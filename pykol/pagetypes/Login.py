@@ -26,7 +26,13 @@ class Login(KoLPage):
         return hash2
 
     def auto_action(self):
-        soup = bs4.BeautifulSoup(self.response.text)
+
+        soup = bs4.BeautifulSoup(self.response.text, 'html.parser')
+
+        retry = soup(text=re.compile('try again in'))
+        if len(retry) > 0:
+            raise framework.KoLError(retry[0])
+
         form = soup.find('form', attrs={'name': 'Login'})
         params = form.find_all('input')
         param_list = {}
@@ -42,4 +48,4 @@ class Login(KoLPage):
         param_list['secure'] = 1
         param_list['loginname'] = Config.user
 
-        return Client.post(Login.url, param_list)
+        return framework.Client.post(Login.url, param_list)

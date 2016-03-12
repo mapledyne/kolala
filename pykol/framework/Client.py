@@ -1,6 +1,8 @@
 import requests
 import six
 
+import pykol.framework.PageSelector
+
 
 class Client(object):
 
@@ -48,3 +50,18 @@ class Client(object):
         response = Client.session.post(url, data)
 
         return response
+
+    def getpage(url, params=None):
+        response = self.get(url, params)
+
+        web = framework.PageSelector(response)
+
+        page = web.page()
+
+        req = page.auto_action()
+        while req is not None:
+            page = framework.PageSelector(req).page()
+            req = page.auto_action()
+
+        if type(page) is 'MainFrame' and url is not MainFrame.url:
+            print 'reload our page of: ' + url

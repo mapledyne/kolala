@@ -1,7 +1,11 @@
 import inspect
 
 import pykol.framework as framework
-import pykol.pagetypes as pagetypes
+from pykol.pagetypes import *
+
+app = framework.KolCmd()
+
+app.cmdloop()
 
 web = framework.PageSelector(framework.Client.get('http://www.kingdomofloathing.com'))
 

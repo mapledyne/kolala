@@ -1,3 +1,4 @@
+from pykol.character.Stat import Stat
 from pykol.character.Stats import Stats
 
 
@@ -8,11 +9,24 @@ class Character(object):
         self.char_cls = ''
         self.level = ''
         self.stats = Stats()
+        self.hp = Stat()
+        self.mp = Stat()
+        self.meat = 0
+        self.adv = 0
+        self.liver = 0
+        self.drunk = False
 
-    def __str__():
-        print('Name: ' + self.name)
-        print('Class: ' + self.char_cls)
-        print('Level: ' + self.level)
-        print('Muscle: ' + self.stats.muscle)
-        print('Moxie: ' + self.stats.moxie)
-        print('mysticality: ' + self.stats.mysticality)
+    def __str__(self):
+        msg = ('Name: ' + self.name + '\n' +
+               'Class: ' + self.char_cls + '\n' +
+               'Level: ' + self.level + '\n' +
+               'Muscle: ' + str(self.stats.muscle) + '\n'
+               'Moxie: ' + str(self.stats.moxie) + '\n'
+               'Mysticality: ' + str(self.stats.mysticality) + '\n' +
+               'Liver: ' + str(self.liver) + '\n' +
+               'Drunk: ' + str(self.drunk) + '\n' +
+               'HP: ' + str(self.hp) + '\n' +
+               'MP: ' + str(self.mp) + '\n' +
+               'Meat: ' + str(self.meat) + '\n' +
+               'Adv: ' + str(self.adv))
+        return msg

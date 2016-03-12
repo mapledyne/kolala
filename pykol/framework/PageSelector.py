@@ -1,5 +1,5 @@
 import pykol.Config as Config
-import pykol.pagetypes as pagetypes
+from pykol.pagetypes import *
 
 
 class PageSelector(object):
@@ -14,7 +14,7 @@ class PageSelector(object):
                       'w+') as file:
                 file.write(self.response.text.encode('utf-8'))
 
-        for page in pagetypes.KoLPage.__subclasses__():
+        for page in KoLPage.__subclasses__():
             if page.claim(self.response):
                 return page(self.response)
-        return pagetypes.KoLPage(self.response)
+        return KoLPage(self.response)

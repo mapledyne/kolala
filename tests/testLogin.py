@@ -1,6 +1,6 @@
 import bs4
-import sys
 import re
+import sys
 
 sys.path.append('..')
 import pykol.framework as framework  # noqa

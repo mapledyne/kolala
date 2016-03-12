@@ -1,5 +1,6 @@
 import bs4
 import hashlib
+import re
 
 import pykol.Config as Config
 from pykol.framework.Client import Client
@@ -48,4 +49,4 @@ class Login(KoLPage):
         param_list['secure'] = 1
         param_list['loginname'] = Config.user
 
-        return framework.Client.post(Login.url, param_list)
+        return Client.post(Login.url, param_list)

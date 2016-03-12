@@ -12,5 +12,5 @@ char = Character()
 
 CharPane.parse_page(text, char)
 
-print str(char)
+print unicode(char)
 exit(0)

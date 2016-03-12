@@ -16,19 +16,39 @@ class Character(object):
         self.liver = 0
         self.drunk = False
         self.fury = 0
+        self.furynote = ''
+        self.effects = []
+        self.hardcore = False
+        self.quests = []
 
     def __str__(self):
-        msg = ('Name: ' + self.name + '\n' +
-               'Class: ' + self.char_cls + '\n' +
-               'Level: ' + self.level + '\n' +
-               'Muscle: ' + str(self.stats.muscle) + '\n'
-               'Moxie: ' + str(self.stats.moxie) + '\n'
-               'Mysticality: ' + str(self.stats.mysticality) + '\n' +
-               'Liver: ' + str(self.liver) + '\n' +
-               'Drunk: ' + str(self.drunk) + '\n' +
-               'HP: ' + str(self.hp) + '\n' +
-               'MP: ' + str(self.mp) + '\n' +
-               'Meat: ' + str(self.meat) + '\n' +
-               'Adv: ' + str(self.adv) + '\n' +
-               'Fury: ' + str(self.fury) + '\n')
+        core = ''
+        if self.hardcore:
+            core = ' [Hardcore]'
+        header = u' {} (Level {} {}){} '.format(self.name,
+                                                self.level,
+                                                self.char_cls,
+                                                core).center(78, '=')
+        stats = 'Mus: {}, Mox: {}, Mys: {}'.format(self.stats.muscle,
+                                                   self.stats.moxie,
+                                                   self.stats.mysticality)
+        drunk = ''
+        if self.drunk:
+            drunk = ' (drunk)'
+        furynote = self.furynote
+        if len(furynote) > 0:
+            furynote = ' ({})'.format(furynote)
+        msg = (header + '\n' +
+               stats + '\n' +
+               'HP: {}, MP: {}\n'.format(self.hp, self.mp) +
+               'Liver: {}{}\n'.format(self.liver, drunk) +
+               'Meat: {:,}\n'.format(self.meat) +
+               'Adv: {}\n'.format(self.adv) +
+               'Fury: {}{}\n'.format(self.fury, furynote))
+        msg += 'Effects: ' + '\n'
+        if len(self.effects) == 0:
+            msg += '\tNone.\n'
+        else:
+            for e in self.effects:
+                msg += u'\t{}\n'.format(e)
         return msg

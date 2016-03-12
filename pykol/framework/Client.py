@@ -27,7 +27,6 @@ class Client(object):
     @staticmethod
     def get(url, params=None):
         """Send a  request to the server."""
-        print url
         if params is None:
             params = {}
 
@@ -65,11 +64,6 @@ class Client(object):
             page = PageSelector(req).page()
             req = page.auto_action()
 
-        print '***'
-        print type(page).__name__
-        print url
-        print page.url
-
-        if type(page) is 'MainFrame' and url is not page.url:
-            print 'reload our page of: ' + url
+        if type(page).__name__ is 'MainFrame' and url is not page.url:
+            return Client.getpage(url, params)
         return page

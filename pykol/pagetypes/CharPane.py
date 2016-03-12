@@ -1,4 +1,5 @@
 import bs4
+import re
 
 from pykol.character.Stat import Stat
 import pykol.Config as Config
@@ -31,11 +32,24 @@ class CharPane(KoLPage):
 
         tag = tag.find_next('table')
         stats = tag.find_all('tr')
-        character.stats.muscle = Stat(stats[0].b.text)
-        character.stats.moxie = Stat(stats[1].b.text)
-        character.stats.mysticality = Stat(stats[2].b.text)
-        if len(stats) > 3:
-            character.liver = int(stats[3].b.text)
+        for s in stats:
+            if 'Muscle' in s.text:
+                character.stats.muscle = Stat(s.b.text)
+            if 'Moxie' in s.text:
+                character.stats.moxie = Stat(s.b.text)
+            if 'Mysticality' in s.text:
+                character.stats.mysticality = Stat(s.b.text)
+            if 'Tipsiness' in s.text:
+                character.liver = int(s.b.text)
+            if 'Inebriety' in s.text:
+                character.liver = int(s.b.text)
+            if 'Temulency' in s.text:
+                character.liver = int(s.b.text)
+            if 'Drunkenness' in s.text:
+                character.liver = int(s.b.text)
+            if 'Fury' in s.text:
+                character.fury = int(s.b.text.split()[0])
+
         character.drunk = 'falling-down drunk' in tag.text
 
         tag = tag.find_next('img', title='Hit Points')
@@ -48,6 +62,9 @@ class CharPane(KoLPage):
 
         tag = tag.find_next('img', title='Adventures Remaining')
         character.adv = int(tag.text)
+
+        tag.find_next('font', text=re.compile('Effects:'))
+        print '**' + tag.text + '**'
 
     def auto_action(self):
         CharPane.parse_page(self.response.text, Globals.player)

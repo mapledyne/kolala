@@ -6,7 +6,6 @@ class KoLPage(object):
 
     def __init__(self, response):
         self.response = response
-        print type(self).__name__
 
     @staticmethod
     def claim(response):

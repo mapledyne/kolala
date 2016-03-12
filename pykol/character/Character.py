@@ -15,6 +15,7 @@ class Character(object):
         self.adv = 0
         self.liver = 0
         self.drunk = False
+        self.fury = 0
 
     def __str__(self):
         msg = ('Name: ' + self.name + '\n' +
@@ -28,5 +29,6 @@ class Character(object):
                'HP: ' + str(self.hp) + '\n' +
                'MP: ' + str(self.mp) + '\n' +
                'Meat: ' + str(self.meat) + '\n' +
-               'Adv: ' + str(self.adv) + '\n')
+               'Adv: ' + str(self.adv) + '\n' +
+               'Fury: ' + str(self.fury) + '\n')
         return msg

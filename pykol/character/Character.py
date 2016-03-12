@@ -28,5 +28,5 @@ class Character(object):
                'HP: ' + str(self.hp) + '\n' +
                'MP: ' + str(self.mp) + '\n' +
                'Meat: ' + str(self.meat) + '\n' +
-               'Adv: ' + str(self.adv))
+               'Adv: ' + str(self.adv) + '\n')
         return msg

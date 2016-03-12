@@ -1,7 +1,7 @@
 import requests
 import six
 
-import pykol.framework.PageSelector
+from pykol.framework.PageSelector import PageSelector
 
 
 class Client(object):
@@ -27,6 +27,7 @@ class Client(object):
     @staticmethod
     def get(url, params=None):
         """Send a  request to the server."""
+        print url
         if params is None:
             params = {}
 
@@ -51,17 +52,24 @@ class Client(object):
 
         return response
 
+    @staticmethod
     def getpage(url, params=None):
-        response = self.get(url, params)
+        response = Client.get(url, params)
 
-        web = framework.PageSelector(response)
+        web = PageSelector(response)
 
         page = web.page()
 
         req = page.auto_action()
         while req is not None:
-            page = framework.PageSelector(req).page()
+            page = PageSelector(req).page()
             req = page.auto_action()
 
-        if type(page) is 'MainFrame' and url is not MainFrame.url:
+        print '***'
+        print type(page).__name__
+        print url
+        print page.url
+
+        if type(page) is 'MainFrame' and url is not page.url:
             print 'reload our page of: ' + url
+        return page

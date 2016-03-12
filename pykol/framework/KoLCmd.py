@@ -3,7 +3,7 @@ import importlib
 import pykol.Globals as Globals
 from pykol.actions import *  # noqa
 from pykol.framework.Client import Client
-from pykol.pagetypes import CharPane
+from pykol.pagetypes.CharPane import CharPane
 
 
 class KoLCmd(Cmd):
@@ -12,11 +12,11 @@ class KoLCmd(Cmd):
     file = None
 
     def __init__(self):
-        super(KoLCmd, self).__init__(self)
+        Cmd.__init__(self)
         Client.getpage(CharPane.url)
 
     def do_character(self, arg):
-        self.stdout.write(Globals.player)
+        self.stdout.write(str(Globals.player))
 
     def do_meat(self, arg):
         meat.do_meat(self, arg)

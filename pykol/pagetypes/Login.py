@@ -3,7 +3,6 @@ import hashlib
 import re
 
 import pykol.Config as Config
-from pykol.framework.Client import Client
 from pykol.pagetypes.KoLPage import KoLPage
 
 
@@ -27,6 +26,7 @@ class Login(KoLPage):
         return hash2
 
     def auto_action(self):
+        from pykol.framework.Client import Client
 
         soup = bs4.BeautifulSoup(self.response.text, 'html.parser')
 

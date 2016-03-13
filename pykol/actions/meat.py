@@ -1,5 +1,5 @@
-import pykol.Globals as Globals
+import pykol
 
 
-def do_meat(self, arg):
-    self.stdout.write('You have {:,} meat.\n'.format(Globals.player.meat))
+def main(arg):
+    print('You have {:,} meat.\n'.format(pykol.player.meat))

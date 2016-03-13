@@ -67,7 +67,7 @@ class CharPane(KoLPage):
         tag = tag.find_next('img', title='Adventures Remaining')
         character.adv = int(tag.text)
 
-        character.quests = []
+        character.quests = {}
         nudges = tag.find_next('table', id='nudges')
         nudges = nudges.find_all('tr')
         for nudge in nudges:
@@ -77,8 +77,8 @@ class CharPane(KoLPage):
             quest.description = tasks[0]
             for sub in range(1, len(tasks)):
                 quest.subtasks.append(tasks[sub])
-            character.quests.append(quest)
-            print unicode(quest)
+            character.quests[quest.name] = quest
+
         character.effects = []
         effects = tag.find_next(text=re.compile('Effects:'))
         effects = effects.find_next('table')

@@ -19,7 +19,7 @@ class Character(object):
         self.furynote = ''
         self.effects = []
         self.hardcore = False
-        self.quests = []
+        self.quests = {}
 
     def __str__(self):
         core = ''

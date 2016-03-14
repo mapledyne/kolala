@@ -1,0 +1,63 @@
+{
+    "Spice Ghost": {
+        "category": "Thrall", 
+        "modifier": [
+            "Item Drop: [10+P]"
+        ], 
+        "name": "Spice Ghost"
+    }, 
+    "Elbow Macaroni": {
+        "category": "Thrall", 
+        "modifier": [
+            "Equalize Muscle: \"Mysticality\"", 
+            "Weapon Damage: [min(floor(P/5),1)*2*P]", 
+            "Critical Hit Percent: [floor(P/10)*10]"
+        ], 
+        "name": "Elbow Macaroni"
+    }, 
+    "Vampieroghi": {
+        "category": "Thrall", 
+        "modifier": [
+            "Maximum HP: [floor(P/10)*60]"
+        ], 
+        "name": "Vampieroghi"
+    }, 
+    "Lasagmbie": {
+        "category": "Thrall", 
+        "modifier": [
+            "Meat Drop: [20+(2*P)]", 
+            "Spooky Spell Damage: [floor(P/10)*10]"
+        ], 
+        "name": "Lasagmbie"
+    }, 
+    "Penne Dreadful": {
+        "category": "Thrall", 
+        "modifier": [
+            "Equalize Moxie: \"Mysticality\"", 
+            "Damage Reduction: [floor(P/10)*10]"
+        ], 
+        "name": "Penne Dreadful"
+    }, 
+    "Angel Hair Wisp": {
+        "category": "Thrall", 
+        "modifier": [
+            "Initiative: [5*P]"
+        ], 
+        "name": "Angel Hair Wisp"
+    }, 
+    "Spaghetti Elemental": {
+        "category": "Thrall", 
+        "modifier": [
+            "Spell Damage: [floor(P/10)*5]", 
+            "Experience: [(1+ceil(P/3))/2]"
+        ], 
+        "name": "Spaghetti Elemental"
+    }, 
+    "Vermincelli": {
+        "category": "Thrall", 
+        "modifier": [
+            "Maximum MP: [floor(P/10)*30]"
+        ], 
+        "name": "Vermincelli"
+    }
+}

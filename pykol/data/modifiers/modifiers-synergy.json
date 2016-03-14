@@ -1,0 +1,85 @@
+{
+    "bitter bowtie/brazen bracelet": {
+        "category": "Synergy", 
+        "modifier": [
+            "Meat Drop: +10", 
+            "Cold Resistance: +1", 
+            "Sleaze Resistance: +1"
+        ], 
+        "name": "bitter bowtie/brazen bracelet"
+    }, 
+    "cardboard katana/cardboard wakizashi": {
+        "category": "Synergy", 
+        "modifier": [
+            "Weapon Damage: +20"
+        ], 
+        "name": "cardboard katana/cardboard wakizashi"
+    }, 
+    "musty moccasins/molten medallion": {
+        "category": "Synergy", 
+        "modifier": [
+            "Item Drop: +10", 
+            "Stench Resistance: +1", 
+            "Hot Resistance: +1"
+        ], 
+        "name": "musty moccasins/molten medallion"
+    }, 
+    "molten medallion/monstrous monocle": {
+        "category": "Synergy", 
+        "modifier": [
+            "Item Drop: +10", 
+            "Hot Resistance: +1", 
+            "Spooky Resistance: +1"
+        ], 
+        "name": "molten medallion/monstrous monocle"
+    }, 
+    "stuffed carpenter/stuffed walrus": {
+        "category": "Synergy", 
+        "modifier": [
+            "HP Regen Min: 5", 
+            "HP Regen Max: 5", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 5"
+        ], 
+        "name": "stuffed carpenter/stuffed walrus"
+    }, 
+    "serpentine sword/snake shield": {
+        "category": "Synergy", 
+        "modifier": [
+            "Monster Level: +10"
+        ], 
+        "name": "serpentine sword/snake shield"
+    }, 
+    "brazen bracelet/bewitching boots": {
+        "category": "Synergy", 
+        "modifier": [
+            "Meat Drop: +10", 
+            "Sleaze Resistance: +1"
+        ], 
+        "name": "brazen bracelet/bewitching boots"
+    }, 
+    "monstrous monocle/musty moccasins": {
+        "category": "Synergy", 
+        "modifier": [
+            "Item Drop: +10", 
+            "Spooky Resistance: +1", 
+            "Stench Resistance: +1"
+        ], 
+        "name": "monstrous monocle/musty moccasins"
+    }, 
+    "bewitching boots/bitter bowtie": {
+        "category": "Synergy", 
+        "modifier": [
+            "Meat Drop: +10", 
+            "Cold Resistance: +1"
+        ], 
+        "name": "bewitching boots/bitter bowtie"
+    }, 
+    "lupine sword/snarling wolf shield": {
+        "category": "Synergy", 
+        "modifier": [
+            "Spooky Damage: +9"
+        ], 
+        "name": "lupine sword/snarling wolf shield"
+    }
+}

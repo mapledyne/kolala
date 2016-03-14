@@ -1,0 +1,158 @@
+{
+    "Lettuce Spray": {
+        "category": "Florist", 
+        "modifier": [
+            "HP Regen Min: 10", 
+            "HP Regen Max: 30"
+        ], 
+        "name": "Lettuce Spray"
+    }, 
+    "Shuffle Truffle": {
+        "category": "Florist", 
+        "modifier": [
+            "Initiative: +25"
+        ], 
+        "name": "Shuffle Truffle"
+    }, 
+    "Up Sea Daisy": {
+        "category": "Florist", 
+        "modifier": [
+            "Experience: +30"
+        ], 
+        "name": "Up Sea Daisy"
+    }, 
+    "Pitcher Plant": {
+        "category": "Florist", 
+        "modifier": [
+            "MP Regen Min: 5", 
+            "MP Regen Max: 15"
+        ], 
+        "name": "Pitcher Plant"
+    }, 
+    "Snori": {
+        "category": "Florist", 
+        "modifier": [
+            "HP Regen Min: 20", 
+            "HP Regen Max: 30", 
+            "MP Regen Min: 10", 
+            "MP Regen Max: 20"
+        ], 
+        "name": "Snori"
+    }, 
+    "Rabid Dogwood": {
+        "category": "Florist", 
+        "modifier": [
+            "Monster Level: +30"
+        ], 
+        "name": "Rabid Dogwood"
+    }, 
+    "Kelptomaniac": {
+        "category": "Florist", 
+        "modifier": [
+            "Item Drop: +40"
+        ], 
+        "name": "Kelptomaniac"
+    }, 
+    "Blustery Puffball": {
+        "category": "Florist", 
+        "modifier": [
+            "Monster Level: +30"
+        ], 
+        "name": "Blustery Puffball"
+    }, 
+    "Rutabeggar": {
+        "category": "Florist", 
+        "modifier": [
+            "Item Drop: +25"
+        ], 
+        "name": "Rutabeggar"
+    }, 
+    "Portlybella": {
+        "category": "Florist", 
+        "modifier": [
+            "HP Regen Min: 10", 
+            "HP Regen Max: 30"
+        ], 
+        "name": "Portlybella"
+    }, 
+    "Aloe Guv'nor": {
+        "category": "Florist", 
+        "modifier": [
+            "HP Regen Min: 10", 
+            "HP Regen Max: 30"
+        ], 
+        "name": "Aloe Guv'nor"
+    }, 
+    "War Lily": {
+        "category": "Florist", 
+        "modifier": [
+            "Monster Level: +30"
+        ], 
+        "name": "War Lily"
+    }, 
+    "Horn of Plenty": {
+        "category": "Florist", 
+        "modifier": [
+            "Item Drop: +25"
+        ], 
+        "name": "Horn of Plenty"
+    }, 
+    "Stealing Magnolia": {
+        "category": "Florist", 
+        "modifier": [
+            "Item Drop: +25"
+        ], 
+        "name": "Stealing Magnolia"
+    }, 
+    "Crookweed": {
+        "category": "Florist", 
+        "modifier": [
+            "Meat Drop: +60"
+        ], 
+        "name": "Crookweed"
+    }, 
+    "Impatiens": {
+        "category": "Florist", 
+        "modifier": [
+            "Initiative: +25"
+        ], 
+        "name": "Impatiens"
+    }, 
+    "Canned Spinach": {
+        "category": "Florist", 
+        "modifier": [
+            "Experience (Muscle): +5"
+        ], 
+        "name": "Canned Spinach"
+    }, 
+    "Wizard's Wig": {
+        "category": "Florist", 
+        "modifier": [
+            "Experience (Mysticality): +5"
+        ], 
+        "name": "Wizard's Wig"
+    }, 
+    "Max Headshroom": {
+        "category": "Florist", 
+        "modifier": [
+            "MP Regen Min: 5", 
+            "MP Regen Max: 15"
+        ], 
+        "name": "Max Headshroom"
+    }, 
+    "Seltzer Watercress": {
+        "category": "Florist", 
+        "modifier": [
+            "MP Regen Min: 5", 
+            "MP Regen Max: 15"
+        ], 
+        "name": "Seltzer Watercress"
+    }, 
+    "Rad-ish Radish": {
+        "category": "Florist", 
+        "modifier": [
+            "Experience (Moxie): +5"
+        ], 
+        "name": "Rad-ish Radish"
+    }
+}

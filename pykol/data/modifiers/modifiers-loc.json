@@ -1,0 +1,119 @@
+{
+    "Anemone Mine": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Anemone Mine"
+    }, 
+    "The Briniest Deepests": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: +25", 
+            "Item Drop Penalty: +25", 
+            "Meat Drop Penalty: +25"
+        ], 
+        "name": "The Briniest Deepests"
+    }, 
+    "Mer-kin Gymnasium": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Mer-kin Gymnasium"
+    }, 
+    "Mer-kin Elementary School": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Mer-kin Elementary School"
+    }, 
+    "Caliginous Abyss": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Caliginous Abyss"
+    }, 
+    "Mer-kin Colosseum": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Mer-kin Colosseum"
+    }, 
+    "The Briny Deeps": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: +75", 
+            "Item Drop Penalty: +75", 
+            "Meat Drop Penalty: +75"
+        ], 
+        "name": "The Briny Deeps"
+    }, 
+    "The Brinier Deepers": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: +50", 
+            "Item Drop Penalty: +50", 
+            "Meat Drop Penalty: +50"
+        ], 
+        "name": "The Brinier Deepers"
+    }, 
+    "The Dive Bar": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "The Dive Bar"
+    }, 
+    "The Marinara Trench": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "The Marinara Trench"
+    }, 
+    "The Sunken Party Yacht": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -50", 
+            "Item Drop Penalty: -50", 
+            "Meat Drop Penalty: -50"
+        ], 
+        "name": "The Sunken Party Yacht"
+    }, 
+    "The Ice Hole": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "The Ice Hole"
+    }, 
+    "Mer-kin Library": {
+        "category": "Loc", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Mer-kin Library"
+    }
+}

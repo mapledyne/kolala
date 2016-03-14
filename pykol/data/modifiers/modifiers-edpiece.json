@@ -1,0 +1,56 @@
+{
+    "owl": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Mysticality: +20", 
+            "Experience (Mysticality): +2"
+        ], 
+        "name": "owl"
+    }, 
+    "puma": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Moxie: +20", 
+            "Experience (Moxie): +2"
+        ], 
+        "name": "puma"
+    }, 
+    "fish": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Adventure Underwater"
+        ], 
+        "name": "fish"
+    }, 
+    "bear": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Muscle: +20", 
+            "Experience (Muscle): +2"
+        ], 
+        "name": "bear"
+    }, 
+    "hyena": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Monster Level: +20"
+        ], 
+        "name": "hyena"
+    }, 
+    "weasel": {
+        "category": "Edpiece", 
+        "modifier": [
+            "HP Regen Min: 10", 
+            "HP Regen Max: 20"
+        ], 
+        "name": "weasel"
+    }, 
+    "mouse": {
+        "category": "Edpiece", 
+        "modifier": [
+            "Item Drop: +10", 
+            "Meat Drop: +20"
+        ], 
+        "name": "mouse"
+    }
+}

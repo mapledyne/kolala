@@ -1,0 +1,73 @@
+{
+    "Vole": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Moxie): +10", 
+            "Initiative: +20", 
+            "Maximum HP: +20", 
+            "Maximum MP: +20"
+        ], 
+        "name": "Vole"
+    }, 
+    "Wombat": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Muscle): +10", 
+            "Meat Drop: +20"
+        ], 
+        "name": "Wombat"
+    }, 
+    "Marmot": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Moxie): +10"
+        ], 
+        "name": "Marmot"
+    }, 
+    "Packrat": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Moxie): +10", 
+            "Item Drop: +10"
+        ], 
+        "name": "Packrat"
+    }, 
+    "Platypus": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Muscle): +10", 
+            "Familiar Weight: +5"
+        ], 
+        "name": "Platypus"
+    }, 
+    "Opossum": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Mysticality): +10"
+        ], 
+        "name": "Opossum"
+    }, 
+    "Mongoose": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Muscle): +10", 
+            "Weapon Damage Percent: +20"
+        ], 
+        "name": "Mongoose"
+    }, 
+    "Wallaby": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Mysticality): +10", 
+            "Spell Damage Percent: +20"
+        ], 
+        "name": "Wallaby"
+    }, 
+    "Blender": {
+        "category": "Sign", 
+        "modifier": [
+            "Experience Percent (Mysticality): +10"
+        ], 
+        "name": "Blender"
+    }
+}

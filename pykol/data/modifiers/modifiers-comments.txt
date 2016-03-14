@@ -1,0 +1,2212 @@
+# Numeric modifiers can now be expressions, enclosed in square brackets.
+# No spaces are allowed within the expression, except as part of a zone/location name.
+# + - * / ( ) have their usual mathematical meaning and precedence.
+# ^ is exponentiation, with the highest precedence.
+# Functions available:
+#	ceil(x) floor(x) sqrt(x) min(x,y) max(x,y) abs(x)
+# Location functions: loc(text) zone(text) env(text)
+#	These have a value of 1 if the current adventure location, zone, or environment
+#	contains the specified text, 0 elsewhere.
+# Path function: path(text)
+#	This has a value of 1 if the player's path matches the text.
+# Familiar function: fam(text)
+#	This has a value of 1 if the player's familiar type contains the text, else 0.
+# Weapon function: mainhand(text)
+#	This has a value of 1 if the player's mainhand weapon class (sword, club, etc.)
+#	contains the text.
+# Preferences function: pref(text)
+#	Returns the value of the specified preference
+#             function: pref(text,compare)
+#	Returns 1 if the specified preference is equal to "compare", otherwise 0
+# Effect function: effect(text)
+#	This returns the number of turns remaining of the effect uniquely matching text.
+#	text can be the effect name or id
+# Resistance function: res(text)
+#	This returns the number of resistance levels for the listed element
+# Class function: class(text)
+#	This has a value of 1 if the player's class matches the text.
+# Skill function: skill(text)
+#	This has a value of 1 if the player has the skill matching the text.
+#	text can be the skill name or id
+# Upper-case letters are varying values:
+#	A - number of Ascensions
+#	B - Blood of Wereseal effect
+#	C - Clancy's level
+#	D - Drunkenness
+#	E - active (nonintrinsic) Effects
+#	F - Fullness
+#	G - Grimace darkness (0..5)
+#	H - Hobo Power
+#	I - Disco Momentum
+#	J - 1 on Festival of Jarlsberg, 0 otherwise
+#	K - Smithsness
+#	L - player Level
+#	M - total Moonlight (0..9)
+#	N - AudieNce
+#	P - Pasta Thrall level
+#	R - Reagent potion duration
+#	S - Spleenness
+#	T - Turns remaining of this effect
+#	U - telescope Upgrades
+#	W - familiar Weight
+#	X - gender (-1=male, 1=female)
+#	Y - furY
+#
+# Items which "change with every new day":
+#
+# Tuesday's Ruby
+#	Sunday		+5% Meat from Monsters
+#	Monday		Muscle +5%
+#	Tuesday		Regenerate 3-7 MP per adventure
+#	Wednesday	+5% Mysticality
+#	Thursday	+5% Item Drops from Monsters
+#	Friday		+5% Moxie
+#	Saturday	Regenerate 3-7 HP per adventure
+# Hats section of modifiers.txt
+# Admiral's hat: +50 Skeleton Anger
+# Item bellhop's hat: Helps you blend in at the Ice Hotel
+# brainwave-controlled unicorn horn: Enables Friendship.  And Goring.
+# Cerebral Cloche: Jellyfish Vision
+# Crown of Thrones: Put a Familiar In It!
+# Crown of Thrones: That Familiar gains 1 Experience per Fight
+# Dinsey mascot mask: Changes Your Avatar
+# double-ice cap: Stuns opponents who hit you
+# dreadful fedora: Lets you find 5% more Kruegerands
+# dwarvish war helmet: Heads Up!
+# eelskin hat: Damages Attacking Opponent (Underwater Only)
+# fireman's helmet: +1 FDKOL Commendation per Fire
+# Goggles of Loathing: Makes you a better diver
+# Hairpiece On Fire: (+Maximum MP based on Smithsness)
+# hazmat helmet: 75% Chance of Preventing Negative Status Attacks
+# hazmat helmet: Changes Your Avatar
+# insane tophat: We're All Mad Here!
+# jewel-eyed wizard hat: Regenerate MP Based on Level
+# jewel-eyed wizard hat: +5 Duration to Buffs You Cast
+# jewel-eyed wizard hat: Allows casting of Magic Missile
+# leather aviator's cap: Kill 5% More Skeletons
+# Lens of Violence: Allows you to discover your opponents' magical weaknesses
+# makeshift turban: Interferes with your vision
+# Mark V Steam-Hat: Has a Death Ray on it
+# metallic foil cat ears: Not Amused
+# papier-mitre: Helps you describe things
+# parasitic headgnawer: Deals 30-45 damage to attackers
+# party hat: (On the Festival of Jarlsberg only)
+# polyester panama hat: Adds Damage to Disco Dances
+# porcelain porkpie: Adds <font color=purple>Sleaze Damage</font> to all Pastamancer Spells
+# safarrri hat: +10 Damage vs. Lions
+# sleep mask: Can't see nothin'
+# The Crown of Ed the Undying: Ed's servants will level up faster
+# The Crown of Ed the Undying: Allows you to read thoughts
+# toy Crimbot mega face: Allows use of LIGHT in combat
+# toy space helmet: Provides Mostly Accurate Battle Statistics During Fights
+# Item very pointy crown: Weakens Monster on Critical Hit
+# warbear electro-spiked helm: +60 WarBear Armor Penetration
+# warbear electro-spiked helm: Troubling Vulnerability to All Elements (-5)
+# warbear fancy fedora: +15% Item Drops from WarBears
+# warbear feathered fedora: +10% Item Drops from WarBears
+# warbear foil hat: (additional +10 lbs. to Robotic Familiars)
+# warbear plain fedora: +5% Item Drops from WarBears
+# warbear plain helm: +20 WarBear Armor Penetration
+# warbear spiked helm: +40 WarBear Armor Penetration
+# Ze&trade; goggles: +25% Item Drops from Monsters (Underwater only)
+# Pants section of modifiers.txt
+# Item bakelite breeches: Doubles the damage of Disco Inferno
+# bloodied surgical dungarees: Makes you look like a gross doctor
+# Dinsey's pants: Disco Bandit Combat Skills weaken enemies by an additional 50%
+# dubious loincloth: Deals <font color=purple>Sleaze Damage</font> every round
+# dwarvish war kilt: Blinky Lights
+# eelskin pants: Damages Attacking Opponent (Underwater Only)
+# Great Wolf's beastly trousers: Troubling Vulnerability to All Elements (-5)
+# Greatest American Pants: Amazing Super Powers
+# Jodhpurs of Violence: Allows moshing
+# liar's pants: +30 to All Attributes.  Yeah, +30.  That's the ticket.
+# muddy skirt: Deals <font color=green>Stench Damage</font> every round
+# Pantaloons of Hatred: Generates a lot of static electricity
+# Pantsgiving: Lets you cram in slightly more food.
+# Pantsgiving: Improves resting
+# Pantsgiving: Lets you use various Thanksgivingy skills
+# papier-m&acirc;churidars: Improves things
+# polyester pettipants: Makes Curse of Vichyssoise Way Better
+# porcelain plus-fours: Increase Duration of Turtle Tamer Buffs by 4
+# SMOOCH codpiece: Damages Attacking Opponent
+# The Sagittarian's leisure pants: Disco Bandit Combat Skills weaken enemies by an additional 20%
+# toy Crimbot rocket legs: Allows use of BURN in combat
+# Travoltan trousers: 5-Finger Discount
+# Travoltan trousers: Moxie used to determine Maximum MP
+# Travoltan trousers: (unless Mysticality is higher)
+# Vicar's Tutu: (+Maximum HP based on Smithsness)
+# warbear battle greaves: +20 WarBear Armor Penetration
+# warbear bearserker greaves: +60 WarBear Armor Penetration
+# warbear bearserker greaves: Troubling Vulnerability to All Elements (-5)
+# warbear ceremonial party pants: +10% Item Drops from WarBears
+# warbear high festival pants: +15% Item Drops from WarBears
+# warbear officer greaves: +40 WarBear Armor Penetration
+# warbear party pants: +5% Item Drops from WarBears
+# Item wicker knickers: Increases the effectiveness of Shield of the Pastalord
+# Shirts section of modifiers.txt
+# Ascension Souvenir T-Shirt
+# Colonel Mustard's Lonely Spades Club Jacket: + ???
+# dreadful sweater: Lets you find 5% more Kruegerands
+# fishbone corset: Reduces the level of nearby water
+# Private Pepper's Lonely Hearts Club Jacket: 50% Discount on Gift Packages
+# red-and-green sweater: Shocking!
+# SMOOCH breastplate: Damages Attacking Opponent
+# Sneaky Pete's leather jacket: The Audience Loves/Hates You Even More!
+# Sneaky Pete's leather jacket (collar popped): The Audience Loves/Hates You Even More!
+# surgical apron: Makes you look like a gross doctor
+# Thinknerd T-Shirt	enchantment varies per player?
+# witch's bra: All Spells Cast Are Cold
+# Weapons section of modifiers.txt
+# 25-meat staff
+# 7-inch discus: On Critical:  Music Snobbery!
+# airblaster gun: Blasts Air (Duh.)
+# archaeologing shovel
+# automatic catapult
+# Ax of L'rose
+# bamboo bokuto
+# Item Batfellow comic: Lets you have have a fun adventure as a dark, brooding, bat-themed superhero.
+# big stick
+# bill bec-de-bardiche glaive-guisarme
+# bindlestocking: On Critical:  Merry Crimbo!
+# black blade: Successful attacks restore some HP
+# bone and arrows: +30% Damage vs. Skeletons
+# bone crusher: +30% Damage vs. Skeletons
+# bonerang: +10% Damage vs. Skeletons
+# Bonestabber: +30% Damage vs. Skeletons
+# boning knife: +10% Damage vs. Skeletons
+# boot knife
+# bottle-rocket crossbow: Shoots Bottle-Rockets!
+# breadchucks: Deals 45-50 Physical Damage and 45-50 <font color=red>Hot Damage</font> when used as a combat item
+# broken beer bottle
+# bugbear-smiting sword: +100% Damage vs. Bugbears
+# can-you-dig-it?: + ???
+# candy knife
+# cap gun: Bang Bang!
+# charming flute: +20 Damage vs. Snakes
+# cheap plastic blowgun: 50% chance of poisoning opponent.
+# chisel
+# chocolate cow bone: Candilicious Smacks!
+# Cloaca-Cola-issue combat knife: Drains MP on Successful Hit
+# clockwork crossbow: Weakens Monster on Critical Hit
+# clockwork staff: Restores 3-24 MP on Critical Hit
+# clockwork sword: Heals 3-24 HP on Critical Hit
+# clown hammer: Squeaky!
+# coal shovel: Lets you hurl hot coals at your foes
+# cool whip
+# cozy bazooka: Makes you a much better diver
+# cozy scimitar: Makes you a much better diver
+# Crimbomination Contraption
+# debonair deboner: +25% Damage vs. Skeletons
+# decaying wooden oar
+# depleted Grimacite hammer: Needed for depleted Grimacite smithing
+# Dinsey's pizza cutter: Motorized Blade is Good for Twisting
+# disco ball
+# dreadful glove: Lets you find 5% more Krueggerands
+# dwarvish war mattock: Magical Blue Glow
+# El Vibrato energy spear
+# elephant stinger: 50% chance of poisoning opponent.
+# elven whittling knife: On Critical:  Whittles enemy down
+# Flail of the Seven Aspects: Handle Doubles as a Turtling Rod
+# Flail of the Seven Aspects: Special Attack:  Turtle of Seven Tails
+# flamin' bindle: On Critical: Deals 70-100 <font color=red>Hot Damage</font>
+# Frankly Mr. Shank: Disco Bandit Combat Skills weaken enemies by an additional 25%
+# Frankly Mr. Shank: (+% to Moxie Based on Smithsness)
+# freezin' bindle: On Critical: Deals 70-100 <font color=blue>Cold Damage</font>
+# giant fishhook
+# gift-a-pult: Allows hurling of Gift Items
+# glow-in-the-dark dart gun: Super Accurate!
+# Gnollish flyswatter
+# Gnollish plunger
+# goblin autoblowgun: 50% chance of poisoning opponent.
+# goblin hunting spear: +15 Damage vs. Jungle Beasts
+# grease cannon: Sets opponents on fire
+# Great Wolf's rocket launcher: Lets you fire rockets <font color=white>Duh</font>
+# haiku katana: Allows use of seasonal attacks
+# half-size scalpel: Makes you look like a doctor
+# Hand that Rocks the Ladle: (+% to Mysticality Based on Smithsness)
+# Hand that Rocks the Ladle: Eminently Twistable
+# hawk: +22% Damage vs. Skeletons
+# heteroerotic frat-paddle
+# high-temperature mining drill: Allows Mining in the Velvet / Gold Mine
+# Hodgman's whackin' stick: On Critical: Insanity!
+# lead yo-yo
+# licorice whip: Candiful Crits
+# Loathing Legion hammer: Gets the job done
+# lucky ball-and-chain
+# Mayor Ghost's gavel: +50 Damage vs. Ghosts
+# Mayor Ghost's gavel: Lets you hit ghosts with a gavel.
+# Mayor Ghost's gavel: This gavel, specifically.
+# Meat Tenderizer is Murder: (+% to Muscle Based on Smithsness)
+# Meat Tenderizer is Murder: 25% chance to gain an extra gallon of Fury when you gain a gallon of Fury.
+# Mer-kin finpaddle: +100% Damage vs. Mer-kin
+# Mer-kin hookspear: Extracts Meat on Critical Hits
+# mecenary pistol: Allows the Use of Specialty Ammunition
+# mecenary rifle: Allows the Use of Specialty Ammunition
+# Meteoid ice beam: On Critical:  Freeze Opponent
+# Mjolnir Jr.
+# non-stick pugil stick: On Critical:  Stuns Opponent
+# origami riding crop: Makes you prone to innuendo (heh heh)
+# papier-m&acirc;ch&eacute;te: Makes actions more exciting
+# papier-m&acirc;chine gun: Makes actions more exciting
+# pasta spoon
+# Pener's drumstick: Sets opponents on fire
+# Pigsticker of Violence: Lets you stab opponents as they fail to attack you
+# poison pen: 75% chance of poisoning opponent.
+# polyester peeler: Increases the Damage of Stuffed Mortar Shell
+# porcelain police baton: Your Smacks Restore MP
+# quantum disintegrator pistol: +15% Damage vs. Bugbears
+# Rain-Doh yellow laser gun: Super Accurate!
+# Red Rover BB gun: You'll Put Your Eye Out!
+# Item reindeer sickle: Successful hit causes bleeding.
+# remorseless knife: Successful hit causes bleeding.
+# right bear arm: Lets you act like a bear
+# Ruby Rod
+# rusty speargun: On Critical:  Deals 50-60 additional damage
+# sack of doorknobs
+# saucepan
+# Saucepanic: (+% to Mysticality Based on Smithsness)
+# Saucepanic: Lets you gather more Soulsauce
+# scorpion whip: 50% chance of poisoning opponent.
+# seal-clubbing club
+# Seeger's Unstoppable Banjo: Special Attack:  Funk Bluegrass Fusion
+# Shakespeare's Sister's Accordion: (+% to Moxie Based on Smithsness)
+# Shakespeare's Sister's Accordion: Has a cool Cadenza
+# sharpened spoon
+# Sheila Take a Crossbow: (+Initiative based on Smithsness)
+# sleazy bindle: On Critical: Deals 70-100 <font color=blueviolet>Sleaze Damage</font>
+# Sledgehammer of the V&aelig;lkyr: +20% Physical Damage (currently approximated with Weapon Damage)
+# Sledgehammer of the V&aelig;lkyr: Special Attack:  Bashing Slam Smash
+# slightly peevedbow
+# slime-covered club: +50 Damage against Slimes
+# slime-covered shovel: +100 Damage against Slimes
+# slime-covered speargun: +50 Damage against Slimes
+# slime-covered staff: All Spells Cast Are Sleazy
+# slingshot
+# soap knife
+# soul knife: Can harm True Mimes
+# Space Tourist Phaser: This Phaser is set to Fun
+# spectral axe: +30 Damage vs. Ghosts
+# spooky bindle: On Critical: Deals 70-100 <font color=gray>Spooky Damage</font>
+# Staff of the All-Steak: (5 charges left today)
+# Staff of the Cozy Fish: Makes you a much better diver
+# Staff of the Cream of the Cream: (5 charges left today)
+# Staff of the Headmaster's Victuals: (+Spell Damage based on Smithsness)
+# Staff of the Staff of Life: (5 charges left today)
+# Staff of the Standalone Cheese: (5 charges left today)
+# stinkin' bindle: On Critical: Deals 70-100 <font color=green>Stench Damage</font>
+# stuffed club
+# stuffed crazy bastard sword
+# suede shortsword
+# sugar shank: On Critical:  Cause Opponent to Bleed
+# sugar shotgun: On Critical:  Stuns Opponent
+# sweet ninja sword
+# Sword of Procedural Generation: Randomized per player
+# Tales of the Word Realms: Lends Power to Your Words
+# Item The Jokester's gun: Can be fired in a weird way once per day to instantly defeat an opponent
+# The Trickster's Trikitixa: Special Attack:  Extreme High Note
+# Thor's Pliers: Lets You Smith and Make Jewelry Faster
+# Thor's Pliers: Allows You to Ply Reality
+# Thor's Pliers: Regenerates Lightning Power (in Heavy Rains only)
+# Totally Gay Claymore
+# toy Crimbot power glove: Allows use of ZAP in combat
+# toy taijijian
+# trash net
+# trout fang: 25% chance of poisoning opponent.
+# turtle totem
+# twisted-up wet towel: +25% Item Drops from Monsters (KoL High School zones only)
+# two-handed depthsword
+# Unkillable Skeleton's sawsword: +100% Damage vs. Skeletons
+# Unkillable Skeleton's sawsword: +50% Damage vs. Zombies
+# Unkillable Skeleton's sawsword: +50% Damage vs. Vampires
+# Unkillable Skeleton's sawsword: +50% Damage vs. Werewolves
+# Unkillable Skeleton's sawsword: +50 Damage vs. Ghosts
+# Unkillable Skeleton's sawsword: +50% Damage vs. Bugbears
+# Wand of Nagamar
+# warbear oil pan: Lets you sling hot grease!
+# Item wicker sticker: Is a sweet, sweet knife
+# Windsor Pan of the Source: Special Attack:  Saucemageddon
+# wolf whistle: Blowable for massive <font color=blueviolet>Sleaze Damage</font>
+# Work is a Four Letter Sword: (+Damage based on Smithsness)
+# worm-riding hooks
+# Wrath of the Capsaician Pastalords: Special Attack:  Noodles of Fire
+# X-37 gun: Shoots Elemental Blasts
+# Off-hand Items section of modifiers.txt
+# A Light that Never Goes Out: (+Item Drops based on Smithsness)
+# ancient stone head: 75% Chance of Preventing Negative Status Attacks
+# anniversary balloon
+# arrow'd heart balloon
+# Bag o' Tricks: Summons Animals During Combat
+# bag of Crotchety Pine saplings
+# bag of Laughing Willow saplings
+# bag of Saccharine Maple saplings
+# Item bakelite bowl: Increase the number of Ravioli Shurikens you can conjure
+# balloon shield: Deals 2-3 damage to attackers
+# bone abacus: Helps you track your progress
+# Brand of Violence: Allows you to grow your brand by branding opponents
+# card sleeve: If you like it, you should put a card in it!
+# charged magnet: Radiates a Strange Energy
+# clockwork detective skull
+# Codex of Capsaicin Conjuration: All Spells Cast Are Hot
+# Cookbook of the Damned: All Spells Cast Are Stinky
+# creepy voice box: Pull the String!  I Dare You!
+# cup of infinite pencils: Never runs out of pencils
+# defective skull
+# detective skull
+# Dinsey's radar dish: Deals Increasing Damage Every Round
+# double-ice box: All Spells Cast Are Cold
+# double-ice box: Deals 10-20 cold damage every round
+# Drunkula's wineglass: Prevents you from using skills and spells and combat items
+# Drunkula's wineglass: Allows adventuring while falling-down drunk
+# eelskin shield: Damages Attacking Opponent (Underwater Only)
+# enchanted fire extinguisher: All Spells Cast Are Cold
+# encrypted micro-cassette recorder: Optimized for Pun-Recording
+# Engorged Sausages and You: All Spells Cast Are Sleazy
+# fake hand: Gives Extra Offhand Equipment Slot
+# fishbone catcher's mitt: Prevents some items from washing away in the Heavy Rains
+# Gazpacho's Glacial Grimoire: All Spells Cast Are Cold
+# giant stuffed bugbear
+# glowing esca: +20% Item Drops from Monsters (Underwater only)
+# golden sausage
+# gore bucket
+# green balloon
+# Grey Guanon: Deals <font color=green>Stench Damage</font> every round
+# Half a Purse: (+Meat Drops based on Smithsness)
+# hand of Mr. Cards: Can be thrown
+# heart-shaped balloon
+# heavy duty umbrella: Reduces the level of nearby water.  Somehow.
+# Hodgman's almanac: Converts Hobo Power to Spell Damage
+# Hodgman's cane: Converts Hobo Power to HP and MP Regeneration
+# Hodgman's garbage sticker: Converts Hobo Power to + Meat Drops
+# Hodgman's harmonica: Converts Hobo Power to Ranged Damage
+# Hodgman's imaginary hamster: Converts Hobo Power to + Meat Drops, + Item Drops, and HP and MP Regeneration
+# Hodgman's metal detector: Converts Hobo Power to + Item Drops
+# Hodgman's varcolac paw: Converts Hobo Power to Weapon Damage
+# hot plate: Damages Attacking Opponent
+# jar of frostigkraut: Deals Cold Damage every round
+# Jarlsberg's pan: +1 Food Conjuration for Jarlsberg
+# Jarlsberg's pan: Softcore Only (except for Avatar of Jarlsberg)
+# Jarlsberg's pan (Cosmic portal mode): +1 Food Conjuration for Jarlsberg
+# Jarlsberg's pan (Cosmic portal mode): Converts dropped food and booze into Cosmic Calories
+# Jarlsberg's pan (Cosmic portal mode): Softcore Only (except for Avatar of Jarlsberg)
+# joybuzzer: Grants &quot;Shake Hands&quot; Combat Skill
+# joybuzzer: (31-50 damage per successful handshake)
+# Kevlar balloon
+# left bear arm: Lets you act like a bear
+# loose purse strings: Monsters Will Drop Additional Meat
+# Mer-kin takebag: (+15% Underwater)
+# mini-zeppelin
+# miniature stuffed Goth Giant
+# Mr. Haggis: Haggis!
+# Mylar balloon
+# naughty fortune teller: + Some Stats Per Fight
+# Necrotelicomnicon: All Spells Cast Are Spooky
+# Ol' Scratch's ash can: All Spells Cast Are Hot
+# Ol' Scratch's stove door: Deals 40-50 <font color=red>Hot Damage</font> to attackers
+# Operation Patriot Shield: Can be Thrown in Combat
+# Seal Clubber:
+# Operation Patriot Shield	HP Regen Min: 10, HP Regen Max: 12, Weapon Damage: +15, Damage Reduction: 1
+# Turtle Tamer:
+# Operation Patriot Shield	HP Regen Min: 10, HP Regen Max: 12, Familiar Weight: +5
+# Disco Bandit
+# Operation Patriot Shield: Makes you a Crack Shot
+# Operation Patriot Shield	Ranged Damage: +20
+# Accordion Thief
+# Operation Patriot Shield: Lets You Sing More Proudly
+# Operation Patriot Shield	Four Songs
+# Pastamancer
+# Operation Patriot Shield	MP Regen Min: 5, MP Regen Max: 6, Mana Cost (combat): -3
+# Sauceror
+# Operation Patriot Shield	MP Regen Min: 5, MP Regen Max: 6, Spell Damage: +20
+# ornate dowsing rod: Aids in desert exploration
+# Oscus's garbage can lid: Deals 40-50 <font color=green>Stench Damage</font> to attackers
+# Ouija Board, Ouija Board: (+% to Muscle Based on Smithsness)
+# Ouija Board, Ouija Board: Gain the favor of the Turtle Spirits more quickly
+# oyster basket
+# Paradaisical Cheeseburger recipe
+# polyester pad: Shieldbutting Always Causes Bad Guys to Stagger
+# pool skimmer: Catches other people's washed-away items
+# porcelain pepper mill: Adds Physical Damage to Saucestorm
+# Raggedy Hippy doll
+# Rain-Doh green lantern: Makes Spells Smell Worse
+# red balloon
+# rusty old lantern
+# silver sausage
+# Sinful Desires: All Spells Cast Are Sleazy
+# smirking shrunken head: Deals <font color=gray>Spooky Damage</font> every round
+# snapdragon pistil: All Spells Cast Are Hot
+# snow mobile: Makes Spells Way Cooler
+# Spanish fly trap
+# sprinkle shaker
+# stuffed astral badger
+# stuffed baby gravy fairy
+# stuffed bandersnatch
+# stuffed Baron von Ratsworth
+# stuffed can of asparagus
+# stuffed caterpillar
+# stuffed Cheshire bitten
+# stuffed cocoabo
+# stuffed dodecapede
+# stuffed dodo
+# stuffed flaming gravy fairy
+# stuffed frozen gravy fairy
+# stuffed ghuol whelp
+# stuffed hand turkey
+# stuffed key
+# stuffed MagiMechTech MicroMechaMech
+# stuffed martini
+# stuffed Meat
+# stuffed mind flayer
+# stuffed Mob Penguin
+# stuffed monocle
+# stuffed pocketwatch
+# stuffed porpoise
+# stuffed sabre-toothed lime
+# stuffed scary death orb
+# stuffed sleazy gravy fairy
+# stuffed snowy owl
+# stuffed spooky gravy fairy
+# stuffed stab bat
+# stuffed stinky gravy fairy
+# stuffed teddy butler
+# stuffed tin of caviar
+# stuffed treasure chest
+# stuffed undead elbow macaroni
+# stuffed yeti
+# stuffed yo-yo
+# stuffed zmobie
+# sucker bucket: May Attract Walruses
+# Taco Dan's Taco Stand Cocktail Sauce Bottle
+# tailbone shield: Deals 80-100 <font color=green>Stench Damage</font> to attackers
+# The Lot's engagement ring: Allows Noxious Proposals
+# The Necbromancer's Stein: All Spells Cast Are Spooky
+# thought balloon
+# tiny black hole: Allows Pickpocketing
+# toy Crimbot super fist: Allows use of POW in combat
+# Tuesday's ruby has day-dependent effects which are hard-coded
+# turtling rod: Helps You Tame Turtles
+# Unkillable Skeleton's shield: Deals damage to attackers
+# unstable fulminate
+# UV-resistant compass: Aids in desert exploration
+# Wand of Oscus: All Spells Cast Are Stinky
+# white balloon
+# Item wicker clicker: Cadenza will briefly stun opponents
+# Accessories section of modifiers.txt
+# acid-squirting flower: Damages Attacking Opponent
+# actual reality goggles: Reveals peoples' true nature
+# Amulet of Yendor: Prevents Level Teleporting
+# aquamariner's necklace: Makes you a better diver
+# aquamariner's ring: Makes you a better diver
+# Ass-Stompers of Violence: Allows you to stomp asses
+# attorney's badge: OBJECTION!
+# Item bakelite badge: Gain the favor of the Great Turtle Spirits more quickly
+# Item bakelite belt: Makes Cavalcade of Fury consume less Fury
+# Item bakelite brooch: Active Saucespheres increase your spell damage
+# bananarama bangle: (only in the Candy Diorama)
+# beer goggles: They Do Nothing!
+# Belt of Loathing: 75% Chance of Preventing Negative Status Attacks
+# bewitching boots: Slight Cute Resistance
+# bezoar ring: Protects the wearer from poison
+# black glass
+# Bling of the New Wave: 1 Additional Pickpocket Attempt
+# bottle opener belt buckle: Damages Attacking Opponent
+# bugbear communicator badge
+# bugbear detector: Detects Bugbears (Duh)
+# cannonball charrrm bracelet: Explosively hilarious
+# Cat-Herding Prod: +10 Damage vs. Lions
+# cement shoes: Makes you sleep like the dead
+# cheap sunglasses: +60% Meat Drops from Tourists
+# Chester's Aquarius medallion: All Spells Cast Are Sleazy
+# Chester's moustache: Disco Bandit Combat Skills weaken enemies by an additional 50%
+# Claw of the Infernal Seal: 5 Additional Seal Summons Per Day<super>*</super>
+# * This enchantment works even when this item is not equipped
+# Claybender glasses: +15 Damage vs. Ghosts
+# club necklace
+# continuum transfunctioner
+# CRIMBCO lanyard: Lets you work harder!
+# Crimbomega drive chain: Allows use of LUBE in combat
+# crusty hula hoop: 75% Chance of Preventing Negative Status Attacks
+# crystalline seal eye: +200% Item Drops from Seals
+# dark baconstone ring: Spell Criticals Deal Extra Damage
+# dark hamethyst ring: Critical Hits Deal Extra Damage
+# dark porquoise ring: Makes Deleveling More Effective
+# diamond necklace
+# Dinsey's glove: +30 damage to Accordion Thief Combat Skills
+# diving muff: Makes you a better diver
+# doll-eye amulet: +40% Item Drops in Spookyraven Manor
+# Dreadsylvania Auditor's badge: Lets you find 5% more Kruegerands
+# Drunkula's ring of haze: The first attack against you will always miss
+# E.M.U. Unit
+# El Vibrato translator
+# Elvish sunglasses: Lets you Rock Out
+# ESP suppression collar
+# fishbone belt: (Heavy Rains only)
+# fishbone bracers: (Heavy Rains only)
+# fishbone facemask: (Heavy Rains only)
+# fishbone fins: Makes it harder for enemies to hit you in flood conditions
+# fishbone kneepads: (Heavy Rains only)
+# foam noodle
+# French slippers
+# Fuzzy Slippers of Hatred: Makes running more comfortable
+# Garter of the Turtle Poacher: Helps You Tame Turtles
+# giant diamond ring
+# giant motorcycle boots: +10 Damage vs. Ghosts
+# giant pinky ring: 75% Chance of Preventing Negative Status Attacks
+# Girdle of Hatred: Tightenable
+# gold wedding ring: 75% Chance of Preventing Negative Status Attacks
+# GPS-tracking wristwatch
+# Gravyskin Belt of the Sauceblob: 3 Additional Scrumptious Reagent Summons Per Day<super>*</super>
+# * This enchantment works even when this item is not equipped
+# Groll doll: Is The Best The Best The Best The Best The Best The Best The Best
+# groovy prism necklace: Deals a rainbow of damage to attackers
+# haggis socks: Allows you to deliver disgusting kicks
+# Hand in Glove: (+Monster Level and Does Damage in Combat based on Smithsness)
+# hazardous sauce dosimeter: Lets you gather more Soulsauce
+# head mirror: Makes you look like a doctor
+# hemp string
+# hippy protest button: Damages Attacking Opponent
+# hobo stogie: +100% Physical Damage against Hobos
+# inflatable duck
+# ironic oversized sunglasses: Damages Attacking Opponent
+# Item #13
+# Juju Mojo Mask: Big Mojo
+# kumquartz ring: +200% Physical Damage (currently approximated with Weapon Damage)
+# kumquartz ring: (only in the Candy Diorama)
+# left half of a heart necklace
+# Lord Spookyraven's spectacles
+# lube-shoes: Good for lubricating rollercoaster tracks
+# lucky Crimbo tiki necklace: Brings Good Luck!
+# MagiMechTech NanoMechaMech: Attacks Monsters in Combat
+# mayfly bait necklace: Allows Summoning of Mayflies in Combat
+# Mega Gem
+# Mer-kin prayerbeads: Makes you feel uneasy...
+# mirrored aviator shades: Kill 10% More Skeletons
+# mood ring
+# Mr. Cheeng's spectacles: Find... like...  far out stuff, like everywhere... man...
+# Mr. Exploiter
+# Novelty Belt Buckle of Violence: Casts reflections of your spells
+# Ol' Scratch's manacles: All Spells Cast Are Hot
+# old soft shoes: +30% Item Drops from Hobos
+# old-school calculator watch: Math!
+# orc wrist: +15 Damage vs. Orcs
+# over-the-shoulder Folder Holder: Softcore Only (Except for High School Students)
+# pair of pearidot earrings: (only in the Candy Diorama)
+# papier-masque: Makes your possessions seem more interesting
+# pat-a-cake pendant: Regenerate 1 MP per adventure (sometimes)
+# pearl diver's necklace: +30% Item Drops from Monsters (Underwater only)
+# pearl diver's ring: +20% Item Drops from Monsters (Underwater only)
+# Personal Ventilation Unit: Allows Safe Access to Secret Government Lab
+# phase-tuned shield generator belt: +10 Damage Reduction vs. Bugbears
+# plastic vampire fangs: Makes You Thirst For Blood
+# polyester pulsera: Causes Songs in your Head to Restore HP
+# porcelain phantom mask: Adds <font color=gray>Spooky Damage</font> to Bawdy Refrain
+# portable cassette player: Has An Obnoxious Mix Tape Stuck In It
+# Protects-Your-Junk: 75% Chance of Preventing Negative Status Attacks
+# Protects-Your-Junk: Grants Protection from Dreadsylvanian Curses
+# right half of a heart necklace
+# ring of Detect Boring Doors: Detects Boring Doors (Duh)
+# ring of half-assed regeneration: Sporadic HP Regeneration
+# actual max is 3, fudged so that (min+max)/2 matches the actual average
+# ring of teleportation: Your position seems uncertain...
+# ring of telling skeletons what to do: Lets you tell skeletons what to do
+# rubber WWBBDD? bracelet
+# rubber WWBD? bracelet
+# rubber WWJD? bracelet
+# rubber WWSPD? bracelet
+# rubber WWtNSD? bracelet
+# seal medal: 25% chance to gain an extra gallon of Fury when you gain a gallon of Fury.
+# shock belt: Shocks enemies that hit you
+# Sister Accessory: (minimum of +20 Meat)
+# skeletal scabbard: Doubles the damage dealt by swords
+# slime-covered necklace: +50 Damage against Slimes
+# SMOOCH bracers: Damages Attacking Opponent
+# SMOOCH kneepads: Damages Attacking Opponent
+# SMOOCH spaulders: Damages Attacking Opponent
+# soul mask: Changes Your Avatar
+# soul monocle: Reveals secrets
+# spade necklace
+# spaghetti cult robe
+# special sauce glove: Allows you to equip Chefstaves
+# spiky turtle shoulderpads: Damages Attacking Opponent
+# spirit bell: Gain the favor of the Turtle Spirits more quickly
+# Item steel knuckles: +30 Damage to Unarmed Attacks
+# stinky fannypack: +40% Item Drops while on Vacation
+# stinky fannypack: (in any Elemental Airport area)
+# strawberyl necklace: (only in the Candy Diorama)
+# stuffed mink
+# Superhero Reboots: Help You Run Faster
+# surgical mask: Makes you look like a doctor
+# Talisman of Baio: All Attributes Increase with Moonlight
+# Talisman of Bakula: Hemophilia
+# tarnished tastevin: Sample Booze Items as They Drop
+# teflon swim fins: Makes you a better diver
+# Time Bandit Badge of Courage: Proves your worth to the Time Bandits
+# Time Lord Badge of Honor: Proves your worth to the Time Lords
+# time-twitching toolbelt: +60% Item Drops in the Time-Twitching Tower
+# time-twitching toolbelt: Reveals various Time-Forgotten Secrets
+# time-twitching toolbelt: (also in the Time-Twitching Tower)
+# tourmalime tourniquet: Makes Candy Diorama Fights Harder
+# Uncle Hobo's epic beard: +6 Adventures per day when equipped
+# Uncle Hobo's epic beard: (+9 in December)
+# V for Vivala mask: Critical Hits are extra-explosive
+# V for Vivala mask: Combat items do more damage
+# V for Vivala mask: +1-3 Stat(s) per Fight
+# V for Vivala mask: Allows use of Creepy Grin (once per day)
+# vampire collar: Makes You Act Like a Vampire.  Blah.
+# warbear energy bracers: Monster attacks reduce MP instead of HP
+# warbear exo-arm: Increases the magnitude of your Smacks
+# warbear goggles: +5% Item Drops from WarBears
+# warbear hoverbelt: Grants access to the upper floors of the Warbear fortress
+# warbear laser beacon: Attracts Cool Lasers
+# warbear laser beacon: (Lasers respond to Disco Momentum)
+# warbear laser bowtie: +20 WarBear Armor Penetration
+# warbear nuclear bowtie: +60 WarBear Armor Penetration
+# warbear nuclear bowtie: Troubling Vulnerability to All Elements (-5)
+# warbear plasma bowtie: +40 WarBear Armor Penetration
+# warbear polarized goggles: +15% Item Drops from WarBears
+# warbear snowblindness goggles: +10% Item Drops from WarBears
+# water wings
+# Item wicker kickers: Add a stomp attack to every Smack
+# Item wicker ticker: Collecting Soul Sauce restores HP
+# x-ray specs
+# Xiblaxian holo-wrist-puter: Detects Anomalous Materials of Xiblaxian Origin
+# Xiblaxian xeno-detection goggles: They Really Open Your Eyes
+# Item your cowboy boots: Lets you engage in Cowboy Kicking, can be further upgraded with skins and spurs
+# Containers section of modifiers.txt
+# Item bakelite backpack: Makes Accordion Bash knock loose some Meat
+# Buddy Bjorn: Put a Familiar In It!
+# Buddy Bjorn: That Familiar gains 1 Experience per Fight
+# Camp Scout backpack: Helps You Be Prepared
+# Lord Flameface's cloak: Has Cool Swirling Flames
+# polyester parachute: Fury Increases Your Initiative
+# porcelain pelerine: Begin Fights with 1 Disco Momentum
+# sea mantle: +150% Physical Damage (Underwater Only)
+# shocked shell: Deals physical damage every round
+# Time Cloak: Sometimes Find an Extra Chroner in the Time-Twitching Tower
+# toy jet pack: Jane!  Get Me Off This Crazy Thing!
+# Item wicker slicker: Lets you use Shell Up multiple times per fight
+# Familiar Items section of modifiers.txt
+# amphibious tophat: Lets your Frog Breathe Underwater
+# ant hoe: Your familiar will sow pain and reap Meat.
+# ant pick: Your familiar will sow pain and reap Meat.
+# ant pitchfork: Your familiar will sow pain and reap Meat.
+# ant rake: Your familiar will sow pain and reap Meat.
+# ant sickle: Your familiar will sow pain and reap Meat.
+# badger badge: Increases Astral Mushroom Drop Rate
+# bag of many confections: Full of Candy!
+# blue pumps: Causes your Ms. Puck Man to sometimes drop extra yellow pixels
+# bottle of moontan lotion: Makes Familiar More Sensitive to Light
+# brass bung spigot: Lets your Barrel Mimic restore HP and MP after combat.
+# can of starch: Makes Origami Towel Crane More Resistant to Wear and Tear
+# evil teddy bear sewing kit: Teddy Bear loses less stuffing when hit
+# farfalle bow tie: +10 lbs. of Barnacle
+# filthy child leash: Deals <font color=green>Stench Damage</font> Every Round
+# fishy wand: Lets your familiar cast fishy spells
+# flaming familiar doppelg&auml;nger: Familiar gains 1-2 extra experience per Adventure
+# flaming nose: Makes Flaming Face More Complete
+# flask of embalming fluid: Helps your Reanimated Reanimator collect body parts
+# giant book of ancient carols: Causes the Ancient Yuletide Troll to drop carol pages more frequently
+# gnomish athlete's foot: Lets your gnome kick enemies prior to combat
+# gnomish coal miner's lung: Your gnome's coughing will sometimes block enemy attacks
+# gnomish housemaid's kgnee: Lets your gnome help out around the house
+# gnomish swimmer's ears: Makes you a better diver
+# gnomish swimmer's ears: (because the gnome helps you dive better)
+# gnomish swimmer's ears: (by riding on your back)
+# gnomish tennis elbow: Lets your gnome attack enemies
+# homemade robot gear: +1 Gear
+# imitation whetstone: Makes Imitation Crab claws sharper
+# ittah bittah hookah: Magical Smoke!
+# jalape&ntilde;o slices: +10 lbs. of Leprechaun
+# Li'l Businessman Kit: Lets your familiar make deals
+# little wooden mannequin: Makes Kid Better at Drawing Other Players
+# Loathing Legion helicopter: Familiar will act more often
+# microwave stogie: Helps your Organ Grinder Bake Pies Faster
+# miniature dormouse: Makes March Hare More Better
+# miniature life preserver: Helps your familiar deal with all this rain
+# MiniMechaElf Laser Punch Missile Launcher: More likely to use more powerful attacks
+# moonglasses: Makes Familiar Less Sensitive to Light
+# moveable feast: Familiar gains 1 extra experience per Adventure
+# moveable feast: Familiar will start food fights!
+# nanorhino credit card: Helps your Nano-Rhino charge
+# orange boxing gloves: Causes your Puck Man to sometimes drop extra yellow pixels
+# origami &quot;gentlemen's&quot; magazine: +10 lbs. of Ghuol Whelp
+# oversized fish scaler: Allows familiar to scale fish
+# plastic bib: Makes your ghost better at eating stuff
+# plastic pumpkin bucket: Familiar Will Occasionally Play Tricks on Enemies
+# pretty pink bow: +10 lbs. of Ghoul Whelp
+# quadroculars: Helps Your He-Boulder See Better (x4)
+# quake of arrows: Holds Heavier Arrows
+# school spirit socket set: Keeps more steam in
+# shock collar: Familiar Will Attack You Less Often
+# smiley-face sticker: +10 lbs. of Volleyball
+# Snow Suit: Lets Your Familiar Do Various Tricks
+# Stembridge sidearm: Decisively ends fights, but only occasionally
+# stick-on mini solar panels: +10 lbs. of Starfish
+# targeting chip: More likely to use more powerful attacks
+# teddy bear sewing kit: Teddy Bear loses less stuffing when hit
+# teddy borg sewing kit: Teddy Borg loses less stuffing when hit
+# tiny bowler: Lets your familiar bowl
+# tiny costume wardrobe: Contains Many Adorable Costumes
+# tiny nose-bone fetish: Reduces familiar's MP expenditure by 2-4
+# tiny top hat and cane: Lets your Li'l Xenomorph dance!
+# tiny top hat and cane: (adds item0 to familiar abilities)
+# tuning fork: Familiar Will Attack You Less Often
+# undissolvable contact lenses: Helps your Slimeling See Better
+# warbear drone codes: Makes the drone better, faster, stronger
+# weegee sqouija: Hobo's Booze Is More Effective
+# zen motorcycle: Makes Llama Lamas friendlier
+# Virtual Equipment
+# Bananubis's Staff: Raise Skeleton Buddies
+# crumbling skull: Can be thrown
+# cursed coffee cup: Drink blood, get healthy
+# mining helmet: Lights Dark Places
+# pot: Can be thrown
+# rock: Can be thrown
+# spiked boots: Deal some damage at the start of combat
+# spring boots: Sometimes Avoid Enemy Attacks
+# torch: Burns foes
+# torch: Lights dark places
+# torch: Can be thrown
+# X-ray goggles: Reveals Secrets
+# Minstrel section of modifiers.txt
+# Pasta Thrall section of modifiers.txt
+# level 5 ability: min(floor(P/5),1)*X
+# level 10 ability: floor(P/10)*X
+# Familiars section of modifiers.txt
+# Familiars with standard abilities don't need to appear here -
+# familiar.txt types of stat0, stat1, item0, meat0 correspond to
+# modifiers Volleyball, Sombrero, Fairy, Leprechaun, with a default
+# value of 1.
+# Enthroned familiars section of modifiers.txt
+# Throne	Homemade Robot
+# Throne	MiniMechaElf
+# Sneaky Pete's Motorbike section
+# Motorbike	Blacklight Bulb gives +2% desert exploration after every combat in the desert
+# Motorbike	Deep-Seat Cushions means you find extra Meat after combat
+# Motorbike	Extra-Buoyant Tank allows access to Mysterious Island of Mystery
+# Motorbike	Extra-Loud Muffler means Rev Engine also grants: Unmuffled
+# Motorbike	Extra-Quiet Muffler means Rev Engine also grants: Muffled
+# Motorbike	Extra-Smelly Muffler means Peel Out also banishes enemies
+# Motorbike	Ghost Vacuum does more damage against undead
+# Motorbike	Large Capacity Tanks allows access to Desert Beach
+# Motorbike	Party Bulb makes Flash Headlight deal prismatic damage
+# Motorbike	Racing Slicks allows you to Peel Out 20 times more per day
+# Motorbike	Rocket Launcher constantly fires military-grade rockets
+# Motorbike	Snow Tires allows you to ascend The Mist-Shrouded Peak
+# Motorbike	Spiky Tires Pop Wheelie deals more damage
+# Motorbike	Ultrabright Yellow Bulb adds yellow ray to Flash Headlight
+# Snow Suit decoration section
+# Edpiece section
+# Edpiece	weasel First attack against you will always miss
+# Bedazzlements section of modifiers.txt
+# Alice's Army section of modifiers.txt
+# Alice's Army Dervish	Weapon Damage +1-20
+# Alice's Army Mad Bomber	Weapon Damage +1-15
+# Alice's Army Foil Dervish	Weapon Damage +1-60
+# Alice's Army Foil Mad Bomber	Weapon Damage +1-45
+# Folder section of modifiers.txt
+# folder (barbarian): Increased physical damage as you take damage
+# folder (rainbow unicorn): Deals Prismatic Damage to Attackers
+# folder (Stinky Trash Kid): Deals <font color=green>Stench Damage</font> every round
+# Cowboy boot decorations section of modifiers.txt
+# Item coal snakeskin: Adds Spooky Damage to kicks with your cowboy boots
+# Item rotting cowskin: Adds Demonic Bovine Taint to your cowboy boots
+# Item sicksilver spurs: Adds Stench Damage to kicks with your cowboy boots
+# Item slicksilver spurs: Adds Sleaze Damage to kicks with your cowboy boots
+# Item wicksilver spurs: Adds Hot Damage to kicks with your cowboy boots
+# Campground equipment section of modifiers.txt
+# bartender-in-the-box
+# big rock is used as a placeholder for "the ground" (when you have no housing)
+# black-and-blue light
+# blue plasma ball
+# chef-in-the-box
+# clockwork bartender-in-the-box
+# clockwork chef-in-the-box
+# haunted doghouse: Houses your very own Hallowiener Dog!
+# huge pumpkin
+# Loudmouth Larry Lamprey
+# meat golem
+# pumpkin
+# sleeping stocking
+# snow fort 10 turns of Snow Fortified (+25% item drop, +50% meat drop, +50 max MP, +100 max HP)
+# spirit bed 20 turns of Spirit Schooled (+20% max MP)
+# spooky scarecrow
+# Chateau section of modifiers.txt
+# bowl of potpourri: Gives some Moxie stats when you rest
+# ceiling fan: Rest 5 times per day without using an Adventure
+# continental juice bar: Produces 3 random potions each day
+# electric muscle stimulator: Gives some Muscle stats when you rest
+# fancy stationery set: Produces 3 fancy calligraphy pens each day
+# foreign language tapes: Gives some Mysticality stats when you rest
+# Swiss piggy bank: Produces 1,000 Meat each day
+# Status Effects section of modifiers.txt
+# A Hole in the World: Time destroys everything
+# A Taste of Rainbow: Increases stat gains from food
+# Absinthe-Minded: You are aware of The Worm Wood
+# Abyssal Sweat: The first attack against you will always miss
+# All Covered In Whatsit: More likely to fumble
+# All Covered In Whatsit: Continually take damage
+# Aloysius' Antiphon of Aptitude: +1 Muscle, Mysticality and Moxie Stat Per Fight
+# Amorous Avarice: Meat Drop: +X, bonus is 0%-100% depending on current drunk
+# Ancient Fortitude: You are impervious to negative effects
+# Angry Bone: +40 Damage vs. Undead
+# Antarctic Memories: Recover HP and MP after battle
+# Antihangover	actual bonus is floor((yesterday's drunkenness)^(1/1.7)), we assume 5 but viewing effect updates
+# Avatar of She-Who-Was: You can unleash the Voice of She-Who-Was
+# Avatar of the Storm Tortoise: You can unleash the Will of the Storm Tortoise
+# Avatar of the War Snapper: You take very little damage in combat
+# Avatar of the War Snapper: Your regular attacks always hit
+# Avatar of the War Snapper: You can unleash the Rage of the War Snapper
+# B-b-brr!
+# Bad Luck: Uh Oh...
+# Barfpits: Deals Stench Damage every round
+# Effect Barrel of Laughs: Makes food more delicious!
+# Bearserker Bearrage: +20 WarBear Armor Penetration
+# Effect Beer Barrel Polka: Makes booze more effective!
+# Beer in Your Shoes: More likely to fumble
+# Beer in Your Shoes: Continually take damage
+# Effect Bendin' Hell: Your Elemental (and Elemental Spell) damage bonuses are doubled
+# Biologically Shocked: Unleash strange forces in combat
+# Black Day: Get any one item from any store for 10% less Meat
+# Black Lung: Stops Monsters from Attacking You
+# Black Tongue: Recover HP and MP after battle
+# Blessed by the RNG: ???
+# Blessing of Squirtlcthulli: Recover HP and MP after battle
+# Blood Porter
+# Bloody Grin: +500% Physical Damage
+# Bloody-minded: +50% Damage vs. Vampires
+# Bone Homie: Bites Your Enemies
+# Boner Battalion: BONERS HO!
+# Booing Radly: +50 Damage vs. Ghosts
+# Boon of She-Who-Was: Your melee attacks deal <font color=gray>Spooky Damage</font>
+# Boon of the Storm Tortoise: Your melee attacks restore some MP
+# Boon of the War Snapper: Your melee attacks restore some HP
+# Bored With Explosions: You're just over them
+# Effect Bow-Legged Swagger: Your Physical Damage and Initiative bonuses are doubled
+# Braaaains Over Braaaawwn: +50% Damage vs. Zombies
+# Brass Loins: Physical Damage +100% (in Dreadsylvania only)
+# Brass Loins: Triple bonus damage against Bugbears, Werewolves, Zombies, Ghosts, Skeletons and Vampires
+# Brined Liver: Makes you a better diver
+# Broken Dancing: You Can't Not Dance If You Don't Want To
+# Bruised Jaw: Mruimed Maw
+# Buggy Flavor: 25% chance of poisoning opponent
+# Burning Soul: Sizzle!
+# Effect Burning Tongue: Lets you spit fireballs!
+# Burning, Man: Sizzle!
+# Busker Do
+# Canadianity: Makes you feel more Canadian
+# Chalk Outline: Your Spookiness is Spookier
+# Chilled to the Bone: Enemies get N extra attack(s) against you per round
+# Clumsy: Always Fumble
+# Effect Coal-Powered: Deal 20-30 <font color=red>Hot Damage</font> to foes each round
+# Coated in Slime: It Burns!  It Burns!
+# Cold Breath: Can breathe frigid air in combat
+# Coldform: Cold, Cold, Cold!
+# Consumed by Anger: You can only attack
+# Cookie backup: automatically removes beaten up?
+# Corrupted: All Attributes +/- ???
+# Cotton Mouthed: So dry!  It's from yesterday!
+# Covetous Robbery: Increases meat drops from stingy monsters
+# Effect Coy to the Hurled: variable DR
+# Effect Craft Tea: Lets you craft things more quickly
+# Crappily Disguised as a Waiter: You almost look sort of like a waiter.
+# Crimbonar: Detect the presence of Crimbonium
+# Cunctatitis: Eh.  You'll figure out what this effect does later...
+# Curse Magnet: Curses!
+# Curse of Exposure: Total Hot Vulnerability (-9)
+# Curse of Exposure: Total Cold Vulnerability (-9)
+# Curse of Exposure: Total Stench Vulnerability (-9)
+# Curse of Exposure: Total Spooky Vulnerability (-9)
+# Curse of Exposure: Total Sleaze Vulnerability (-9)
+# Curse of Impotence: -50% Damage vs. Bugbears
+# Curse of Impotence: -50% Damage vs. Werewolves
+# Curse of Impotence: -50% Damage vs. Zombies
+# Curse of Impotence: -50 Damage vs. Ghosts
+# Curse of Impotence: -50% Damage vs. Vampires
+# Curse of Impotence: -50% Damage vs. Skeletons
+# Curse of the Black Pearl Onion: Nasty belches during combat
+# Cursed by The RNG: ???
+# Dances with Warbears: +10% Item Drops from WarBears
+# Deadened Palate: Bleah
+# Deadly Lampblade: 100% chance of poisoning opponent
+# Deep-Fried: Extra-Vulnerable to Stench and Sleaze
+# Deep-Seated Rage: +100% Damage vs. Mer-kin
+# Dirty Pear: All Bonus Sleaze Damage is doubled
+# Dis Abled: Grants access to the Suburb of Dis
+# Disco Neuropathy: Disco Bandit Combat Skills weaken enemies by an additional 30%
+# Don't Rest Ye, Bold Adventurer: variable Experience
+# Donho's Bubbly Ballad: Makes you a better diver
+# Down the Rabbit Hole: Lets you adventure in The Rabbit Hole in The Nearby Plains
+# Earthen Fist: +10 damage to Fist techniques
+# Earthen Fist: Allows you to punch rocks without hurting yourself
+# Earworm: Get them out!  Get them out!
+# Easily Embarrassed: Extra-Vulnerable to Sleaze
+# Eau de Tortue: Helps you tame turtles
+# Electric, Kool
+# Emotion Sickness: +25% Item drops from Monsters
+# Emotion Sickness: +50% Meat drops from Monsters
+# Emotion Sickness: (Underwater only)
+# Eso S&iacute; Que Es
+# Everything Looks Blue
+# Everything Looks Red
+# Everything Looks Yellow
+# Everything Must Go!: You are much more attracted to monsters
+# Everything Must Go!: (so you can destroy them)
+# EVISCERATE!: Attacks enemies every round
+# Existential Torment: Who are you?  Who are you <i>really</i>?
+# Expert Oiliness: Makes your Muscle and Moxie equal to your Mysticality
+# Effect Expert Vacationer: +25% to all stat gains in exotic travel destinations
+# Eyes of the Dragon: +100% Item drops from monsters
+# Eyes of the Dragon: (Underwater only)
+# Fangs and Pangs: Attacks enemies every round and restores HP
+# Filthworm Drone Stench
+# Filthworm Guard Stench
+# Filthworm Larva Stench
+# Finstrong: Makes you a better diver
+# Fishy: -1 Adventure cost underwater
+# Fishy, Oily: (In Heavy Rains only)
+# Fishy Whiskers: Fewer items will wash away in the Heavy Rains
+# Flared Nostrils: Extra-Vulnerable to Stench
+# Flimsy Shield of the Pastalord: Reduces physical damage taken by 10%
+# Float Like a Butterfly, Smell Like a Bee: Bzzzzzz
+# Foe-Splattered: Can't use Bifurcating Blow
+# Forbear, Warbears!: +40 WarBear Armor Penetration
+# Form of...Bird!: You're a Bird
+# Form of...Cockroach!: You're a Cockroach
+# Fortunate Resolve: Bonus Luck!
+# Frigidalmatian: Bites your foes
+# Frosty the Hitman: +0-2 <font color=red>Hot Damage</font>
+# Frosty the Hitman: +0-2 <font color=blue>Cold Damage</font>
+# Frosty the Hitman: +0-2 <font color=gray>Spooky Damage</font>
+# Frosty the Hitman: +0-2 <font color=green>Stench Damage</font>
+# Frosty the Hitman: +0-2 <font color=blueviolet>Sleaze Damage</font>
+# Fudge Headache: Find 75% more Fudge
+# Fudgehound: Find 50% more Fudge
+# Gar-ish: You love lasagna as much as you hate Mondays
+# Get Me Off This Crazy Thing!: Jane!
+# Ghost Finger: +100 Damage vs. Ghosts
+# Gift of the Warbear: +15% Item Drops from WarBears
+# Got Milk: You like food; food tastes good.
+# Greased: Continually take damage
+# Greaser Lightnin': +25% Item Drops from Monsters (Art Class only)
+# Gummi Badass: Deal damage to attackers
+# Haiku State of Mind: large penalty to result parsing
+# Hairless and Airless: Makes you a better diver
+# Half-Astral: Like, Wow, Man
+# Hammertime: Seriously, your pants are huge
+# Heart of Black: Damn, Gina
+# Heisenberglary: Muscle +/-X
+# Heisenberglary: Mysticality +/-Y
+# Heisenberglary: Moxie  +/-Z
+# Hooked Up: Continually gain MP
+# Hot Breath: Can breathe fire in combat
+# Hotform: Hot, Hot, Hot!
+# How to Scam Tourists: +300% Meat Drops from Tourists
+# Hurricane Force: Here Comes the Story of You!
+# Hyperbolic Hypothermia: Continually take damage
+# In Your Cups: Whoah...
+# Infinite Loop
+# Inigo's Incantation of Inspiration: Lets you craft things more quickly
+# Inner Dog: +50% Damage vs. Zombies
+# Inner Dog: +50 Damage vs. Ghosts
+# Innuendo Shopping
+# Inocente, In a Sense: Te hace ver como un Persona Inocente Cadáver
+# Effect Inside The Snowglobe: You can access the Deep Machine Tunnels beneath Seaside Town
+# Invisible (20 Minutes Ago): Makes You Invisible In The Past
+# Iron Palms: Swords count as clubs
+# It's Electric!: Damages Attacking Opponents
+# Jaba&ntilde;ero Saucesphere: Damages Attacking Opponent
+# Jalape&ntilde;o Saucesphere: Damages Attacking Opponent
+# Jammin': Deal extra damage as the fight goes on
+# Jammin': and on...
+# Jamming with the Jocks: +25% Item Drops from Monsters (Shop Class only)
+# Jazz Hands
+# Jelly Combed: Makes you harder to hit (when underwater)
+# Jingle Jangle Jingle: Familiar will act more often in combat
+# Juiced Up: Makes you a better diver
+# Jungle Juiced: Doubles Stat Gains in the Deep Dark Jungle
+# Just the Best Anapests: Da da dee, da da dee
+# Knob Goblin Perfume: You smell like a Knob Goblin harem girl!
+# L'instinct F&eacute;lin: Makes you better at sleeping
+# Light!
+# Light-Headed: Increased chance of fumbling
+# Literally Insane: Insane in the BRAIN!
+# Effect:Little Mouse Skull Buddy: Occasionally attacks your enemies for you
+# Long Live GORF: GORF is watching.
+# Long Live GORF: GORF approves.
+# Macho, Macho Dog: +50% Damage vs. Bugbears
+# Macho, Macho Dog: +50% Damage vs. Werewolves
+# Magic Tongue: Everything tastes weird
+# Mathematically Precise: Combat items deal 50% more damage
+# Mayeaugh: Deals <font color=purple>Sleaze Damage</font> every round.
+# Meat Shielded
+# Merry Smithsness: (+% to All Stats Based on Smithsness)
+# Missing Kidney: Call 911 Immediately
+# Mr. Skullhead's Birthday Happiness: Puts a birthday smile on your face.
+# Musky: You Smell Like a Lynyrd
+# Nerd is the Word: +25% Item Drops from Monsters (Chemistry Class only)
+# Nerf'd: Less powerful than you were before
+# O Hai!: Effect Cat is Not Amused
+# Ode to Booze: Booze tastes even more delicious!
+# Effect Oh Hamlet Hamlet Hamlet Hamlet: +50 Damage vs. Ghosts
+# Oily Legs: Lets you mine Crimbonium faster
+# On the Trail
+# Oversaturated Palate: Blech
+# Effect Partially Ghosted: Reduces physical damage taken by 30%
+# Effect Patent Aggression: Makes you significantly more attractive to monsters
+# Effect Patent Invisibility: Makes you significantly less attractive to monsters
+# Paw swap: Extra-Vulnerable to Hot and Spooky
+# Pemmican't: +10 Damage against Seals
+# Permanent Halloween: Deals <font color=gray>Spooky damage</font> every round
+# Personal Thundercloud: Makes the water around you even deeper
+# Phairly Balanced: Equalize all your stats to your highest stat
+# Pie in the Face: Hilarious!
+# Popping Stomach: Tee-hee!
+# Predjudicetidigitation: You are much less attracted to monsters
+# Predjudicetidigitation: (because you hate them)
+# Psalm of Pointiness: Damages Attacking Opponents
+# Purple Tongue: Recover HP and MP after battle
+# Purr of the Feline: Makes Ed's Servants Stronger
+# Pygmy Drinking Buddy: He is violent and unpredictable!
+# QWOPped Up: Always Fumble
+# Raving Lunatic: Continually take damage
+# Red Around the Gills: Regenerate 140-150 HP and MP per fight (Underwater only)
+# Red Misty-Eyed: +10 Damage against Seals
+# Red-Shirted Escort: Attracts enemy attention.
+# Refined Palate: Fine wines will taste even finer
+# Robocamo: Beep Boop
+# Ruthlessly Efficient: Deleveling is 50% more effective
+# Salty Dogs: Makes you a better diver
+# Salty Mouth: You really need a beer...
+# Sausage Festive: Regenerate 5-10 HP/MP per Adventure
+# Scared Stiff: Extra-Vulnerable to Cold and Spooky
+# Scarysauce: Damages Attacking Opponents
+# Schroedinger's Butt: ???
+# Seeing Red: Monsters will always hit you
+# Shape of...Mole!: You're a Mole
+# Sharp Weapon: +3-5 Weapon Damage
+# Sheepskinned: Your regular attacks deal Sleaze damage
+# Stormswaddled: Damages attacking opponents
+# Shield of the Pastalord: Reduces physical damage taken by 30%
+# Shirtless in Seattle: Extra-Vulnerable to Cold and Sleaze
+# Side Affectation: Extra-Vulnerable to Hot and Stench
+# Silent Running: Decreased chance of random PvP Attacks
+# Single-Eyed Vision
+# Skeletal Cleric
+# Skeletal Rogue
+# Skeletal Warrior
+# Skeletal Wizard
+# Skunkulated: Take stench damage every round of combat
+# Sleazeform: Wink Wink, Nudge Nudge
+# Sleazy Breath: Can breathe cologne in combat
+# Sleeping with the Fishes: Makes you sleep like the dead
+# Sleight of Mind: You See What Taco Dan Saw
+# Slimed: Continually take damage
+# Slimeform: Eww.
+# Slippery Oiliness: Makes your Muscle and Mysticality equal to your Moxie
+# Smokin': Damages Attacking Opponents
+# Smooth Legs: You know how to use them.
+# So Much Holiday Fun!: You Feel Fantastic!
+# Solar Flair: Continually take damage
+# Song of Fortune: First  blow is always Critical
+# Song of the Glorious Lunch: Food Sounds Great!
+# Song of the Southern Turtle Helps you tame turtles
+# Soul Freeze: Brrrrrrr...
+# Soul Funk: Deal some <font color=green>Stench Damage</font> every round
+# Effect Sparkly!: +50 Damage vs. Undead
+# Spectral: You take and deal almost no damage
+# Effect Spiky Frozen Hair: Deals 40-60 Cold Damage to attacking foes
+# Spiky Shell: Damages attacking opponents
+# Spirit of Bacon Grease: All Spells Cast Are Sleazy
+# Spirit of Cayenne: All Spells Cast Are Hot
+# Spirit of Garlic: All Spells Cast Are Stinky
+# Spirit of Peppermint: All Spells Cast Are Cold
+# Spirit of Wormwood: All Spells Cast Are Spooky
+# Spirit Pariah
+# Spooky Breath: Can breathe terrifying air in combat
+# Spookyform: Ooooooooooooooooh
+# Stabilizing Oiliness: Makes your Mysticality and Moxie equal to your Muscle
+# Effect Steely-Eyed Squint: Your Item Drop bonuses are doubled
+# Stenchform: P. U.
+# Stickler for Promptness: Familiar will act more often in combat
+# Sticks and Stones: +50% Damage vs. Skeletons
+# Sticky Hands: Reduced chance of fumbling
+# Stinkybeard: Deals <font color=green>Stench Damage</font> every round
+# Stinky Breath: Can breathe stench in combat
+# Stop and Smell the Fudge: Find 25% More Fudge
+# Strangulated: Continually take damage
+# Stubbly Legs: <s>Love is a battlefield</s>Legs are a stubble field
+# Stuck-Up Hair: Damages Attacking Opponents
+# Super Skill: Combat Skills/Spells cost 0 MP
+# SuperStar: You earned a gold star
+# Swimming Head: +25% Item Drops from Monsters (Underwater only)
+# Swimming with Sharks: Makes you a better diver
+# Talking Like a Pirate: Arrr.
+# Tar-Struck: Continually take damage
+# Taste the Inferno: It burns!  It burns!
+# Teleportitis: Your position seems uncertain...
+# Temporary Amnesia: Who am I?
+# The 'Tussin: Wait, What?
+# The Captain's Hammer: +50 Physical Damage (when Unarmed)
+# The Colors...: Extra-Vulnerable to All Elements (-5)
+# The Eyes Have It: Makes you have an Urge to Stare at Your Hands
+# The Rain In Loathing: Makes the water around you even deeper
+# The Real Deal: Recover HP and MP after battle
+# The Spirit of Crimbo
+# The Tunger&trade;: +3 Adventures from the next thing you eat
+# There is No Spoon
+# Things Man Was Not Meant to Eat: Full of Loathing
+# Timer 1
+# Timer 10
+# Timer 2
+# Timer 3
+# Timer 4
+# Timer 5
+# Timer 6
+# Timer 7
+# Timer 8
+# Timer 9
+# Tinnitus
+# Tiny Bubbles in the Cupcake: Recover HP and MP after battle
+# Toad In The Hole: Continually take damage
+# Top Dog: +50% Damage vs. Vampires
+# Top Dog: +50% Damage vs. Skeletons
+# Transpondent: Gives access to A Transporter Booth
+# Trepandation: Continually lose MP
+# Effect Tropical Contact High: Grants Access to Kokomo
+# Ultrahydrated: Glug, Glug
+# Uncertain: Muscle and Moxie +/- ???
+# Unmotivated: You're feeling really unmotivated.
+# Vanity Rage: Weapon Damage: +X, Spell Damage: +X
+# Effect Venomous Weapon: Causes your regular attacks to poison foes
+# Video... Games?: +5% Damage vs. Bugbears
+# Video... Games?: +5% Damage vs. Werewolves
+# Video... Games?: +5% Damage vs. Zombies
+# Video... Games?: +5 Damage vs. Ghosts
+# Video... Games?: +5% Damage vs. Vampires
+# Video... Games?: +5% Damage vs. Skeletons
+# Video... Games?: +5 Damage vs. Undead
+# Wanged: Unable to use obnoxious abbreviations
+# Warbear Hunter: +10% Item Drops from WarBears
+# Warbear Hunter: +40 WarBear Armor Penetration
+# Warbear Loot Lust: +15% Item Drops from WarBears
+# Warbear Warlust: +60 WarBear Armor Penetration
+# Warm Belly: Makes sushi taste better
+# Warriors, Come out to Playyyy: +60 WarBear Armor Penetration
+# Water Wings: You believe you can float!
+# Weird Flavor: ???
+# Wet Willied: Your familiar can breathe underwater
+# Whitesloshed: +500% Item Drops from Monsters (Dreadsylvania only)
+# Wings: You believe you can fly!
+# Wolf's Bane: +50% Damage vs. Werewolves
+# X-Ray Vision: You can see X-Rays
+# Yellow Tongue: Eww.
+# Yes, Can Haz: Effect Cat is Not Amused
+# You're In Trouble: It was... the drinking fountain...
+# You've Got a Stew Going!: +500% Item Drops from Monsters (Dreadsylvania only)
+# Passive Skills section of modifiers.txt
+# Accordion Appreciation Double-strength enchantments on accordions
+# Adventurer of Leisure +2 Free Rests/day
+# Ambidextrous Funkslinging
+# Another Extra Spleen: +5 spleen capacity
+# Armorcraftiness
+# Audacity of the Otter Critical hits do 3x damage
+# Batter Up! Autokills and banishes monster
+# Bear Essence +20% Picnic Basket Drops from monsters
+# Best Dressed You are aware of your torso.  It is awesome.
+# Bone Spikes: +10 physical damage and injures attackers
+# Buoyancy of the Beluga Regenerate 1 HP per Adventure for each gallon of Fury
+# Butts of Steel Improves the accuracy and damage of your Butt skills
+# Cold Shoulder Your Smack skills will deal 5 additional Cold Damage
+# Crab Claw Technique Makes your accordion attacks significantly more accurate
+# Deep Saucery
+# Deft Hands +25% damage from combat items
+# Double-Fisted Skull Smashing
+# Extra Spleen: +5 spleen capacity
+# Eye of the Stoat Improves your Smacks
+# Flavour of Magic
+# Flashy Dancer Opponents cannot act during Disco Dances
+# Five Finger Discount Items in stores cost 5% less Meat
+# Good Singing Voice: Doubles duration of Boris songs
+# Gourmand: Increases adventures from food
+# Hero of the Half-Shell
+# Immaculate Seasoning: auto-choose hot vs. cold
+# Impetuous Sauciness: +5 reagent potion duration
+# Intrinsic Spiciness Sauce Spell Damage: +10
+# Ire of the Orca Fury capacity increases to 5 gallons
+# Itchy Curse Finger Your curses take hold too quickly for your opponents to react
+# Just One More Extra Spleen Good grief, another +5 spleen capacity
+# Legendary Appetite: Increase stomach capacity by 5
+# Legendary Luck: Critical hits are even criticaler!
+# Liver of Steel
+# Louder Bellows: Improves Intimidating Bellow
+# Neurogourmet: +1 Adventure per Brain Eaten
+# Okay Seriously, This is the Last Spleen Another +5 spleen capacity. That's it, for real.
+# Pizza Lover You really, really like pizza
+# Precision of the Penguin +1% chance of Critical Hit for each gallon of Fury
+# Pulverize
+# Rapid Prototyping: Craft up to 5 items per day without using an Adventure
+# Really Expensive Jewelrycrafting
+# Replacement Stomach: +5 stomach capacity
+# Saucemaven Get more Adventures from the saucy food you eat
+# Salacious Cocktailcrafting
+# Seething of the Snow Leopard Gain additional bonus damage from Fury
+# Skullcracker: +100% Brain Drops from Monsters
+# Skullcracker: Critical hits occasionally stun opponents
+# Soul Saucery Allows you to gather Soulsauce from defeated foes
+# Spirit of Rigatoni: allows wielding of chefstaves
+# Spleen of Steel
+# Sticky Fingers: Pickpocketing also gives Meat
+# Still Another Extra Spleen: Still another +5 spleen capacity
+# Stomach of Steel
+# Super-Advanced Meatsmithing
+# Superhuman Cocktailcrafting
+# Tao of the Terrapin
+# Tempuramancy
+# Testudinal Teachings Your familiars gain weight faster
+# The Way of Sauce
+# Thirst of the Weasel Your Smacks restore 1-2 HP per gallon of Fury
+# Torso Awaregness
+# Transcendental Noodlecraft
+# Tricky Knifework Use knifes as if Muscle=Moxie if Moxie higher
+# Virulence: Critical Hits Improve Infectious Bite
+# Wrath of the Wolverine Lets you build Fury by defeating opponents (up to a maximum of 3 gallons of Fury)
+# Wrath of the Wolverine NOTE: Only true Seal Clubbers have the fortitude needed to contain Fury. Other classes are weak, and would be torn apart by it.
+# Yet Another Extra Spleen: +5 spleen capacity
+# Bad Moon passive skills: the Seven Deadly Sins.
+# The skills positively or negatively modify seven aspects of gameplay
+# Each skill has one positive modifier and one negative modifier.
+# A modifier is twice as potent when positive as when negative
+# Gluttony duplicates Opossum's food gains
+# Pride lowers food gains
+# Outfits section of modifiers.txt
+# Clockwork Apparatus: I <i>Meant</i> To Do That!
+# Clothing of Loathing: ???
+# Dreadful Pajamas: Makes you dream more frequently
+# El Vibrato Relics
+# Legendary Regalia of the Pasta Master: Pasta Ghosts Level Up Faster
+# Legendary Regalia of the Saucemaestro: Better Saucespheres
+# Legendary Regalia of the Seal Crusher: +100% Item Drops from Infernal Seals
+# Mutant Couture: Release Your Inner Mutant
+# Paperclippery: Helpful!
+# Outfit SMOOCH Army Uniform: Hurt those who touch you even more!
+# Yendorian Finery: Be careful! New moon tonight.
+# Zodiac Sign section of modifiers.txt
+# Blender: Unlocks the Gnomish Gnomad Camp
+# Blender: +5 Adventures per day from Booze
+# Marmot: Unlocks Little Canadia
+# Marmot: Get 1 Free Ten-Leaf Clover per Day
+# Mongoose: Unlocks Degrassi Knoll
+# Opossum: Unlocks Little Canadia
+# Opossum: +5 Adventures per day from Food
+# Packrat: Unlocks the Gnomish Gnomad Camp
+# Platypus: Unlocks Little Canadia
+# Vole: Unlocks Degrassi Knoll
+# Wallaby: Unlocks Degrassi Knoll
+# Wombat: Unlocks the Gnomish Gnomad Camp
+# Stat Day section of modifiers.txt
+# Zone-specific section of modifiers.txt
+# -100% is the most common penalty in The Sea; use it as the default
+# Location-specific section of modifiers.txt
+# Synergies section of modifiers.txt
+# Synergies are triggered when an arbitrary combination of two or more
+# equipment items, passive skills, active effects, campground items, or
+# a specific outfit are present.  They can't depend on your familiar or
+# its equipment, to allow the possibility of a familiar weight modifier.
+# The name of the synergy is split into elements using '/'
+# Each element of the synergy must appear earlier in this file (even if
+# it has no enchantments itself), with a "Synergetic" flag.
+# There is currently a limit of 32 total Synergetic items.
+# Mutual exclusions section of modifiers.txt
+# These work much like synergies, but indicate that no two of the listed
+# equipment items or effects can coexist.  Each element must appear earlier
+# in this file, even if their modifiers are just "none"; the mutex itself
+# should also specify "none" since its modifiers aren't actually used.
+# Maximization categories section of modifiers.txt
+# These pseudo-items list the indirect benefits of certain classes of
+# equipment.  If the Modifier Maximizer finds that any of these classes
+# have a positive score, the items in that class will be considered as
+# possibilities even if their direct benefits wouldn't qualify them.
+# The exact values don't really matter, just their sign.
+# Food section of modifiers.txt
+# candy kneecapping stick: Deals 10-20 Physical Damage when used as a combat item
+# cold mashed potatoes: Selling Price: <b>1 Meat.</b><p><center><b><font color=blue>Deals <font color=blue>Cold Damage</font> based on your Mysticality when used as a combat item
+# dinner roll: Selling Price: <b>1 Meat.</b><p><center><b><font color=blue>Deals Physical Damage based on your Muscle when used as a combat item
+# dwarf bread: Deals 4-28 Physical Damage when used as a combat item
+# Item Kudzu salad
+# licorice garrote: Weakens enemies based on how sugared-up you are
+# magical baguette: You can make stuff out of it
+# Item Mr. Burnsger: Reduces your Drunkenness by 2
+# Item The Plumber's mushroom stew: Reduces your Drunkenness by 1
+# whole turkey leg: Selling Price: <b>1 Meat.</b><p><center><b><font color=blue>Deals <font color=blueviolet>Sleaze Damage</font> based on your Moxie when used as a combat item
+# Booze section of modifiers.txt
+# Item Doc Clock's thyme cocktail: Reduces your Fullness by 2
+# plastic cup of beer: Deals 30-40 <font color=blueviolet>Sleaze Damage</font>
+# Russian Ice: Weakens enemies somewhat when used as a combat item
+# Item The Mad Liquor: Reduces your Fullness by 1
+# Spleen Toxins section of modifiers.txt
+# blue paisley oyster egg: Restores 30-35 MP
+# blue polka-dot oyster egg: Restores 30-35 MP
+# blue striped oyster egg: Restores 30-35 MP
+# Medicinal Herb's medicinal herbs: Restores all HP
+# red paisley oyster egg: Restores 30-35 HP
+# red polka-dot oyster egg: Restores 30-35 HP
+# red striped oyster egg: Restores 30-35 HP
+# Everything Else section of modifiers.txt
+# 1952 Mickey Mantle card: Super valuable!
+# 30669 scroll: Mostly Just Confuses Enemies
+# 31337 scroll: Mostly Just Confuses Enemies
+# 33398 scroll: Mostly Just Confuses Enemies
+# 334 scroll: Mostly Just Confuses Enemies
+# 4-d camera: Makes a copy of a monster to fight later
+# 4:20 bomb: Deals 400-500 Physical Damage
+# 4:20 bomb: (super effective against hippies)
+# 64067 scroll: Mostly Just Confuses Enemies
+# 64735 scroll: Mostly Just Confuses Enemies
+# 668 scroll: Mostly Just Confuses Enemies
+# 8-ball: Weakens enemies very slightly
+# a ten-percent bonus: Gain 1,000 points in each stat
+# adder: Poisons your opponent
+# alpine watercolor set: Make a painting of a monster to hang on your wall
+# ancient cure-all: Allows you to remove an Effect
+# ancient Magi-Wipes: Restores 50-60 MP and HP and removes some negative effects
+# ancient poisoned dart: Poisons your opponent
+# ancient spice: Deals 30-40 Physical Damage
+# ancient spice: Weakens Enemies a Little Bit
+# anemone nematocyst: Stuns your opponent for a few rounds
+# anemone nematocyst: (more effective underwater)
+# angry inch: Weakens enemies somewhat
+# anise-flavored venom: Poisons your opponent
+# anti-anti-antidote: Doesn't not remove poison effects
+# antique hand mirror: Be Careful!
+# artificial skylight: +3 Adventures Per Day
+# Artist's Butterknife of Regret: Deals 10-20 Physical Damage
+# Artist's Cookie Cutter of Loneliness: Deals 10-20 Physical Damage
+# Artist's Cr&egrave;me Brul&eacute;e Torch of Fury: Deals 10-20 Physical Damage
+# Artist's Spatula of Despair: Deals 10-20 Physical Damage
+# Artist's Whisk of Misery: Deals 10-20 Physical Damage
+# bag of airline peanuts: Deals 6-10 Physical Damage
+# bag of gross foreign snacks: Deals <font color=green>Stench Damage</font> every round to every monster you fight today in the zone where you used it
+# bag of park garbage: Maybe there's something valuable inside?
+# bag of pygmy blood: Restores 30-40 HP
+# ball: Lets You Escape From Combat
+# ballpark hot daub: Deals 450-500 <font color=red>Hot Damage</font>, also briefly stuns enemies and weakens them a lot
+# banana peel: Comedy!
+# banana spritzer: Restores 40-100 MP
+# barbed-wire fence: Weakens enemies a little bit
+# bargain flash powder: Lets you escape from combat
+# baseball: Deals a 6-8 Physical Damage
+# Item Bat-Aid&trade; bandage: Quickly restores 20 Bat-Health
+# Item bat-bearing: Deals 15 damage and briefly stuns foes
+# Item bat-jute: Lets you tie up and interrogate a weakened foe
+# Item bat-o-mite: Defeats most foes in one shot
+# Item bat-oomerang: Deals 20 damage and disarms foes
+# Battlie Light Saver: Deals 30-50 Physical Damage and briefly stuns your foe
+# Item battoo kit: Unlocks a sweet Batfellow tattoo
+# beehive: Full of bees!
+# beer bomb: Deals 55-75 Physical Damage
+# beer-scented teddy bear: Restores 15-20 MP
+# big boom: Deals 80-120 Physical Damage
+# big glob of skin: Restores half of your missing Hit Points
+# big red button: Deals 2000-3000 Physical Damage
+# bitchin' meatcar: <b>Allows Travel to Desert Beach</b>
+# black BRICKO brick: Stuns your opponent for a few rounds
+# black BRICKO brick: (more effective against BRICKO monsters)
+# black cherry soda: Restores 9-11 MP
+# black pepper: Weakens enemies a little bit
+# black plastic oyster egg: Deals 300-400 Physical Damage and gives you matching Meat
+# black spot: Deals 30-40 Physical Damage per round for the rest of the fight
+# Blatantly Canadian: Restores 20-25 MP
+# blob of wood glue: Weakens foes by 10% and briefly stuns them
+# blowdart: Poisons your opponent
+# blue pixel potion: Restores 50-80 MP
+# blue plastic oyster egg: Restores 35-40 MP
+# blue potion: Restores 20-30 MP
+# blue raspberry troll doll: Deals 3-5 <font color=blue>Cold Damage</font>
+# blue raspberry troll doll: (doesn't go away when used)
+# blue shell: Deals up to 25 Physical Damage to whoever is in the lead
+# bobcat grenade: Deals 400-500 Physical Damage
+# bobcat grenade: (super effective against beasts)
+# Bohemian rhapsody: Deals Physical Damage based on your Level
+# book of matches: Deals 40-60 <font color=red>Hot Damage</font>
+# boozebomb: Deals 400-500 Physical Damage
+# boozebomb: (super effective against orcs)
+# bottle of alcohol: Deals 45-60 <font color=red>Hot Damage</font>
+# bottle of G&uuml;-Gone: Dissolves Slimes
+# bottle of lovebug pheromones: Unlocks lovebug abilities and encounters
+# bottle of Monsieur Bubble: Restores 45-65 MP
+# bottle of Vangoghbitussin: Restores 100 HP and MP and makes you feel weird
+# bottled swamp gas: Deals 15-20 <font color=green>Stench Damage</font>
+# bottled swamp gas: Weakens Enemies Very Slightly
+# boulder: Deals 20-30 Physical Damage
+# bowl of potpourri: Gives some Moxie stats when you rest
+# bowling ball: Weakens enemies somewhat and briefly stuns them
+# box of hammers: Deals 400-500 Physical Damage
+# box of hammers: (way more effective against constructs)
+# box of old Crimbo decorations: Lets you give your Crimbo Shrub new decorations each day
+# brain preservation fluid: Drink it for 5 Adventures!
+# brass abacus: Stuns your opponent for a few rounds
+# brass gear: Deals 20-30 Physical Damage and causes bleeding
+# brick of sand: Deals 60-80 Physical Damage
+# brick of sand: Weakens Enemies a Lot
+# BRICKO reactor: Deals 200-1000 Physical Damage
+# BRICKO reactor: (more effective against BRICKO monsters)
+# broken BRICKO brick: Deals Physical Damage every round for the rest of the fight
+# broken BRICKO brick: (deals more damage if you use additional ones)
+# broken glass grenade: Deals 100-200 Physical Damage
+# broken glass grenade: Weakens enemies a lot
+# bronze handcuffs: Handcuff yourself to your opponent
+# bronzed locust: Weakens enemies a lot
+# bubblegum heart: Restores 80-100 Hit Points
+# buckyball: Lets you escape from combat
+# Item bundle of &quot;fragrant&quot; herbs: Banish a monster for the rest of the day
+# Item bundle of &quot;fragrant&quot; herbs: (up to 10 times per day)
+# Item bundle of &quot;fragrant&quot; herbs: (during the Crimbo 2015 event only)
+# bus pass: Deals 45-50 Physical Damage
+# Camp Scout pup tent: Restores up to 1,000 HP
+# can of Ghuol-B-Gone&trade;: Repels Ghuols
+# can of sterno: Deals 15-20 <font color=red>Hot Damage</font> and 10-20 more each round for the rest of the fight
+# candycaine powder: Poisons your opponent
+# carbonated soy milk: Restores 70-80 MP
+# carbonated water lily: Restores 60-70 MP
+# caret: Guarantees that your next regular attack will Critically Hit
+# carton of rotten eggs: Deals 12-15 <font color=green>Stench Damage</font>
+# carton of rotten eggs: (can be used 8-10 times before the carton is empty)
+# cartoon heart: Restores 40-60 HP
+# cast: Restores 25-35 HP
+# ceiling fan: Rest 5 times per day without using an Adventure
+# chainsaw chain: Deals 60-80 Physical Damage and weakens enemies a lot
+# chaos butterfly: Is Unpredictable
+# Chateau Mantegna room key: Permanently unlocks a new residence in the Big Mountains
+# Cherry Cloaca Cola: Restores 7-9 MP
+# Chinese curse words: Stuns your opponent for a few rounds
+# chipotle wasabi cilantro aioli: Deals 30-40 Physical Damage and 8-10 Prismatic Damage
+# chlorine crystal: Deals 20-40 <font color=green>Stench Damage</font>
+# chloroform rag: Stuns your opponent for a few rounds
+# chocolate frosted sugar bomb: Deals 200-300 Physical Damage
+# chocolate frosted sugar bomb: Weakens enemies somewhat
+# chunk of hot iron: Deals 40-80 <font color=red>Hot Damage</font>
+# cigarette lighter: Deals 50-60 <font color=red>Hot Damage</font>
+# cinnamon troll doll: Deals 3-5 <font color=red>Hot Damage</font>
+# cinnamon troll doll: (doesn't go away when used)
+# Clan VIP Lounge key: <b>Grants access to the Clan VIP Lounge</b>
+# classy monkey: Lets you escape from combat without spending an Adventure
+# clingfilm tangle: Stuns your opponent for a few rounds
+# Cloaca Cola Polar: Restores 100-200 MP
+# Cloaca grenade: Deals 50-60 Physical Damage
+# Cloaca-Cola: Restores 10-14 MP
+# clumsiness bark: Deals 10-20 Physical Damage and briefly stuns your foe
+# clutch of dodecapede eggs: Weakens enemies somewhat as it poisons them
+# Item coal snakeskin: Adds Spooky Damage to kicks with your cowboy boots
+# cocktail napkin: Deals 20-40 <font color=red>Hot Damage</font>
+# cold clusterbomb: Deals <font color=blue>Cold Damage</font> based on your highest stat
+# cold clusterbomb: (more effective against groups)
+# Colon Annihilation Hot Sauce: Deals 6-8 <font color=red>Hot Damage</font> per round for the rest of the fight
+# comfy pillow: Restores 20-30 HP
+# communications windchimes: Summons Hippy Army Aid
+# complimentary Dinsey refreshments: Ya eat 'em.  Well, tourists do.
+# Item confidence-building hug: Increases the damage of your bat-punches and bat-kicks
+# continental juice bar: Produces 3 random potions each day
+# cool spore pod: Briefly enhances your Moxie
+# cotton bandages: Restores 20-40 HP
+# cotton candy bale: Restores 41-82 HP and MP
+# cotton candy cone: Restores 26-52 HP and MP
+# cotton candy pillow: Restores 34-68 HP and MP
+# cotton candy pinch: Restores 7-15 HP and MP
+# cotton candy plug: Restores 19-38 HP and MP
+# cotton candy skoshe: Restores 15-30 HP and MP
+# cotton candy smidgen: Restores 11-23 HP and MP
+# cracked stone sphere: Mysterious, Deprecated
+# crappy camera: Makes a copy of a monster to fight later
+# crappy camera: (when it works)
+# crayon shavings: Weakens enemies by 30%
+# crazy hobo notebook: Deals <font color=gray>Spooky Damage</font> every round to every monster you fight today in the zone where you used it
+# creepy ginger ale: Restores 35-45 MP
+# Crimbo Credit: Use it to buy gifts in Crimbo Town!
+# croquet hedgehog: Weakens enemies a little bit every round for the rest of the fight
+# crude voodoo doll: Makes an enemy smaller than you
+# crystal skull: Banishes a monster for a while
+# CSA all-purpose soap: Restores up to 1,000 MP
+# CSA all-purpose soap: Removes all harmful Effects
+# CSA obedience grenade: Stuns your opponent for a few rounds and weakens them by 5%
+# cubic zirconia: Just sell it
+# cup of hickory chicory: Restores 30-50 MP
+# cuppa Sobrie tea: Reduces your Drunkenness by 1
+# cuppa Voraci tea: Increase your stomach capacity by 1
+# cursed cannonball: Deals <font color=gray>Spooky Damage</font> based on your Muscle
+# cursed dirty joke scroll: Deals <font color=blueviolet>Sleaze Damage</font> and <font color=gray>Spooky Damage</font> based on your Moxie
+# cursed voodoo skull: Deals <font color=red>Hot Damage</font> and <font color=gray>Spooky Damage</font> based on your Mysticality
+# d10: Weakens enemies somewhat
+# d12: Deals a bunch of damage of a random element
+# d20: Deals 1-20 <font color=red>Hot Damage</font> times your Level
+# d20	Effect: "20/20 Vision", Effect Duration: 20d20
+# d20	Effect: "Natural 1", Effect Duration: 1
+# d20	Effect: "Natural 20", Effect Duration: 1
+# d4: Weakens enemies by 10-40%
+# d6: Stuns your opponent for 1-6 rounds
+# d8: Deals Prismatic Damage based on your Level
+# Item dangerous chemicals: Take it to ChemiCorp's downtown office
+# dangerous jerkcicle: Deals 20-40 <font color=blue>Cold Damage</font>
+# death blossom: Deals 20-25 Prismatic Damage
+# Deck of Every Card: Who knows what will happen when you draw from it!
+# delicious shimmering moth: Restore 30-40 MP if you are a bird
+# depantsing bomb: Weakens enemies somewhat
+# Desert Bus pass: <b>Allows Travel to Desert Beach</b>
+# Item diamondback skin: Adds +20 Monster Level to your cowboy boots
+# dictionary: Most Enemies Don't Care About It
+# Diet Cloaca Cola: Restores 7-9 MP
+# dinged-up triangle: Summons a Hobo buddy
+# dingy dinghy: <b>Allows Travel to The Mysterious Island of Mystery</b>
+# Dinsey tattoo kit: Grants a cool Dinsey tattoo when used
+# dirty stinkbomb: Banishes a monster for a while
+# disease: Weakens enemies very slightly
+# disposable instant camera: Weakens enemies somewhat
+# disposable instant camera: (more effective against undead)
+# divine blowout: Deals Physical Damage based on your Moxie
+# divine blowout: Makes you cooler when you use it
+# divine can of silly string: Deals Physical Damage based on your Mysticality
+# divine can of silly string: Makes you smarter when you use it
+# divine champagne popper: Banishes a monster for a while
+# divine cracker: Steals an item from your enemy
+# divine cracker: (Maybe)
+# divine noisemaker: Deals Physical Damage based on your Muscle
+# divine noisemaker: Makes you stronger when you use it
+# DNA extraction syringe: Extracts DNA samples for analysis in your lab
+# DNA extraction syringe: (doesn't go away when used)
+# Doc Galaktik's Ailment Ointment: Heals 35-45 Hit Points
+# Doc Galaktik's Homeopathic Elixir: Heals 18-20 Hit Points
+# Doc Galaktik's Invigorating Tonic: Restores 9-11 MP
+# Doc Galaktik's Pungent Unguent: Heals 3-5 Hit Points
+# Doc Galaktik's Restorative Balm: Heals 13-15 Hit Points
+# Dreadsylvanian seed pod: Fully restores your HP and removes negative status effects
+# drone self-destruct chip: Deals 55-60 <font color=red>Hot Damage</font>
+# droopy doll eye: Deals 60-80 <font color=gray>Spooky Damage</font>
+# Drunkula's bell: Summons bats that deal <font color=blue>Cold Damage</font> based on your Mysticality
+# dumb mud: Deals 500 Physical Damage and weakens your enemy a lot
+# Duskwalker syringe: Deals 25-40 <font color=gray>Spooky Damage</font>
+# Dyspepsi grenade: Deals 50-60 Physical Damage
+# Dyspepsi-Cola: Restores 10-14 MP
+# ear poison: Briefly stuns and less briefly poisons your opponent
+# electric boning knife: Deals Physical Damage each round for the rest of the fight
+# electric muscle stimulator: Gives some Muscle stats when you rest
+# eleven-foot pole: You know...  For traps.
+# elven magi-pack: Restores 40-50 MP
+# elven medi-pack: Restores 80-100 HP
+# eternal car battery: Restores 45-55 MP
+# eternal car battery: (doesn't go away when used)
+# Item experimental gene therapy: Increases your maximum Bat-Health
+# exploding hacky-sack: Deals 75-100 Physical Damage
+# Item exploding kickball: Instantly ends a fight
+# extra-strength red potion: Restores 190-210 HP
+# fabric softener: Weakens enemies a lot
+# facehugging alien: Deals 100-300 Physical Damage after a few rounds have passed
+# facsimile dictionary: Most Enemies Don't Care About It
+# facsimile dictionary: (doesn't go away when used)
+# fancy bath salts: Weakens enemies very slightly
+# fancy blue potion: Restores 90-110 MP
+# fancy dress ball: Lets You Escape From Combat
+# fancy oil painting: Useful for Bridge-Building
+# fat bottom quark: Deals 25-40 <font color=green>Stench Damage</font>
+# fat stacks of cash: Does Not Impress Most Monsters
+# ferret bait: Deals 45-60 Physical Damage
+# fetid feather: Deals 80-120 <font color=green>Stench Damage</font>
+# filthy poultice: Restores 80-120 HP
+# finger cuffs: Stuns your opponent for a few rounds
+# Item fingerprint dusting kit: Helps you find villains faster
+# fire of unknown origin: Deals 35-45 <font color=red>Hot Damage</font> and 35-45 <font color=gray>Spooky Damage</font>
+# fireball: Deals 190-210 <font color=red>Hot Damage</font>
+# firebomb: Deals 40-50 <font color=red>Hot Damage</font>
+# fish-oil smoke bomb: Lets you escape from combat without spending an Adventure
+# fizzing spore pod: Deals 20-40 physical damage
+# flaming feather: Deals 80-120 <font color=red>Hot Damage</font>
+# flaregun: Deals Various Kinds of Naval Damage
+# flirtatious feather: Deals 80-120 <font color=blueviolet>Sleaze Damage</font>
+# floorboard cruft: Deals 100-120 <font color=green>Stench Damage</font>
+# floorboard cruft: Weakens Enemies Somewhat
+# forest tears: Restores 5-10 HP
+# frightful feather: Deals 80-120 <font color=gray>Spooky Damage</font>
+# frigid ninja stars: Deals 20-25 <font color=blue>Cold Damage</font>
+# Item frontwinder skin: Adds +50% Mysticality to your cowboy boots
+# Frosty's iceball: Deals 200-300 <font color=blue>Cold Damage</font>
+# Frosty's iceball: (you can use it 2 times a day without melting it)
+# frozen feather: Deals 80-120 <font color=blue>Cold Damage</font>
+# gas balloon: Stuns your opponent for a few rounds
+# gauze garter: Restores 80-120 HP
+# generic healing potion: Restores HP based on your level
+# generic mana potion: Restores MP based on your level
+# generic restorative potion: Restores 4-5 HP and 2-3 MP
+# Ghost Dog Chow: Grants 20 Familiar XP
+# ghost protocol: Makes you nearly impervious to damage for the duration of the fight
+# ghost trap: Traps ghosts
+# giant eraser: Lets you escape from combat without spending an Adventure
+# gift card: Allows you to draw one card from the Deck of Every Card
+# glark cable: Instantly defeats most monsters on the Red Zeppelin
+# Item Glenn's golden dice: Grants you some random beneficial effects
+# Item glob of Bat-Glue: Stuns foes for a few rounds
+# glob of Blank-Out: Lets you escape from combat without spending an Adventure
+# glob of Blank-Out: (usable a few times before it goes away)
+# glowing New Age crystal: Restores 500 MP
+# glowing New Age crystal: (and briefly stuns your opponent)
+# glowing spore pod: Briefly enhances your Mysticality
+# Gnomitronic Hyperspatial Demodulizer: Science!
+# gob of wet hair: Stops Enemy From Attacking and Weakens it Very Slightly
+# gold star: Restores 20-30 MP
+# Golden Kokomo Resort Chip: Shiny!
+# Golden Light: Vaporizes an enemy and causes all of its items to drop
+# golden plastic oyster egg: Lets you escape from combat without spending an Adventure
+# golden plastic oyster egg: (Maybe)
+# golden ring: Weakens enemies a lot
+# Goodfella contract: Make your Goodfella an offer he can't refuse
+# GOTO: Lets you escape from combat without spending an Adventure
+# GOTO: (Maybe)
+# grape troll doll: Deals 3-5 <font color=blueviolet>Sleaze Damage</font>
+# grape troll doll: (doesn't go away when used)
+# grass clippings: Weakens enemies very slightly
+# great big capacitor: Deals 25-35 Physical Damage and briefly stuns your foe
+# Great Wolf's lice: Weakens enemies a lot
+# Great Wolf's lice: (by 30% if they are beasts)
+# Great Wolf's lice: (doesn't go away when used)
+# green BRICKO brick: Deals a percentage of a monster's current Hit Points in Physical Damage
+# green BRICKO brick: (more effective against BRICKO monsters)
+# green face paint: Makes you green with holiday cheer!
+# green face paint: Does not go away when used.
+# green pixel potion: Restores 40-60 HP and 30-40 MP
+# green smoke bomb: Lets you escape from combat without spending an Adventure
+# green smoke bomb: (Probably)
+# Item grizzled bearskin Adds +50% Muscle to your cowboy boots
+# grody jug: Deals a Buttload of <font color=green>Stench Damage</font>
+# grogpagne: Restores 30-50 MP
+# grouchy restless spirit: Deals 40-45 <font color=gray>Spooky Damage</font>
+# groupie lipstick: Deals 150-250 <font color=blueviolet>Sleaze Damage</font>
+# gyroscope: Briefly distracts enemies
+# hair spray: Deals 3-4 <font color=red>Hot Damage</font>
+# half of a gold tooth: It's gross.  Just sell it.
+# half-empty carton of milk: Deals 50-100 <font color=green>Stench Damage</font>
+# half-rotten brain: Disappoints Zombies
+# hand grenegg: Deals 6-8 <font color=green>Stench Damage</font> per round for the rest of the fight
+# handful of bees: Deals 80-100 Physical Damage per round for the rest of the fight
+# handful of napalm: Deals 100 <font color=red>Hot Damage</font> and sets your opponent on fire
+# handful of sand: Make stuff out of it!
+# handful of sand: Weakens Enemies a Little Bit
+# handful of sawdust: Weakens enemies somewhat
+# Handsome Devil: Instantly defeats most monsters
+# hard spore pod: Briefly enhances your defense
+# Harold's bell: Banishes a monster for a while
+# heart of dark chocolate: Restores 40-50 HP
+# heart of dark chocolate: (doesn't go away when used)
+# hedgeturtle: Deals 30-60 Physical Damage
+# hedgeturtle: Causes Bleeding
+# Item high-grade explosives: Can be used in the Bat-Cavern's Bat-Fab to make Bat-o-mite
+# Item high-grade metal: Can be used in the Bat-Cavern's Bat-Fab to make Bat-oomerangs
+# Item high-tensile-strength fibers: Can be used in the Bat-Cavern's Bat-Fab to make Bat-jute
+# high-pressure seltzer bottle: Restores 150-200 MP
+# HOA citation pad: Weakens enemies a lot
+# HOA citation pad: (by 30% if they are dudes, hippies or orcs)
+# HOA citation pad: (doesn't go away when used)
+# holo-bomber: Deals 5,000 Physical Damage
+# holo-platoon: Deals 5,000 Physical Damage
+# holo-tank: Deals 5,000 Physical Damage
+# holy bomb, batman: Deals 400-500 Physical Damage
+# holy bomb, batman: (way more effective against undead foes)
+# holy spring water: Restores 20-25 MP
+# honey-dipped locust: Restores 30-40 HP and MP
+# hot ashes: Deals <font color=red>Hot Damage</font> based on your highest stat
+# hot clusterbomb: Deals <font color=red>Hot Damage</font> based on your highest stat
+# hot clusterbomb: (more effective against groups)
+# hot spore pod: Briefly improves your <font color = red>Hot</font> spells
+# How to Play Othello: Teaches you how to play Othello better
+# ice house: Banishes a monster more or less permanently
+# ice skate decoy: Put it down, and monsters will attack it instead of you
+# ice-cold Cloaca Zero: Deals 100-200 <font color=blue>Cold Damage</font> and restores up to 2,000 MP
+# illegal firecracker: Deals 15-20 Physical Damage and 15-20 <font color=red>Hot Damage</font>
+# imitation crab meat: Deals 150-250 Physical Damage
+# imitation crab meat: (will backfire if used on land)
+# imp air: Deals 35-40 <font color=red>Hot Damage</font>
+# Item incriminating evidence: Take it downtown to Gotpork P. D.
+# ingot turtle: Deals 90-110 <font color=red>Hot Damage</font> and changes your opponent's element to Hot
+# ink bladder: Lets you escape from combat without spending an Adventure (underwater)
+# ink bladder: Weakens enemies significantly (on land)
+# inkwell: Weakens enemies a little bit
+# jagged scrap metal: Deals 20-30 Physical Damage and causes bleeding
+# jam band flyers: Advertise!
+# janitor sponge: Deals 20-30 <font color=green>Stench Damage</font> and briefly stuns your opponent
+# jar full of wind: Weakens enemies somewhat and briefly stuns them
+# jar of swamp gas: Deals 20-30 <font color=green>Stench Damage</font>
+# jar of swamp gas: Stuns enemies for a few rounds
+# jar of swamp honey: You can dip food in it
+# Jick's autograph: Cool!
+# jigsaw blade: Deals 10-20 Physical Damage, causes a brief stun and less brief bleeding
+# jingling spore pod: Briefly improves your Ranged damage
+# Junk-Bond: Weakens enemies somewhat and briefly stuns them
+# killing feather: Deals 100-120 Physical Damage
+# killing jar: Weakens enemies somewhat and briefly stuns them
+# Item kidnapped orphan: Take it downtown to Gotpork Orphanage
+# kite: Weakens enemies somewhat and briefly stuns them
+# Knob Goblin firecracker: Deals 2-4 Physical Damage
+# Knob Goblin seltzer: Restores 8-12 MP
+# Knob Goblin stink bomb: Weakens enemies slightly
+# Knob Goblin superseltzer: Restores 25-29 MP
+# Kokomo Resort Order Pad: Boring!
+# lavender plastic oyster egg: Deals 40-50 Physical Damage
+# leftovers of indeterminate origin: Deals 8-10 <font color=green>Stench Damage</font>
+# lewd playing card: Deals 100-150 Physical Damage and 100-150 <font color=blueviolet>Sleaze Damage</font>
+# linen bandages: Restores 10-20 HP
+# little parachute guy: Eventually restores 10-20 HP and MP
+# Item little red book: Weakens enemies by 5% and briefly stuns them.
+# Item little red book: Doesn't go away when used.
+# live nautical mine: Deals a bunch of Physical Damage
+# live nautical mine: Is unsafe on land
+# Loathing Legion jackhammer: Allows Meatsmithing without the Adventure cost (3 times a day)
+# LOLmec statuette: Sells for 1 Million Meat
+# Louder Than Bomb: Banishes a monster for a while
+# love song of disturbing obsession: Deals <font color=gray>Spooky Damage</font> based on your Mysticality
+# love song of icy revenge: Deals <font color=blue>Cold Damage</font> based on your Moxie
+# love song of naughty innuendo: Deals <font color=blueviolet>Sleaze Damage</font> based on your Moxie
+# love song of smoldering passion: Deals <font color=red>Hot Damage</font> based on your Mysticality
+# love song of sugary cuteness: Deals <font color=green>Stench Damage</font> based on your Muscle
+# love song of vague ambiguity: Deals Physical Damage based on your Muscle
+# Item LT&T telegraph office deed: Opens a LT&T telegraph office in Seaside Town
+# macrame net: Deals 90-100 Physical Damage
+# macrame net: Weakens Enemies Somewhat
+# magical mystery juice: Restores an amount of MP that increases as you level up
+# magnolia blossom: Restores 15-30 HP and MP
+# mariachi G-string: Deals 10-15 Physical Damage
+# Marquis de Poivre soda: Restores 30-40 MP
+# Massive Manual of Marauder Mockery: Makes marauder mockery mossible
+# mauve plastic oyster egg: Deals 40-50 Physical Damage
+# mayo lance: Unleash a torrent of inner mayonnaise.  The torrent will be yellow and ray-like.
+# Mayo Minder&trade;: Makes it so packets of prescription mayonnaise are automatically consumed as you eat
+# Mayodiol: One Fullness of the next thing you eat will be converted into Drunkenness
+# Mayoflex: The next thing you eat will grant an additional Adventure
+# Mayonex: Instead of giving Adventures, the next thing you eat will increase your blood-mayonnaise level.
+# Mayor Ghost's scissors: Weakens enemies a lot
+# Mayor Ghost's scissors: (by 30% if they are undead)
+# Mayor Ghost's scissors: (doesn't go away when used)
+# Mayostat: Recover a portion of the next substantial thing you eat for later use
+# Mayozapine: Increases the stat gains from the next thing you eat
+# meat vortex: Steals Some Meat From an Enemy
+# memory of a CA base pair: Causes a memory of evolution
+# memory of a CG base pair: Causes a memory of evolution
+# memory of a CT base pair: Causes a memory of evolution
+# memory of a GT base pair: Causes a memory of evolution
+# memory of an AG base pair: Causes a memory of evolution
+# memory of an AT base pair: Causes a memory of evolution
+# Mer-kin fitbrine: Restores 300-400 HP and MP
+# Mer-kin healscroll: Restores up to 300 Hit Points
+# Mer-kin killscroll: Deals tremendous Physical Damage to Mer-kin
+# Mer-kin mouthsoap: Weakens enemies a tremendous amount
+# Mer-kin pinkslip: Escape from fights with Mer-kin without spending an Adventure
+# Mer-kin sawdust: Deals 450-500 Physical Damage underwater
+# Mer-kin sawdust: Weakens enemies a lot on land
+# Merc Core challenge coin: Grants a new tattoo when used
+# Merc Core deployment orders: Contains a one-day ticket to Conspiracy Island
+# military-grade fingernail clippers: Clips fingernails
+# miniature boiler: Deals 20-40 Physical Damage
+# Miniborg beeper: Deals 20-25 Physical Damage and hurts you a little bit
+# Miniborg beeper: (doesn't go away when used)
+# Miniborg Destroy-O-Bot: Deals 10-15 Physical Damage
+# Miniborg Destroy-O-Bot: Deals 10-15 <font color=red>Hot Damage</font>
+# Miniborg Destroy-O-Bot: Weakens Enemies Slightly
+# Miniborg Destroy-O-Bot: (doesn't go away when used)
+# Miniborg hiveminder: Weakens enemies somewhat
+# Miniborg hiveminder: (doesn't go away when used)
+# Miniborg laser: Deals 15-20 <font color=red>Hot Damage</font>
+# Miniborg laser: (doesn't go away when used)
+# Miniborg stomper: Deals 15-20 Physical Damage
+# Miniborg stomper: (doesn't go away when used)
+# Miniborg strangler: Weakens enemies slightly
+# Miniborg strangler: (doesn't go away when used)
+# Mob Penguin cellular phone: Lets You Talk to Penguins
+# molotov cocktail cocktail: Deals 65-80 <font color=red>Hot Damage</font>
+# molten scrap metal: Deals 20-30 <font color=red>Hot Damage</font> and sets your opponent on fire
+# molybdenum magnet: Attracts Molybdenum
+# monomolecular yo-yo: Deals 35-45 Physical Damage
+# Monstar energy beverage: Restores 70-80 MP
+# mossy stone sphere: Mysterious, Deprecated
+# Item mountain lion skin: Adds +50% Moxie to your cowboy boots
+# Mountain Stream Code Black Alert: Restores 15-20 MP
+# Mountain Stream soda: Restores 30-40 MP
+# mylar scout drone: Weakens enemies somewhat
+# Nardz energy beverage: Restores 50-70 MP
+# Item nasty-smelling moss: Restores 20-30 HP and briefly stuns opponents.
+# Item nasty-smelling moss: Doesn't go away when used.
+# nastygeist: Deals <font color=blueviolet>Sleaze Damage</font> each round for the rest of the fight
+# natural fennel soda: Restores 80-120 MP
+# naughty paper shuriken: Removes a monster's pants and stuns it for a few rounds
+# naughty paper shuriken: (if the monster is wearing pants)
+# New Age healing crystal: Restores 500 HP
+# New Age healing crystal: (and briefly stuns your opponent)
+# New Cloaca-Cola: Restores 140-160 MP
+# NG: Deals 40-70 Physical Damage
+# Notes from the Elfpocalypse, Chapter I: Restores 30-40 HP and MP
+# Notes from the Elfpocalypse, Chapter II: Restores 30-40 HP and MP
+# Notes from the Elfpocalypse, Chapter III: Restores 30-40 HP and MP
+# Notes from the Elfpocalypse, Chapter IV: Restores 30-40 HP and MP
+# Notes from the Elfpocalypse, Chapter V: Restores 30-40 HP and MP
+# Notes from the Elfpocalypse, Chapter VI: Restores 30-40 HP and MP
+# noxious gas grenade: Deals 200-300 <font color=green>Stench Damage</font> and lingering Poison Damage
+# Item nuclear stockpile: Instantly destroy an enemy
+# Item nuclear stockpile: (up to 10 times per day)
+# Item nuclear stockpile: (during the Crimbo 2015 event only)
+# nugget of sodium: Deals 10-20 <font color=red>Hot Damage</font> and 10-20 <font color=green>Stench Damage</font>
+# odor extractor: Capture a monster's smell so you can track down similar monsters
+# off-white plastic oyster egg: Weakens enemies a little bit
+# oily boid: Weakens enemies a little bit as it briefly stuns them
+# old-school beer pull tab: Causes a significant amount of bleeding
+# onion shurikens: Deals 10-15 <font color=blueviolet>Sleaze Damage</font>
+# opium grenade: Stuns your opponent for a few rounds
+# opium grenade: (extra effective against hippies)
+# ornate picture frame: Weakens enemies somewhat and briefly stuns them
+# Oscus's neverending soda: Restores 200-300 MP
+# Oscus's neverending soda: (doesn't go away when used)
+# oversized snowflake: Stuns your opponent for a few rounds
+# ovoid leather thing: Deals 80-100 Physical Damage
+# pacification grenade: Weakens enemies somewhat
+# PADL Phone: Summons Frat Army Aid
+# paint bomb: Deals 5-10 Prismatic Damage
+# paint bomb: (keeps dealing damage every round)
+# painted turtle: Deals 10-20 Prismatic Damage
+# paisley spore pod: Stuns your opponent for a couple of rounds.
+# palm-frond fan: Restores 35-45 HP and MP
+# palm-frond net: Weakens enemies somewhat
+# paperclip sproinger: Stuns your opponent for a couple of rounds and deals 10-15 Physical Damage
+# patchouli incense stick: Weakens enemies a little bit
+# patchouli oil bomb: Deals 65-80 <font color=green>Stench Damage</font>
+# pencil kunai: Deals 20-30 Physical Damage
+# pencil stub: Does any number of crazy things
+# peppermint crook: Steals an item from your enemy
+# peppermint crook: (Maybe)
+# peppermint parasol: Lets you escape from combat without spending an Adventure
+# peppermint parasol: (Maybe)
+# petrified wood: Deals 50-60 Physical Damage and 50-60 <font color=gray>Spooky Damage</font>
+# phonics down: Restores 46-50 HP and MP and also does other weird stuff
+# photoprotoneutron torpedo: Deals 30-40 Physical Damage
+# pink-belly slapper: Weakens enemies a little bit, brieftly stuns them, and restores 8-16 of your Hit Points
+# pint of sweat: Deals 25-30 <font color=green>Stench Damage</font> and 25-30 <font color=blueviolet>Sleaze Damage</font>
+# pint of sweat: (and additional Stench and Sleaze damage in subsequent rounds)
+# pixel coin: Sell it for 2,000 Meat
+# pixel cross: Deals 80-100 Physical Damage
+# pixel cross: (does it again the next round)
+# pixel energy tank: Restores up to 1,000 HP and MP
+# pixel holy water: Deals 50-60 Physical Damage per round for the rest of the fight
+# pixel stopwatch: Stuns your opponent for a few rounds
+# pixellated candy heart: Restores 4-5 HP
+# pixie axie: Helps witches find more candy
+# plaid bandage: Restores 120-150 HP
+# plastic cup of flat beer: Deals 30-40 <font color=blueviolet>Sleaze Damage</font> and increases Item Drops by 15% if you win
+# plot hole: Deals 20-25 Physical Damage
+# plump juicy grub: Restores 90-100 HP
+# plus-sized phylactery: Contains the soul of a specific lihc
+# pog #01 (spider): Does all sorts of crazy things
+# pog #02 (Knob goblin): Does all sorts of crazy things
+# pog #03 (warwelf): Does all sorts of crazy things
+# pog #04 (skleleton): Does all sorts of crazy things
+# pog #05 (ninja snowman): Does all sorts of crazy things
+# pog #06 (filthy hippy): Does all sorts of crazy things
+# pog #07 (orcish frat boy): Does all sorts of crazy things
+# pog #08 (hellion): Does all sorts of crazy things
+# pog #09 (pirate): Does all sorts of crazy things
+# pog #10 (hobo): Does all sorts of crazy things
+# pog #11 (Naughty Sorceress): Does all sorts of crazy things
+# Pok&euml;mann band-aid: Restores 100 HP
+# poltergeist-in-the-jar-o: Deals 200-250 Physical Damage
+# pool of liquid metal: Does various things
+# pool torpedo: Deals 250-250 Physical Damage
+# pool torpedo: (underwater only)
+# pool torpedo: (has a chance to not go away when used)
+# portable Mayo Clinic: Installs a mayonnaise-centered medical clinic in your workshed
+# portable photocopier: Makes a photocopy of an enemy
+# portable table: You can hide behind it
+# possessed tomato: Deals 6-8 <font color=gray>Spooky Damage</font> per round for the rest of the fight
+# possessed top: Weakens enemies a little bit
+# potted tea tree: 1) Plant it in your campsite
+# potted tea tree: 2) Get tea every day
+# powdered organs: Weakens enemies somewhat
+# power pill: Can also be fed to Puck Mans in combat
+# procrastination potion: Causes Enemy to Put Off Attacking You
+# puce plastic oyster egg: Deals 40-50 Physical Damage
+# pufferfish spine: Poisons your opponent, and using additional ones makes the poison way worse
+# pulled blue taffy: Summons a helpful fish
+# pulled blue taffy: (underwater only)
+# pulled green taffy: Makes a copy of a monster to fight later
+# pulled green taffy: (underwater only)
+# pulled indigo taffy: Lets you escape from combat without spending an Adventure
+# pulled indigo taffy: (underwater only)
+# pulled orange taffy: Summons a helpful fish
+# pulled orange taffy: (underwater only)
+# pulled red taffy: Summons a helpful fish
+# pulled red taffy: (underwater only)
+# pulled violet taffy: Summons a helpful fish
+# pulled violet taffy: (underwater only)
+# pulled yellow taffy: Vaporizes an enemy and causes all of its items to drop
+# pulled yellow taffy: (underwater only)
+# pumpkin bomb: Vaporizes an enemy and causes all of its items to drop
+# pumpkin carriage: <b>Allows Travel to Desert Beach</b>
+# pygmy blowgun: Poisons enemies, dealing damage over multiple rounds
+# quantum nanopolymer spider web: Weakens enemies somewhat and briefly stuns them
+# Rain-Doh black box: Makes a copy of a monster to fight later
+# Rain-Doh blue balls: Deals 10-20 <font color=blue>Cold Damage</font> and stuns opponent for a couple of rounds
+# Rain-Doh blue balls: (doesn't go away when used)
+# Rain-Doh indigo cup: Heals 20% of your Maximum Hit Points
+# Rain-Doh indigo cup: (doesn't go away when used)
+# Rain-Doh orange agent: Deals Physical Damage for Meat
+# Rain-Doh orange agent: (doesn't go away when used)
+# rainbow bomb: Deals 20-30 Physical Damage and 20-30 Prismatic Damage
+# rattler rattle: Weakens enemies by 25%
+# rattler rattle: (75% for beasts)
+# razor-sharp can lid: Deals 2-3 Physical Damage
+# razor-tipped yo-yo: Deals 30-40 Physical Damage
+# really really sticky spider web: Weakens enemies a little bit
+# really sticky spider web: Weakens enemies slightly
+# really thick bandage: Restores 100-120 HP
+# recovered elf magazine: Turn it in at the E. R. F. camp for
+# recovered elf magazine: 1 Crimbo Credit
+# recovered elf photo album: Turn it in at the E. R. F. camp for
+# recovered elf photo album: 4 Crimbo Credits
+# recovered elf pocketwatch: Turn it in at the E. R. F. camp for
+# recovered elf pocketwatch: 3 Crimbo Credits
+# recovered elf sleeping pills: Turn it in at the E. R. F. camp for
+# recovered elf sleeping pills: 2 Crimbo Credits
+# recovered elf smartphone: Turn it in at the E. R. F. camp for
+# recovered elf smartphone: 5 Crimbo Credits
+# recovered elf toothbrush: Turn it in at the E. R. F. camp for
+# recovered elf toothbrush: 1 Crimbo Credit
+# recovered elf underpants: Turn it in at the E. R. F. camp for
+# recovered elf underpants: 2 Crimbo Credits
+# recovered elf wallet: Turn it in at the E. R. F. camp for
+# recovered elf wallet: 3 Crimbo Credits
+# red button: Deals Physical Damage based on how many of them you have
+# red face paint: Makes you red with holiday cheer!
+# red face paint: Does not go away when used.
+# red pixel potion: Heals 100-120 Hit Points
+# red plastic oyster egg: Restores 35-40 Hit Points
+# red potion: Restores 90-110 HP
+# Regular Cloaca Cola: Restores 7-9 MP
+# Item robin's egg: When used in combat: weakens enemies by 50% and briefly stuns them
+# Item robin nog
+# robotronic egg: Crazy robotronic action!
+# rock band flyers: Advertise!
+# rocky raccoon: Deals 50-60 Physical Damage
+# rogue swarmer: Deals Physical Damage based on how many swarmers you have
+# roller skate decoy: Put it down, and monsters will attack it instead of you
+# roofie: Stops Enemy From Attacking and Weakens it Slightly
+# rotten tomato: Throw it at somebody to grant extra PvP fights
+# Item rotting cowskin: Adds Demonic Bovine Taint to your cowboy boots
+# rough stone sphere: Mysterious, Deprecated
+# round blue bomb: Deals 90-110 <font color=red>Hot Damage</font>
+# rusty bonesaw: Saws bones
+# S.O.C.K.: Allows access to the Castle in the Clouds in the Sky
+# sacramental wine: Restores 80-100 MP
+# sake bomb: Deals 45-60 Physical Damage
+# sake bomb: Weakens Enemies a Little Bit
+# samurai turtle: Does various ninja things
+# sausage bomb: Deals 100-120 <font color=blueviolet>Sleaze Damage</font>
+# sausage bomb: Weakens Enemies Somewhat
+# sawblade fragment: Deals 100-150 Physical Damage and causes additional Bleeding over time
+# scented massage oil: Restores all HP
+# scroll of ancient forbidden unspeakable evil: Invokes Dangerous and Unpredictable Magic
+# scroll of drastic healing: Restores all HP
+# sea cowbell: Gives you a fever
+# sea lasso: Allows underwater rooting and tooting
+# seal tooth: Deals 1 Physical Damage
+# sealhide snare: Stuns your opponent for a few rounds
+# Item self-defense training: Increases your Bat-Armor
+# sewing kit: Restores up to 1,000 HP
+# sewing kit: (doesn't go away when used)
+# shard of double-ice: Deals <font color=blue>Cold Damage</font> based on your highest stat
+# shard of double-ice: (and leaves the monster permanently cold)
+# sharpened hubcap: Deals 400-500 Physical Damage
+# shaving cream: Stops Enemy From Attacking
+# short calculator: ???
+# short writ of habeas corpus: Lets you get away from pygmies without spending an Adventure
+# shrinking powder: Reduce an enemy's size (Hit Points) by 35-50%
+# shuriken salad: Deals 25-35 Physical Damage, 25-35 <font color=blue>Cold Damage</font> and 25-35 <font color=green>Stench Damage</font>
+# silk bandages: Restores 40-80 HP
+# skate skates: Deals 150-300 Physical Damage and briefly stuns your opponent
+# skeletal skiff: <b>Allows Travel to The Mysterious Island of Mystery</b>
+# skull with a fuse in it: Deals 400-500 Physical Damage
+# Skullhead's Screw: Deals 10-20 <font color=blueviolet>Sleaze Damage</font>
+# sleaze clusterbomb: Deals <font color=blueviolet>Sleaze Damage</font> based on your highest stat
+# sleaze clusterbomb: (more effective against groups)
+# slime stack: Deals 10-20% of a monster's current Hit Points in Physical Damage
+# slime stack: Weakens the monster by 10%
+# small golem: Deals Physical Damage each round for the rest of the fight
+# smoke grenade: Banishes a monster for a while
+# smoking grass: Deals 250-300 <font color=red>Hot Damage</font> and also, like, weakens enemies a bunch and briefly makes them forget what they were doing
+# SMOOCH bottlecap: It's a collector's item!
+# smooth stone sphere: Mysterious, Deprecated
+# Item snake oil: Increase the venom and medicine level of your briefcase full of snakes
+# sneaky wrapping paper: Hide gifts for other players in various locations
+# snow boards: Useful for Bridge-Building
+# soda water: Restores 3-5 MP
+# soft green echo eyedrop antidote: Allows you to remove an Effect
+# software glitch: <b>Fatal Error:</b> Unexpected } in line 17
+# soggy used band-aid: Heals all of your Hit Points and stuns your opponent for a few rounds
+# solid gold jewel: Can be sold for 100,000 Meat
+# sonar-in-a-biscuit: Freaks Bats Out
+# soup turtle: Deals 5-10 <font color=red>Hot Damage</font>
+# space invader: Deals 300-400 Physical Damage
+# Space Tours Tripple: Weakens enemies a little bit
+# spangly unitard: Deals 100-250 Physical Damage and weakens your opponent somewhat
+# sparking El Vibrato drone: Deals 250-300 Physical Damage
+# special clip: boneburners: Deals <font color=gray>Spooky Damage</font> and <font color=red>Hot Damage</font> based on your Moxie
+# special clip: graveburpers: Deals <font color=green>Stench Damage</font> and <font color=gray>Spooky Damage</font> based on your Moxie
+# special clip: splatterers: Deals <font color=blueviolet>Sleaze Damage</font> and <font color=gray>Spooky Damage</font> based on your Moxie
+# special clip: squelchers: Deals <font color=blueviolet>Sleaze Damage</font> based on your Moxie
+# special clip: tracers: Deals <font color=red>Hot Damage</font> based on your Moxie
+# special clip: wailers: Deals <font color=gray>Spooky Damage</font> based on your Moxie
+# special edition Batfellow comic: Lets you have a fun adventure (once a week) as a dark, brooding, bat-themed superhero.
+# spectral jelly: Makes you nearly impervious to damage for the duration of the fight
+# spectre scepter: Invoke the Ancient Gods!
+# spices: Deals 1 Physical Damage
+# spider web: Weakens enemies very slightly
+# spinning wheel: Turns air into Meat (once per day)
+# spirit beer: Restores 40-50 MP
+# spooky alphabet block: Mysterious and spooky
+# spooky clusterbomb: Deals <font color=gray>Spooky Damage</font> based on your highest stat
+# spooky clusterbomb: (more effective against groups)
+# spooky lasso: Deals <font color=gray>Spooky Damage</font> based on your Moxie and briefly stuns your opponent
+# spooky music box mechanism: Deals 100-120 <font color=gray>Spooky Damage</font>
+# spooky music box mechanism: (unless you're in Spookyraven Manor, in which case it banishes a monster for a while)
+# Spooky Putty sheet: Makes a copy of a monster to fight later
+# spooky sap: Weakens enemies a lot when used as a combat item
+# star throwing star: Deals 50-75 Physical Damage
+# steam-powered model rocketship: Allows access to the Hole in the Sky
+# stench clusterbomb: Deals <font color=green>Stench Damage</font> based on your highest stat
+# stench clusterbomb: (more effective against groups)
+# stick of dynamite: Deals 15-20 Physical Damage
+# stick-on-a-string: Either Slightly Damages or Slight Weakens Foes
+# sticky clay homunculus: Makes a copy of a monster to fight later
+# stone frisbee: Deals 80-100 Physical Damage
+# strange goggles: ???
+# stuffed alien blob: Randomly Becomes a Different Combat Item When Used
+# stuffed doppelshifter: Randomly Becomes a Different Combat Item When Used
+# stuffed gray blob: Randomly becomes a different combat item when used
+# sugar shard: Restores 10-20 HP and 5-10 MP
+# superamplified boom box: Deals 90-100 Physical Damage
+# superamplified boom box: Weakens enemies somewhat
+# superamplified boom box: Briefly stuns your opponent
+# superduperheated metal: Vaporizes foes
+# surgical tape: Weakens enemies a little bit and restores 20-30 Hit Points
+# T.U.R.D.S. Key: Lets you escape from combat without spending an Adventure
+# T.U.R.D.S. Key: (Maybe)
+# Tales of Spelunking: Begins a Spelunking Adventure!
+# Item Tales of the West: Beanslinging: Teaches you Beanslinger skills
+# Item Tales of the West: Cow Punching: Teaches you Cow Puncher skills
+# Item Tales of the West: Snake Oiling: Teaches you Snake Oiler skills
+# talisman of Horus: Attracts the attention of monsters
+# talisman of Renenutet: Massive boost to Item Drops from Monsters (for one fight)
+# talisman of Seshat: Grants one "skill point" to Ed the Undying
+# talisman of Thoth: Extends Active Invocations
+# tangle of rat tails: Deals 50-70 <font color=blueviolet>Sleaze Damage</font> and 100-120 <font color=green>Stench Damage</font>
+# tattered scrap of paper: Lets you escape from combat without spending an Adventure
+# tattered scrap of paper: (Maybe)
+# tennis ball: Banish an enemy for 30 Adventures
+# tequila grenade: Deals 75-100 Physical Damage
+# terrible poem: Deals 5-6 Physical Damage
+# The Big Book of Pirate Insults: Use it to insult Pirates
+# The Bomb: Deals 400-500 Physical Damage
+# The Emperor's new cookie: So delicious!
+# The Lost Comb: Stuns your opponent for a few rounds
+# The Six-Pack of Pain: Deals Physical Damage based on your Muscle
+# The Six-Pack of Pain: Weakens Enemies a Whole Lot
+# throwing candy: Deals 25-50 Physical Damage and weakens enemies somewhat
+# throwing fork: Deals 20-30 Physical Damage with each of its three tines
+# throwing knife: Causes bleeding
+# throwing spoon: Deals 50-60 Physical Damage and weakens enemies somewhat
+# time shuriken: (does not go away when used)
+# tin lizzie: <b>Allows Travel to Desert Beach</b>
+# tin snips: Deals 8-10 Physical Damage and causes bleeding
+# tiny goth giant: Makes combat all Gothy
+# tiny goth giant: (doesn't go away when used)
+# tiny house: Restores 20-24 HP and MP and removes negative effects
+# Tom's of the Spanish Main Toothpaste: Weakens enemies a little bit
+# tomayohawk-style reflex hammer: Stops enemy from attacking and deals <font color=blueviolet>Sleaze Damage</font> based on your blood-mayonnaise concentration.
+# tongue depressor: Briefly stuns a monster and reveals its vital statistics
+# tonic water: Restores 30-50 MP
+# top: Weakens enemies a little bit
+# toxic globule: Can be scienced into various objects
+# toy deathbot: Deals damage in exchange for some of your blood
+# toy mercenary: Charges Meat to Attack Foes
+# Item toy sixgun: Bang!
+# toy soldier: Deals 30-35 Damage (Requires Tequila)
+# toy soldier: (Not consumed when used)
+# tree-eating kite: Deals 20-25 Physical Damage
+# tropical orchid: Weakens enemies a little bit
+# tube of herbal ointment: Restores 14-16 HP
+# turtle-shaped rock: Deals 45-50 Physical Damage
+# Twelve Night Energy: Grants 12 Adventures
+# Twelve Night Energy: (You can only use one of these per day)
+# twisted piece of wire: Stuns your opponent for a couple of rounds
+# Item ultracoagulator: Restores all of your Bat-Health during a fight
+# unbearable light: Vaporizes an enemy and causes all of its items to drop
+# underwater slingshot: Deals 50-100 Physical Damage
+# underwater slingshot: (sometimes more)
+# underwater slingshot: (and only works underwater)
+# unfinished ice sculpture: Makes a copy of a monster to fight later
+# unnatural gas: Weakens enemies a lot
+# unrefined Mountain Stream syrup: Restores 50-60 MP
+# unstable laser battery: Deals 200-250 <font color=red>Hot Damage</font>
+# unstable laser battery: Briefly stuns enemies
+# valuable coin: Worth a lot!
+# veiny spore pod: Briefly enhances your muscle
+# very large caltrop: Deals 150-200 Physical Damage
+# very large caltrop: Stuns an enemy for a few rounds
+# vial of holy water: Deals 40-60 <font color=red>Hot Damage</font>
+# vial of patchouli oil: Weakens enemies a little bit
+# Volcoino: Spend it at the Towering Inferno Discotheque's Gift Shop
+# wand of pigification: Turns your foe into a pig
+# warbear auto-anvil: Allows Meatsmithing without using an Adventure
+# warbear auto-anvil: (5x / day)
+# warbear chemistry lab: Lets you occasionally cook extra Potions
+# warbear high-efficiency still: Sometimes recovers ingredients when you craft cocktails
+# warbear jackhammer drill press: Increases the effectiveness of Pulverize
+# warbear LP-ROM burner: Lets you make recordings of your Accordion Thief buffs
+# water pipe bomb: Deals 55-75 Physical Damage
+# Way More Tears&trade; pepper spray: Deals 12-15 <font color=red>Hot Damage</font> and weakens enemies somewhat
+# Way More Tears&trade; pepper spray: (can be used 8-10 times before the can is empty)
+# whimpering willow bark: Restores up to 25% of your Maximum HP
+# white picket fence: Stops Enemy From Attacking and Restores 14-15 Hit Points
+# Winifred's whistle: Banishes a monster for a while
+# Wolfman Nardz: Restores 200-300 MP
+# wood screw: Deals 20-30 Physical Damage and briefly stuns your opponent
+# world's most dangerous birdhouse: Instantly defeats most monsters
+# wumpus-hair bolo: Lets you escape from combat without spending an Adventure
+# wumpus-hair bolo: (Maybe)
+# wumpus-hair net: Weakens enemies somewhat
+# wussiness potion: Weakens enemies a little bit
+# X-32-F snowman crate: Installs a Combat Training Snowman the Big Mountains
+# Ye Olde Medieval Insult: Weakens enemies somewhat and briefly stuns them
+# yellow plastic oyster egg: Grants a Random Beneficial Effect
+# yellow submarine: Allows Travel to The Mysterious Island of Mystery
+# yellowcake bomb: Vaporizes an enemy and causes all of its items to drop
+# yo: Deals 15-20 Physical Damage
+# yo-yo: Deals 30-40 Physical Damage
+# your own black heart: Restores all HP and MP
+# Zombo's empty eye: Deals 150-200 <font color=gray>Spooky Damage</font>
+# Zombo's empty eye: Weakens Enemies a Lot
+# Zombo's empty eye: (doesn't go away when used)
+# Florist section
+# Outdoor Plants
+# Florist:Artichoker: Delevels enemies before combat
+# Florist:Smoke-ra: Prevents enemies from attacking
+# Florist:Skunk Cabbage: Deals Stench damage
+# Florist:Deadly Cinnamon: Deals Hot damage
+# Florist:Celery Stalker: Deals Spooky damage
+# Path section
+# Indoor Plants
+# Florist:Spider Plant: Damages and poisons enemies before combat
+# Florist:Red Fern: Delevels enemies during combat
+# Florist:BamBOO!: Deals Spooky damage
+# Florist:Arctic Moss: Deals Cold damage
+# Underground Plants
+# Florist:Dis Lichen: Delevels enemies before combat
+# Florist:Loose Morels: Deals Sleaze damage
+# Florist:Foul Toadstool: Deals Stench damage
+# Florist:Chillterelle: Deals Cold damage
+# Underwater Plants
+# Florist:Spankton: Delevels enemies before combat
+# Florist:Electric Eelgrass: Prevents enemies from attacking
+# Florist:Duckweed: You can hide behind it once per fight
+# Florist:Orca Orchid: Deals Physical damage
+# Florist:Sargassum: Deals Stench damage
+# Florist:Sub-Sea Rose: Deals Cold damage

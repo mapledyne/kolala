@@ -1,0 +1,873 @@
+{
+    "Tolerance of the Kitchen": {
+        "category": "Skill", 
+        "modifier": [
+            "Hot Resistance: +2"
+        ], 
+        "name": "Tolerance of the Kitchen"
+    }, 
+    "Wrath": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +10", 
+            "Spell Damage: +10", 
+            "Damage Reduction: -4"
+        ], 
+        "name": "Wrath"
+    }, 
+    "Skin of the Leatherback": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Reduction: [max(1,ceil(L/2))]"
+        ], 
+        "name": "Skin of the Leatherback"
+    }, 
+    "Cosmic Ugnderstanding": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP Percent: +5"
+        ], 
+        "name": "Cosmic Ugnderstanding"
+    }, 
+    "Barrel Chested": {
+        "category": "Skill", 
+        "modifier": [
+            "Muscle Percent: +50"
+        ], 
+        "name": "Barrel Chested"
+    }, 
+    "Healing Scarabs": {
+        "category": "Skill", 
+        "modifier": [
+            "HP Regen Min: +2", 
+            "HP Regen Max: +4"
+        ], 
+        "name": "Healing Scarabs"
+    }, 
+    "True Outdoorsperson": {
+        "category": "Skill", 
+        "modifier": [
+            "Spooky Resistance: +3", 
+            "Stench Resistance: +3", 
+            "Hot Resistance: +3", 
+            "Cold Resistance: +3", 
+            "Sleaze Resistance: +3"
+        ], 
+        "name": "True Outdoorsperson"
+    }, 
+    "Fashionably Late": {
+        "category": "Skill", 
+        "modifier": [
+            "Adventures: +1"
+        ], 
+        "name": "Fashionably Late"
+    }, 
+    "Pride": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience: +4"
+        ], 
+        "name": "Pride"
+    }, 
+    "The Long View": {
+        "category": "Skill", 
+        "modifier": [
+            "Adventures: +3"
+        ], 
+        "name": "The Long View"
+    }, 
+    "Gnefarious Pickpocketing": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +10"
+        ], 
+        "name": "Gnefarious Pickpocketing"
+    }, 
+    "Upgraded Legs": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +50"
+        ], 
+        "name": "Upgraded Legs"
+    }, 
+    "Indefatigable": {
+        "category": "Skill", 
+        "modifier": [
+            "HP Regen Min: +16", 
+            "HP Regen Max: +20"
+        ], 
+        "name": "Indefatigable"
+    }, 
+    "Asbestos Heart": {
+        "category": "Skill", 
+        "modifier": [
+            "Hot Resistance: +3"
+        ], 
+        "name": "Asbestos Heart"
+    }, 
+    "Best Dressed": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience (Moxie): +1"
+        ], 
+        "name": "Best Dressed"
+    }, 
+    "Hypersane": {
+        "category": "Skill", 
+        "modifier": [
+            "Spooky Resistance: +3"
+        ], 
+        "name": "Hypersane"
+    }, 
+    "Animal Magnetism": {
+        "category": "Skill", 
+        "modifier": [
+            "Moxie Controls MP", 
+            "MP Regen Min: 8", 
+            "MP Regen Max: 10"
+        ], 
+        "name": "Animal Magnetism"
+    }, 
+    "Inner Sauce": {
+        "category": "Skill", 
+        "modifier": [
+            "MP Regen Min: [1+2*class(Sauceror)]", 
+            "MP Regen Max: [1+3*class(Sauceror)]"
+        ], 
+        "name": "Inner Sauce"
+    }, 
+    "Master Accordion Master Thief": {
+        "category": "Skill", 
+        "modifier": [
+            "Pickpocket Chance: +10"
+        ], 
+        "name": "Master Accordion Master Thief"
+    }, 
+    "Slimy Shoulders": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: [pref(skillLevel48)]"
+        ], 
+        "name": "Slimy Shoulders"
+    }, 
+    "Vigor Mortis": {
+        "category": "Skill", 
+        "modifier": [
+            "Muscle Percent: +30"
+        ], 
+        "name": "Vigor Mortis"
+    }, 
+    "Natural Born Scrabbler": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +5"
+        ], 
+        "name": "Natural Born Scrabbler"
+    }, 
+    "Shivering Monkey Technique": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +15"
+        ], 
+        "name": "Shivering Monkey Technique"
+    }, 
+    "Even More Elemental Wards": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +3", 
+            "Hot Resistance: +3", 
+            "Sleaze Resistance: +3", 
+            "Spooky Resistance: +3", 
+            "Stench Resistance: +3"
+        ], 
+        "name": "Even More Elemental Wards"
+    }, 
+    "Northern Exposure": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +2"
+        ], 
+        "name": "Northern Exposure"
+    }, 
+    "Legendary Bravado": {
+        "category": "Skill", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Legendary Bravado"
+    }, 
+    "Riding Tall": {
+        "category": "Skill", 
+        "modifier": [
+            "Muscle Percent: +30", 
+            "Mysticality Percent: +30", 
+            "Moxie Percent: +50"
+        ], 
+        "name": "Riding Tall"
+    }, 
+    "Envy": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +30", 
+            "Meat Drop: -25"
+        ], 
+        "name": "Envy"
+    }, 
+    "Nimble Fingers": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Nimble Fingers"
+    }, 
+    "Buoyancy of the Beluga": {
+        "category": "Skill", 
+        "modifier": [
+            "HP Regen Min: [Y]", 
+            "HP Regen Max: [Y]"
+        ], 
+        "name": "Buoyancy of the Beluga"
+    }, 
+    "Rain Delay": {
+        "category": "Skill", 
+        "modifier": [
+            "Spooky Resistance: +3", 
+            "Stench Resistance: +3", 
+            "Hot Resistance: +3", 
+            "Cold Resistance: +3", 
+            "Sleaze Resistance: +3"
+        ], 
+        "name": "Rain Delay"
+    }, 
+    "Marginally Insane": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP Percent: +10"
+        ], 
+        "name": "Marginally Insane"
+    }, 
+    "Fortitude of the Muskox": {
+        "category": "Skill", 
+        "modifier": [
+            "HP Regen Min: +1", 
+            "HP Regen Max: +2"
+        ], 
+        "name": "Fortitude of the Muskox"
+    }, 
+    "Riding the Lightning": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP Percent: +100"
+        ], 
+        "name": "Riding the Lightning"
+    }, 
+    "Master of the Surprising Fist": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +10", 
+            "Damage Reduction: 10", 
+            "Unarmed"
+        ], 
+        "name": "Master of the Surprising Fist"
+    }, 
+    "More Legs": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +50"
+        ], 
+        "name": "More Legs"
+    }, 
+    "Bone Spikes": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +10"
+        ], 
+        "name": "Bone Spikes"
+    }, 
+    "Wrath of the Wolverine": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: [Y]"
+        ], 
+        "name": "Wrath of the Wolverine"
+    }, 
+    "Big Boned": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +30"
+        ], 
+        "name": "Big Boned"
+    }, 
+    "Diminished Gag Reflex": {
+        "category": "Skill", 
+        "modifier": [
+            "Stench Resistance: +2"
+        ], 
+        "name": "Diminished Gag Reflex"
+    }, 
+    "Alien Source Code": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP: +5"
+        ], 
+        "name": "Alien Source Code"
+    }, 
+    "Gift of the Assassin": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +10", 
+            "Critical Hit Percent: +30"
+        ], 
+        "name": "Gift of the Assassin"
+    }, 
+    "Arm Blade": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +5", 
+            "Critical Hit Percent: +20"
+        ], 
+        "name": "Arm Blade"
+    }, 
+    "Larger Than Life": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +100", 
+            "Maximum MP Percent: +100"
+        ], 
+        "name": "Larger Than Life"
+    }, 
+    "Brain Games": {
+        "category": "Skill", 
+        "modifier": [
+            "Adventures: +3"
+        ], 
+        "name": "Brain Games"
+    }, 
+    "20/20 Vision": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "20/20 Vision"
+    }, 
+    "Gift of the Priest": {
+        "category": "Skill", 
+        "modifier": [
+            "Spell Damage: +40"
+        ], 
+        "name": "Gift of the Priest"
+    }, 
+    "Armor Plating": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Reduction: 10"
+        ], 
+        "name": "Armor Plating"
+    }, 
+    "Mariachi Memory": {
+        "category": "Skill", 
+        "modifier": [
+            "Additional Song"
+        ], 
+        "name": "Mariachi Memory"
+    }, 
+    "Overdeveloped Sense of Self Preservation": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Overdeveloped Sense of Self Preservation"
+    }, 
+    "Greed": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +50", 
+            "Item Drop: -15"
+        ], 
+        "name": "Greed"
+    }, 
+    "Irrepressible Spunk": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +5", 
+            "Maximum MP Percent: +5"
+        ], 
+        "name": "Irrepressible Spunk"
+    }, 
+    "Thrift and Grift": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +10"
+        ], 
+        "name": "Thrift and Grift"
+    }, 
+    "Wisdom of the Elder Tortoises": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP Percent: +50"
+        ], 
+        "name": "Wisdom of the Elder Tortoises"
+    }, 
+    "Claws of the Walrus": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +7"
+        ], 
+        "name": "Claws of the Walrus"
+    }, 
+    "Expert Panhandling": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: [10+5*mainhand(saucepan)]"
+        ], 
+        "name": "Expert Panhandling"
+    }, 
+    "Mad Looting Skillz": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +20"
+        ], 
+        "name": "Mad Looting Skillz"
+    }, 
+    "Elemental Obliviousness": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +2", 
+            "Hot Resistance: +2", 
+            "Sleaze Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Stench Resistance: +2"
+        ], 
+        "name": "Elemental Obliviousness"
+    }, 
+    "Heart of Polyester": {
+        "category": "Skill", 
+        "modifier": [
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Heart of Polyester"
+    }, 
+    "Natural Dancer": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +200"
+        ], 
+        "name": "Natural Dancer"
+    }, 
+    "Gift of the Cat": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +25"
+        ], 
+        "name": "Gift of the Cat"
+    }, 
+    "More to Love": {
+        "category": "Skill", 
+        "modifier": [
+            "Minstrel Level: +3"
+        ], 
+        "name": "More to Love"
+    }, 
+    "Disco Greed": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: [10*I]"
+        ], 
+        "name": "Disco Greed"
+    }, 
+    "Seething of the Snow Leopard": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: [2*Y]"
+        ], 
+        "name": "Seething of the Snow Leopard"
+    }, 
+    "Legendary Impatience": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +100"
+        ], 
+        "name": "Legendary Impatience"
+    }, 
+    "Thief Among the Honorable": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +5", 
+            "Meat Drop: +10"
+        ], 
+        "name": "Thief Among the Honorable"
+    }, 
+    "Food Coma": {
+        "category": "Skill", 
+        "modifier": [
+            "Base Resting MP: 9999"
+        ], 
+        "name": "Food Coma"
+    }, 
+    "Hunter's Sprint": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +100"
+        ], 
+        "name": "Hunter's Sprint"
+    }, 
+    "Gift of the Dancer": {
+        "category": "Skill", 
+        "modifier": [
+            "MP Regen Min: 4", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Gift of the Dancer"
+    }, 
+    "Best Served Cold": {
+        "category": "Skill", 
+        "modifier": [
+            "Spell Damage Percent: +100"
+        ], 
+        "name": "Best Served Cold"
+    }, 
+    "Unoffendable": {
+        "category": "Skill", 
+        "modifier": [
+            "Sleaze Resistance: +3"
+        ], 
+        "name": "Unoffendable"
+    }, 
+    "Zombie Maestro": {
+        "category": "Skill", 
+        "modifier": [
+            "Mana Cost: -1"
+        ], 
+        "name": "Zombie Maestro"
+    }, 
+    "Hide of the Walrus": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Absorption: +50"
+        ], 
+        "name": "Hide of the Walrus"
+    }, 
+    "Gift of the Scribe": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience (Mysticality): +5"
+        ], 
+        "name": "Gift of the Scribe"
+    }, 
+    "Bean Runner": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +75"
+        ], 
+        "name": "Bean Runner"
+    }, 
+    "Big Lungs": {
+        "category": "Skill", 
+        "modifier": [
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Big Lungs"
+    }, 
+    "Spirit of Ravioli": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +25"
+        ], 
+        "name": "Spirit of Ravioli"
+    }, 
+    "Chip on your Shoulder": {
+        "category": "Skill", 
+        "modifier": [
+            "PvP Fights: +5"
+        ], 
+        "name": "Chip on your Shoulder"
+    }, 
+    "Virulence": {
+        "category": "Skill", 
+        "modifier": [
+            "Critical Hit Percent: +10"
+        ], 
+        "name": "Virulence"
+    }, 
+    "Slimy Sinews": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP: [pref(skillLevel46)]"
+        ], 
+        "name": "Slimy Sinews"
+    }, 
+    "Unrepentant Thief": {
+        "category": "Skill", 
+        "modifier": [
+            "Pickpocket Chance: +50"
+        ], 
+        "name": "Unrepentant Thief"
+    }, 
+    "Hungry Eyes": {
+        "category": "Skill", 
+        "modifier": [
+            "Food Drop: +100"
+        ], 
+        "name": "Hungry Eyes"
+    }, 
+    "Disco Bravado": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience: [I-max(I-1,0)/2]"
+        ], 
+        "name": "Disco Bravado"
+    }, 
+    "Easy Riding": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience (Moxie): +5"
+        ], 
+        "name": "Easy Riding"
+    }, 
+    "Elemental Wards": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +1", 
+            "Hot Resistance: +1", 
+            "Sleaze Resistance: +1", 
+            "Spooky Resistance: +1", 
+            "Stench Resistance: +1"
+        ], 
+        "name": "Elemental Wards"
+    }, 
+    "Sensitive Fingers": {
+        "category": "Skill", 
+        "modifier": [
+            "Pickpocket Chance: +10"
+        ], 
+        "name": "Sensitive Fingers"
+    }, 
+    "Amphibian Sympathy": {
+        "category": "Skill", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Amphibian Sympathy"
+    }, 
+    "Thick-Skinned": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Thick-Skinned"
+    }, 
+    "Upgraded Arms": {
+        "category": "Skill", 
+        "modifier": [
+            "Muscle Percent: +50"
+        ], 
+        "name": "Upgraded Arms"
+    }, 
+    "More Elemental Wards": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +2", 
+            "Hot Resistance: +2", 
+            "Sleaze Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Stench Resistance: +2"
+        ], 
+        "name": "More Elemental Wards"
+    }, 
+    "Born Showman": {
+        "category": "Skill", 
+        "modifier": [
+            "Moxie: [abs(ceil(N/2))]"
+        ], 
+        "name": "Born Showman"
+    }, 
+    "Unyielding Flesh": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Absorption: +100", 
+            "Damage Reduction: 5"
+        ], 
+        "name": "Unyielding Flesh"
+    }, 
+    "Olfactory Burnout": {
+        "category": "Skill", 
+        "modifier": [
+            "Stench Resistance: +3"
+        ], 
+        "name": "Olfactory Burnout"
+    }, 
+    "Refusal to Freeze": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +3"
+        ], 
+        "name": "Refusal to Freeze"
+    }, 
+    "Ferocity": {
+        "category": "Skill", 
+        "modifier": [
+            "Critical Hit Percent: +25"
+        ], 
+        "name": "Ferocity"
+    }, 
+    "Master Saucier": {
+        "category": "Skill", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Master Saucier"
+    }, 
+    "Gift of the Maid": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +50"
+        ], 
+        "name": "Gift of the Maid"
+    }, 
+    "Gift of the Bodyguard": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Absorption: +200"
+        ], 
+        "name": "Gift of the Bodyguard"
+    }, 
+    "Abs of Tin": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +10"
+        ], 
+        "name": "Abs of Tin"
+    }, 
+    "Subtle and Quick to Anger": {
+        "category": "Skill", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Subtle and Quick to Anger"
+    }, 
+    "Precision of the Penguin": {
+        "category": "Skill", 
+        "modifier": [
+            "Critical Hit Percent: [Y]"
+        ], 
+        "name": "Precision of the Penguin"
+    }, 
+    "Upgraded Spine": {
+        "category": "Skill", 
+        "modifier": [
+            "Moxie Percent: +50"
+        ], 
+        "name": "Upgraded Spine"
+    }, 
+    "Gluttony": {
+        "category": "Skill", 
+        "modifier": [
+            "Experience: -2"
+        ], 
+        "name": "Gluttony"
+    }, 
+    "Never Late for Dinner": {
+        "category": "Skill", 
+        "modifier": [
+            "Adventures: +10", 
+            "Initiative: +50"
+        ], 
+        "name": "Never Late for Dinner"
+    }, 
+    "Sick Pythons": {
+        "category": "Skill", 
+        "modifier": [
+            "Weapon Damage: +20"
+        ], 
+        "name": "Sick Pythons"
+    }, 
+    "Legendary Girth": {
+        "category": "Skill", 
+        "modifier": [
+            "Cold Resistance: +2", 
+            "Hot Resistance: +2", 
+            "Sleaze Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Stench Resistance: +2"
+        ], 
+        "name": "Legendary Girth"
+    }, 
+    "Powers of Observatiogn": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Powers of Observatiogn"
+    }, 
+    "Cold-Blooded Fearlessness": {
+        "category": "Skill", 
+        "modifier": [
+            "Spooky Resistance: +2"
+        ], 
+        "name": "Cold-Blooded Fearlessness"
+    }, 
+    "Sloth": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Reduction: 8", 
+            "Initiative: -25"
+        ], 
+        "name": "Sloth"
+    }, 
+    "Gnomish Hardigness": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum HP Percent: +5"
+        ], 
+        "name": "Gnomish Hardigness"
+    }, 
+    "His Master's Voice": {
+        "category": "Skill", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "His Master's Voice"
+    }, 
+    "Lust": {
+        "category": "Skill", 
+        "modifier": [
+            "Initiative: +50", 
+            "Weapon Damage: -5", 
+            "Spell Damage: -5"
+        ], 
+        "name": "Lust"
+    }, 
+    "Speluck": {
+        "category": "Skill", 
+        "modifier": [
+            "Item Drop: [5*env(underground)]", 
+            "Meat Drop: [10*env(underground)]"
+        ], 
+        "name": "Speluck"
+    }, 
+    "Slimy Synapses": {
+        "category": "Skill", 
+        "modifier": [
+            "Maximum MP: [pref(skillLevel47)]"
+        ], 
+        "name": "Slimy Synapses"
+    }, 
+    "Undying Greed": {
+        "category": "Skill", 
+        "modifier": [
+            "Meat Drop: +25"
+        ], 
+        "name": "Undying Greed"
+    }, 
+    "Tougher Skin": {
+        "category": "Skill", 
+        "modifier": [
+            "Damage Absorption: +100"
+        ], 
+        "name": "Tougher Skin"
+    }
+}

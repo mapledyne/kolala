@@ -1,0 +1,11 @@
+{
+    "Zone:The Sea": {
+        "category": "Zone", 
+        "modifier": [
+            "Initiative Penalty: -100", 
+            "Item Drop Penalty: -100", 
+            "Meat Drop Penalty: -100"
+        ], 
+        "name": "Zone:The Sea"
+    }
+}

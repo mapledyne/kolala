@@ -1,0 +1,1457 @@
+{
+    "Adorable Seal Larva": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Adorable Seal Larva"
+    }, 
+    "Attention-Deficit Demon": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Attention-Deficit Demon"
+    }, 
+    "Emo Squid": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Emo Squid"
+    }, 
+    "El Vibrato Megadrone": {
+        "category": "Throne", 
+        "modifier": [
+            "Monster Level: +10", 
+            "MP Regen Min: 10", 
+            "MP Regen Max: 15"
+        ], 
+        "name": "El Vibrato Megadrone"
+    }, 
+    "Topiary Skunk": {
+        "category": "Throne", 
+        "modifier": [
+            "Stench Damage: +15"
+        ], 
+        "name": "Topiary Skunk"
+    }, 
+    "Mini-Hipster": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10", 
+            "HP Regen Min: 10", 
+            "HP Regen Max: 15", 
+            "MP Regen Min: 8", 
+            "MP Regen Max: 10"
+        ], 
+        "name": "Mini-Hipster"
+    }, 
+    "Sugar Fruit Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2"
+        ], 
+        "name": "Sugar Fruit Fairy"
+    }, 
+    "Rockin' Robin": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +15"
+        ], 
+        "name": "Rockin' Robin"
+    }, 
+    "Leprechaun": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Leprechaun"
+    }, 
+    "Sabre-Toothed Lime": {
+        "category": "Throne", 
+        "modifier": [
+            "Moxie Percent: +15"
+        ], 
+        "name": "Sabre-Toothed Lime"
+    }, 
+    "Misshapen Animal Skeleton": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Misshapen Animal Skeleton"
+    }, 
+    "Sludgepuppy": {
+        "category": "Throne", 
+        "modifier": [
+            "Stench Damage: +15"
+        ], 
+        "name": "Sludgepuppy"
+    }, 
+    "Purse Rat": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience: +2"
+        ], 
+        "name": "Purse Rat"
+    }, 
+    "Happy Medium": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +25"
+        ], 
+        "name": "Happy Medium"
+    }, 
+    "Choctopus": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: 15", 
+            "Maximum MP: 15", 
+            "HP Regen Min: 3", 
+            "HP Regen Max: 5", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 5"
+        ], 
+        "name": "Choctopus"
+    }, 
+    "Puck Man": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Puck Man"
+    }, 
+    "Artistic Goth Kid": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10", 
+            "HP Regen Min: 10", 
+            "HP Regen Max: 20", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Artistic Goth Kid"
+    }, 
+    "Frumious Bandersnatch": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience: +2"
+        ], 
+        "name": "Frumious Bandersnatch"
+    }, 
+    "Adventurous Spelunker": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +15"
+        ], 
+        "name": "Adventurous Spelunker"
+    }, 
+    "Rogue Program": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Rogue Program"
+    }, 
+    "Pair of Stomping Boots": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage Percent: +10"
+        ], 
+        "name": "Pair of Stomping Boots"
+    }, 
+    "Wind-up Chattering Teeth": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "Wind-up Chattering Teeth"
+    }, 
+    "Teddy Borg": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Teddy Borg"
+    }, 
+    "Snowy Owl": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Snowy Owl"
+    }, 
+    "Imitation Crab": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "Imitation Crab"
+    }, 
+    "Hunchbacked Minion": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2"
+        ], 
+        "name": "Hunchbacked Minion"
+    }, 
+    "Spooky Pirate Skeleton": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Spooky Pirate Skeleton"
+    }, 
+    "Ancient Yuletide Troll": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Ancient Yuletide Troll"
+    }, 
+    "Mutant Fire Ant": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Damage: +20"
+        ], 
+        "name": "Mutant Fire Ant"
+    }, 
+    "Penguin Goodfella": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Penguin Goodfella"
+    }, 
+    "Grim Brother": {
+        "category": "Throne", 
+        "modifier": [
+            "Combat Rate: +5"
+        ], 
+        "name": "Grim Brother"
+    }, 
+    "Personal Raincloud": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Personal Raincloud"
+    }, 
+    "Reanimated Reanimator": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2"
+        ], 
+        "name": "Reanimated Reanimator"
+    }, 
+    "Animated Macaroni Duck": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Animated Macaroni Duck"
+    }, 
+    "Star Starfish": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Star Starfish"
+    }, 
+    "Machine Elf": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +7", 
+            "Mysticality: +7", 
+            "Moxie: +7"
+        ], 
+        "name": "Machine Elf"
+    }, 
+    "Bulky Buddy Box": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Bulky Buddy Box"
+    }, 
+    "Dancing Frog": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Dancing Frog"
+    }, 
+    "Mutant Cactus Bud": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Mutant Cactus Bud"
+    }, 
+    "Origami Towel Crane": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Origami Towel Crane"
+    }, 
+    "Grouper Groupie": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Grouper Groupie"
+    }, 
+    "Cotton Candy Carnie": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Cotton Candy Carnie"
+    }, 
+    "Stab Bat": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "Stab Bat"
+    }, 
+    "Reconstituted Crow": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Reconstituted Crow"
+    }, 
+    "Steam-Powered Cheerleader": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Steam-Powered Cheerleader"
+    }, 
+    "Angry Jung Man": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: 10", 
+            "Maximum MP: 10"
+        ], 
+        "name": "Angry Jung Man"
+    }, 
+    "Hobo Monkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +25"
+        ], 
+        "name": "Hobo Monkey"
+    }, 
+    "Teddy Bear": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Teddy Bear"
+    }, 
+    "He-Boulder": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "He-Boulder"
+    }, 
+    "Cheshire Bat": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2", 
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Cheshire Bat"
+    }, 
+    "Fuzzy Dice": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Fuzzy Dice"
+    }, 
+    "Black Cat": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: -10", 
+            "Mysticality: -10", 
+            "Moxie: -10"
+        ], 
+        "name": "Black Cat"
+    }, 
+    "Smiling Rat": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience: +3"
+        ], 
+        "name": "Smiling Rat"
+    }, 
+    "BRICKO chick": {
+        "category": "Throne", 
+        "modifier": [
+            " Muscle Percent: +10", 
+            "Mysticality Percent: +10", 
+            "Moxie Percent: +10"
+        ], 
+        "name": "BRICKO chick"
+    }, 
+    "Gelatinous Cubeling": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Gelatinous Cubeling"
+    }, 
+    "Reagnimated Gnome": {
+        "category": "Throne", 
+        "modifier": [
+            "Spooky Damage: +15"
+        ], 
+        "name": "Reagnimated Gnome"
+    }, 
+    "Angry Goat": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "Angry Goat"
+    }, 
+    "Hovering Skull": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2"
+        ], 
+        "name": "Hovering Skull"
+    }, 
+    "Casagnova Gnome": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20", 
+            "HP Regen Min: 16", 
+            "HP Regen Max: 20", 
+            "MP Regen Min: 9", 
+            "MP Regen Max: 11"
+        ], 
+        "name": "Casagnova Gnome"
+    }, 
+    "RoboGoose": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "RoboGoose"
+    }, 
+    "Putty Buddy": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage Percent: +20", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Putty Buddy"
+    }, 
+    "Dramatic Hedgehog": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2", 
+            "HP Regen Min: 2", 
+            "HP Regen Max: 3"
+        ], 
+        "name": "Dramatic Hedgehog"
+    }, 
+    "Autonomous Disco Ball": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Autonomous Disco Ball"
+    }, 
+    "Spooky Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Spooky Damage: +20"
+        ], 
+        "name": "Spooky Gravy Fairy"
+    }, 
+    "Golden Monkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +25"
+        ], 
+        "name": "Golden Monkey"
+    }, 
+    "Dandy Lion": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Dandy Lion"
+    }, 
+    "Holiday Log": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Holiday Log"
+    }, 
+    "Stinky Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Stench Damage: +20"
+        ], 
+        "name": "Stinky Gravy Fairy"
+    }, 
+    "Hanukkimbo Dreidl": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Hanukkimbo Dreidl"
+    }, 
+    "Gluttonous Green Ghost": {
+        "category": "Throne", 
+        "modifier": [
+            "Food Drop: +15"
+        ], 
+        "name": "Gluttonous Green Ghost"
+    }, 
+    "Ninja Snowflake": {
+        "category": "Throne", 
+        "modifier": [
+            "Moxie Percent: +15", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Ninja Snowflake"
+    }, 
+    "Coffee Pixie": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Coffee Pixie"
+    }, 
+    "Slimeling": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Drop: +15"
+        ], 
+        "name": "Slimeling"
+    }, 
+    "Twitching Space Critter": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Twitching Space Critter"
+    }, 
+    "Stocking Mimic": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Stocking Mimic"
+    }, 
+    "Blood-Faced Volleyball": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2"
+        ], 
+        "name": "Blood-Faced Volleyball"
+    }, 
+    "Adorable Space Buddy": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: 30", 
+            "Maximum MP: 30", 
+            "MP Regen Min: 10", 
+            "MP Regen Max: 12"
+        ], 
+        "name": "Adorable Space Buddy"
+    }, 
+    "Underworld Bonsai": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Underworld Bonsai"
+    }, 
+    "Crimbo P. R. E. S. S. I. E.": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Crimbo P. R. E. S. S. I. E."
+    }, 
+    "Cocoabo": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Cocoabo"
+    }, 
+    "Green Pixie": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Green Pixie"
+    }, 
+    "Pair of Ragged Claws": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Pair of Ragged Claws"
+    }, 
+    "Reassembled Blackbird": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Reassembled Blackbird"
+    }, 
+    "Howling Balloon Monkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Howling Balloon Monkey"
+    }, 
+    "MagiMechTech MicroMechaMech": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "MagiMechTech MicroMechaMech"
+    }, 
+    "Magic Dragonfish": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +15", 
+            "HP Regen Min: 10", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Magic Dragonfish"
+    }, 
+    "Mini-Skulldozer": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Mini-Skulldozer"
+    }, 
+    "Wild Hare": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Wild Hare"
+    }, 
+    "Astral Badger": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Astral Badger"
+    }, 
+    "Spirit Hobo": {
+        "category": "Throne", 
+        "modifier": [
+            "Booze Drop: +15"
+        ], 
+        "name": "Spirit Hobo"
+    }, 
+    "Syncopated Turtle": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Syncopated Turtle"
+    }, 
+    "Feral Kobold": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +15"
+        ], 
+        "name": "Feral Kobold"
+    }, 
+    "Hand Turkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Hand Turkey"
+    }, 
+    "Galloping Grill": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Galloping Grill"
+    }, 
+    "Psychedelic Bear": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Psychedelic Bear"
+    }, 
+    "Baby Sandworm": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Baby Sandworm"
+    }, 
+    "Warbear Drone": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Warbear Drone"
+    }, 
+    "Cuddlefish": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Cuddlefish"
+    }, 
+    "Blavious Kloop": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Blavious Kloop"
+    }, 
+    "Ninja Pirate Zombie Robot": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10", 
+            "HP Regen Min: 10", 
+            "HP Regen Max: 15", 
+            "MP Regen Min: 8", 
+            "MP Regen Max: 10"
+        ], 
+        "name": "Ninja Pirate Zombie Robot"
+    }, 
+    "Bloovian Groose": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10"
+        ], 
+        "name": "Bloovian Groose"
+    }, 
+    "Obtuse Angel": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Obtuse Angel"
+    }, 
+    "Hovering Sombrero": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2"
+        ], 
+        "name": "Hovering Sombrero"
+    }, 
+    "Wizard Action Figure": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 5"
+        ], 
+        "name": "Wizard Action Figure"
+    }, 
+    "Scary Death Orb": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Scary Death Orb"
+    }, 
+    "Flaming Face": {
+        "category": "Throne", 
+        "modifier": [
+            "Cold Resistance: +3"
+        ], 
+        "name": "Flaming Face"
+    }, 
+    "Lil' Barrel Mimic": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience: +2"
+        ], 
+        "name": "Lil' Barrel Mimic"
+    }, 
+    "Squamous Gibberer": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Squamous Gibberer"
+    }, 
+    "Temporal Riftlet": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Temporal Riftlet"
+    }, 
+    "Pet Cheezling": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +15", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 15", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Pet Cheezling"
+    }, 
+    "Pottery Barn Owl": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Damage: +10"
+        ], 
+        "name": "Pottery Barn Owl"
+    }, 
+    "Baby Mutant Rattlesnake": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2"
+        ], 
+        "name": "Baby Mutant Rattlesnake"
+    }, 
+    "Pet Rock": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Pet Rock"
+    }, 
+    "Mutant Gila Monster": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Mutant Gila Monster"
+    }, 
+    "Li'l Xenomorph": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +15"
+        ], 
+        "name": "Li'l Xenomorph"
+    }, 
+    "Midget Clownfish": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Midget Clownfish"
+    }, 
+    "Barrrnacle": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Barrrnacle"
+    }, 
+    "Ms. Puck Man": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Ms. Puck Man"
+    }, 
+    "Jack-in-the-Box": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience: +2"
+        ], 
+        "name": "Jack-in-the-Box"
+    }, 
+    "Uniclops": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2"
+        ], 
+        "name": "Uniclops"
+    }, 
+    "Mini-Crimbot": {
+        "category": "Throne", 
+        "modifier": [
+            "Cold Damage: +15"
+        ], 
+        "name": "Mini-Crimbot"
+    }, 
+    "Llama Lama": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: +10", 
+            "Maximum MP: +10", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Llama Lama"
+    }, 
+    "Dataspider": {
+        "category": "Throne", 
+        "modifier": [
+            "MP Regen Min: 3", 
+            "MP Regen Max: 5", 
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Dataspider"
+    }, 
+    "Mariachi Chihuahua": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2"
+        ], 
+        "name": "Mariachi Chihuahua"
+    }, 
+    "Baby Yeti": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Baby Yeti"
+    }, 
+    "Fist Turkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage: +20"
+        ], 
+        "name": "Fist Turkey"
+    }, 
+    "Baby Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage: +10", 
+            "HP Regen Min: 3", 
+            "HP Regen Max: 5", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 5"
+        ], 
+        "name": "Baby Gravy Fairy"
+    }, 
+    "Restless Cow Skull": {
+        "category": "Throne", 
+        "modifier": [
+            "Spooky Damage: +15"
+        ], 
+        "name": "Restless Cow Skull"
+    }, 
+    "Wereturtle": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "Wereturtle"
+    }, 
+    "Baby Bugged Bugbear": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: -10", 
+            "Mysticality: -10", 
+            "Moxie: -10", 
+            "Experience: +2"
+        ], 
+        "name": "Baby Bugged Bugbear"
+    }, 
+    "Unconscious Collective": {
+        "category": "Throne", 
+        "modifier": [
+            "Maximum HP: 10", 
+            "Maximum MP: 10"
+        ], 
+        "name": "Unconscious Collective"
+    }, 
+    "Crimbo Elf": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage: +10"
+        ], 
+        "name": "Crimbo Elf"
+    }, 
+    "Oily Woim": {
+        "category": "Throne", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Oily Woim"
+    }, 
+    "Snow Angel": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Snow Angel"
+    }, 
+    "Evil Teddy Bear": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Evil Teddy Bear"
+    }, 
+    "Untamed Turtle": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20"
+        ], 
+        "name": "Untamed Turtle"
+    }, 
+    "Knob Goblin Organ Grinder": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +25"
+        ], 
+        "name": "Knob Goblin Organ Grinder"
+    }, 
+    "Nanorhino": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +10", 
+            "Mysticality Percent: +10", 
+            "Moxie Percent: +10"
+        ], 
+        "name": "Nanorhino"
+    }, 
+    "Robot Reindeer": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Robot Reindeer"
+    }, 
+    "Peppermint Rhino": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage Percent: +10", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Peppermint Rhino"
+    }, 
+    "O.A.F.": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: -10", 
+            "Mysticality: -10", 
+            "Moxie: -10"
+        ], 
+        "name": "O.A.F."
+    }, 
+    "Jitterbug": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Jitterbug"
+    }, 
+    "Clockwork Grapefruit": {
+        "category": "Throne", 
+        "modifier": [
+            "Moxie Percent: +15"
+        ], 
+        "name": "Clockwork Grapefruit"
+    }, 
+    "Urchin Urchin": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage: +10"
+        ], 
+        "name": "Urchin Urchin"
+    }, 
+    "Grinning Turtle": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2"
+        ], 
+        "name": "Grinning Turtle"
+    }, 
+    "MiniMechaElf": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: +15"
+        ], 
+        "name": "MiniMechaElf"
+    }, 
+    "Feather Boa Constrictor": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Feather Boa Constrictor"
+    }, 
+    "Sleazy Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Sleaze Damage: +20"
+        ], 
+        "name": "Sleazy Gravy Fairy"
+    }, 
+    "Grimstone Golem": {
+        "category": "Throne", 
+        "modifier": [
+            "Combat Rate: -5"
+        ], 
+        "name": "Grimstone Golem"
+    }, 
+    "Pygmy Bugbear Shaman": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Mysticality): +2", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Pygmy Bugbear Shaman"
+    }, 
+    "Baby Z-Rex": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2"
+        ], 
+        "name": "Baby Z-Rex"
+    }, 
+    "Flaming Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Damage: +20"
+        ], 
+        "name": "Flaming Gravy Fairy"
+    }, 
+    "Crimbo Shrub": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Crimbo Shrub"
+    }, 
+    "Sweet Nutcracker": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Sweet Nutcracker"
+    }, 
+    "Nosy Nose": {
+        "category": "Throne", 
+        "modifier": [
+            "Moxie Percent: 15"
+        ], 
+        "name": "Nosy Nose"
+    }, 
+    "Levitating Potato": {
+        "category": "Throne", 
+        "modifier": [
+            "Initiative: +20", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 3", 
+            "MP Regen Max: 4"
+        ], 
+        "name": "Levitating Potato"
+    }, 
+    "Tickle-Me Emilio": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Tickle-Me Emilio"
+    }, 
+    "Cymbal-Playing Monkey": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2"
+        ], 
+        "name": "Cymbal-Playing Monkey"
+    }, 
+    "Piano Cat": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Piano Cat"
+    }, 
+    "Jill-O-Lantern": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2", 
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Jill-O-Lantern"
+    }, 
+    "Hippo Ballerina": {
+        "category": "Throne", 
+        "modifier": [
+            "Meat Drop: +20"
+        ], 
+        "name": "Hippo Ballerina"
+    }, 
+    "Mosquito": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage Percent: +20", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Mosquito"
+    }, 
+    "Mini-Adventurer": {
+        "category": "Throne", 
+        "modifier": [
+            "Muscle Percent: 10", 
+            "Mysticality Percent: 10", 
+            "Moxie Percent: 10"
+        ], 
+        "name": "Mini-Adventurer"
+    }, 
+    "Ragamuffin Imp": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15"
+        ], 
+        "name": "Ragamuffin Imp"
+    }, 
+    "Ghost Pickle on a Stick": {
+        "category": "Throne", 
+        "modifier": [
+            "Familiar Weight: +5", 
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Ghost Pickle on a Stick"
+    }, 
+    "Rock Lobster": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +15", 
+            "MP Regen Min: 11", 
+            "MP Regen Max: 15"
+        ], 
+        "name": "Rock Lobster"
+    }, 
+    "Inflatable Dodecapede": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15"
+        ], 
+        "name": "Inflatable Dodecapede"
+    }, 
+    "Chauvinist Pig": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2"
+        ], 
+        "name": "Chauvinist Pig"
+    }, 
+    "Grue": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15"
+        ], 
+        "name": "Grue"
+    }, 
+    "Jumpsuited Hound Dog": {
+        "category": "Throne", 
+        "modifier": [
+            "Weapon Damage: +20", 
+            "HP Regen Min: 4", 
+            "HP Regen Max: 10", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 10"
+        ], 
+        "name": "Jumpsuited Hound Dog"
+    }, 
+    "Toothsome Rock": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Toothsome Rock"
+    }, 
+    "Mechanical Songbird": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: 20", 
+            "HP Regen Min: 5", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Mechanical Songbird"
+    }, 
+    "Killer Bee": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Muscle): +2", 
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Killer Bee"
+    }, 
+    "Whirling Maple Leaf": {
+        "category": "Throne", 
+        "modifier": [
+            "Spell Damage Percent: +10"
+        ], 
+        "name": "Whirling Maple Leaf"
+    }, 
+    "Ghuol Whelp": {
+        "category": "Throne", 
+        "modifier": [
+            "HP Regen Min: 2", 
+            "HP Regen Max: 8", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 8"
+        ], 
+        "name": "Ghuol Whelp"
+    }, 
+    "Frozen Gravy Fairy": {
+        "category": "Throne", 
+        "modifier": [
+            "Cold Damage: +20"
+        ], 
+        "name": "Frozen Gravy Fairy"
+    }, 
+    "Nervous Tick": {
+        "category": "Throne", 
+        "modifier": [
+            "Experience (Moxie): +2", 
+            "HP Regen Min: 8", 
+            "HP Regen Max: 10"
+        ], 
+        "name": "Nervous Tick"
+    }, 
+    "Exotic Parrot": {
+        "category": "Throne", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Exotic Parrot"
+    }, 
+    "Baby Mayonnaise Wasp": {
+        "category": "Throne", 
+        "modifier": [
+            "Mysticality Percent: +15"
+        ], 
+        "name": "Baby Mayonnaise Wasp"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "goatee": {
+        "category": "Snowsuit", 
+        "modifier": [
+            "HP Regen Min: 1", 
+            "HP Regen Max: 20"
+        ], 
+        "name": "goatee"
+    }, 
+    "hat": {
+        "category": "Snowsuit", 
+        "modifier": [
+            "MP Regen Min: 1", 
+            "MP Regen Max: 10"
+        ], 
+        "name": "hat"
+    }, 
+    "nose": {
+        "category": "Snowsuit", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "nose"
+    }
+}

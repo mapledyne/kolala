@@ -1,0 +1,842 @@
+{
+    "Cursed Zombie Pirate Costume": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +30"
+        ], 
+        "name": "Cursed Zombie Pirate Costume"
+    }, 
+    "Bow Tux": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +5"
+        ], 
+        "name": "Bow Tux"
+    }, 
+    "Uncle Hobo's Rags": {
+        "category": "Outfit", 
+        "modifier": [
+            "Candy Drop: +15"
+        ], 
+        "name": "Uncle Hobo's Rags"
+    }, 
+    "Dyspepsi-Cola Uniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "MP Regen Min: 1", 
+            "MP Regen Max: 3"
+        ], 
+        "name": "Dyspepsi-Cola Uniform"
+    }, 
+    "eXtreme Cold-Weather Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Resistance: +5"
+        ], 
+        "name": "eXtreme Cold-Weather Gear"
+    }, 
+    "War Hippy Fatigues": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Damage: +15"
+        ], 
+        "name": "War Hippy Fatigues"
+    }, 
+    "Floaty Fatigues": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spell Critical Percent: +10"
+        ], 
+        "name": "Floaty Fatigues"
+    }, 
+    "Crimbo Duds": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +5"
+        ], 
+        "name": "Crimbo Duds"
+    }, 
+    "Cloaca-Cola Uniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "MP Regen Min: 1", 
+            "MP Regen Max: 3"
+        ], 
+        "name": "Cloaca-Cola Uniform"
+    }, 
+    "Workoutfit": {
+        "category": "Outfit", 
+        "modifier": [
+            "PvP Fights: +2"
+        ], 
+        "name": "Workoutfit"
+    }, 
+    "Crimbot Crimboutfit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Crimbot Outfit Power: +3"
+        ], 
+        "name": "Crimbot Crimboutfit"
+    }, 
+    "Antique Arms and Armor": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 5", 
+            "Muscle: +15", 
+            "Initiative: -10"
+        ], 
+        "name": "Antique Arms and Armor"
+    }, 
+    "Tapered Threads": {
+        "category": "Outfit", 
+        "modifier": [
+            "Initiative: +30"
+        ], 
+        "name": "Tapered Threads"
+    }, 
+    "Pinata Provisions": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 15"
+        ], 
+        "name": "Pinata Provisions"
+    }, 
+    "Ghast Iron Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +20", 
+            "Hot Damage: +20"
+        ], 
+        "name": "Ghast Iron Gear"
+    }, 
+    "Oil Rig": {
+        "category": "Outfit", 
+        "modifier": [
+            "Initiative: +30"
+        ], 
+        "name": "Oil Rig"
+    }, 
+    "Hyperborean Hobo Habiliments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Damage: +50"
+        ], 
+        "name": "Hyperborean Hobo Habiliments"
+    }, 
+    "Space Beast Furs": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 25"
+        ], 
+        "name": "Space Beast Furs"
+    }, 
+    "Seafaring Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Initiative: +100"
+        ], 
+        "name": "Seafaring Suit"
+    }, 
+    "Dreadful Bugbear Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Damage: +50", 
+            "Hot Spell Damage: +50"
+        ], 
+        "name": "Dreadful Bugbear Suit"
+    }, 
+    "Sucker Samurai Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 10"
+        ], 
+        "name": "Sucker Samurai Suit"
+    }, 
+    "Black Armaments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +6"
+        ], 
+        "name": "Black Armaments"
+    }, 
+    "Topiaria": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Resistance: +2", 
+            "Cold Resistance: +2", 
+            "Stench Resistance: +2", 
+            "Spooky Resistance: +2", 
+            "Sleaze Resistance: +2"
+        ], 
+        "name": "Topiaria"
+    }, 
+    "Bits o' Honey": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +5"
+        ], 
+        "name": "Bits o' Honey"
+    }, 
+    "Mer-kin Gladiatorial Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Critical Hit Percent: +3"
+        ], 
+        "name": "Mer-kin Gladiatorial Gear"
+    }, 
+    "Brogre Brouture": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +50"
+        ], 
+        "name": "Brogre Brouture"
+    }, 
+    "Unblemished Uniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +10", 
+            "Mysticality Percent: +10", 
+            "Moxie Percent: +10"
+        ], 
+        "name": "Unblemished Uniform"
+    }, 
+    "Animelf Apparel": {
+        "category": "Outfit", 
+        "modifier": [
+            "HP Regen Min: 4", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 2", 
+            "MP Regen Max: 3"
+        ], 
+        "name": "Animelf Apparel"
+    }, 
+    "Wicker Wear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +15", 
+            "Mysticality Percent: +15", 
+            "Moxie Percent: +15"
+        ], 
+        "name": "Wicker Wear"
+    }, 
+    "Bounty-Hunting Rig": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +15"
+        ], 
+        "name": "Bounty-Hunting Rig"
+    }, 
+    "Dreadful Skeleton Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Sleaze Damage: +50", 
+            "Sleaze Spell Damage: +50"
+        ], 
+        "name": "Dreadful Skeleton Suit"
+    }, 
+    "Gnauga Hides": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 3"
+        ], 
+        "name": "Gnauga Hides"
+    }, 
+    "Roy Orbison Disguise": {
+        "category": "Outfit", 
+        "modifier": [
+            "Moxie: +15"
+        ], 
+        "name": "Roy Orbison Disguise"
+    }, 
+    "Ceramic Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Resistance: +5", 
+            "Cold Resistance: +5", 
+            "Stench Resistance: +5", 
+            "Spooky Resistance: +5", 
+            "Sleaze Resistance: +5"
+        ], 
+        "name": "Ceramic Suit"
+    }, 
+    "Bugbear Costume": {
+        "category": "Outfit", 
+        "modifier": [
+            "Mysticality: +3", 
+            "Spell Damage: +3"
+        ], 
+        "name": "Bugbear Costume"
+    }, 
+    "Hot and Cold Running Ninja Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Resistance: +2", 
+            "Hot Resistance: +2"
+        ], 
+        "name": "Hot and Cold Running Ninja Suit"
+    }, 
+    "Encephalic Ensemble": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +5"
+        ], 
+        "name": "Encephalic Ensemble"
+    }, 
+    "Mining Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Meat Drop: +5"
+        ], 
+        "name": "Mining Gear"
+    }, 
+    "Dreadful Ghost Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +50", 
+            "Spooky Spell Damage: +50"
+        ], 
+        "name": "Dreadful Ghost Suit"
+    }, 
+    "Toxic Togs": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Damage: +20", 
+            "Stench Spell Damage: +20"
+        ], 
+        "name": "Toxic Togs"
+    }, 
+    "Filthy Hippy Disguise": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Damage: +5"
+        ], 
+        "name": "Filthy Hippy Disguise"
+    }, 
+    "Violent Vestments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +15", 
+            "Mysticality Percent: +15", 
+            "Moxie Percent: +15"
+        ], 
+        "name": "Violent Vestments"
+    }, 
+    "Grimy Reaper's Vestments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +100", 
+            "Spooky Spell Damage: +100"
+        ], 
+        "name": "Grimy Reaper's Vestments"
+    }, 
+    "Cold Comforts": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Damage: +30", 
+            "Cold Spell Damage: +30"
+        ], 
+        "name": "Cold Comforts"
+    }, 
+    "BRICKOfig Outfit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "BRICKOfig Outfit"
+    }, 
+    "Snowman Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Damage: +15"
+        ], 
+        "name": "Snowman Suit"
+    }, 
+    "Xiblaxian Stealth Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +10", 
+            "Mysticality Percent: +10", 
+            "Moxie Percent: +10"
+        ], 
+        "name": "Xiblaxian Stealth Suit"
+    }, 
+    "The Jokester's Costume": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +25", 
+            "Meat Drop: +50"
+        ], 
+        "name": "The Jokester's Costume"
+    }, 
+    "Hodgman's Regal Frippery": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hobo Power: +25"
+        ], 
+        "name": "Hodgman's Regal Frippery"
+    }, 
+    "Pyretic Panhandler Paraphernalia": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Spell Damage: +40", 
+            "MP Regen Min: 20", 
+            "MP Regen Max: 30"
+        ], 
+        "name": "Pyretic Panhandler Paraphernalia"
+    }, 
+    "Cooper's Couture": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 10"
+        ], 
+        "name": "Cooper's Couture"
+    }, 
+    "Knob Goblin Elite Guard Uniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +7"
+        ], 
+        "name": "Knob Goblin Elite Guard Uniform"
+    }, 
+    "Grass Guise": {
+        "category": "Outfit", 
+        "modifier": [
+            "HP Regen Min: 1", 
+            "HP Regen Max: 3"
+        ], 
+        "name": "Grass Guise"
+    }, 
+    "Wax Wardrobe": {
+        "category": "Outfit", 
+        "modifier": [
+            "Moxie: +7"
+        ], 
+        "name": "Wax Wardrobe"
+    }, 
+    "8-Bit Finery": {
+        "category": "Outfit", 
+        "modifier": [
+            "Initiative: +25"
+        ], 
+        "name": "8-Bit Finery"
+    }, 
+    "Warbear Dress Armor": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Warbear Dress Armor"
+    }, 
+    "OK Lumberjack Outfit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Critical Hit Percent: +10"
+        ], 
+        "name": "OK Lumberjack Outfit"
+    }, 
+    "Star Garb": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +7", 
+            "Mysticality: +7", 
+            "Moxie: +7"
+        ], 
+        "name": "Star Garb"
+    }, 
+    "Raiments of the Final Boss": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +10", 
+            "Mysticality Percent: +10", 
+            "Moxie Percent: +10"
+        ], 
+        "name": "Raiments of the Final Boss"
+    }, 
+    "Pork Elf Prizes": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +10"
+        ], 
+        "name": "Pork Elf Prizes"
+    }, 
+    "Time Trappings": {
+        "category": "Outfit", 
+        "modifier": [
+            "Adventures: +3"
+        ], 
+        "name": "Time Trappings"
+    }, 
+    "Luniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "Weapon Damage Percent: +25", 
+            "Spell Damage Percent: +25"
+        ], 
+        "name": "Luniform"
+    }, 
+    "Swashbuckling Getup": {
+        "category": "Outfit", 
+        "modifier": [
+            "Moxie: +7", 
+            "Look like a Pirate"
+        ], 
+        "name": "Swashbuckling Getup"
+    }, 
+    "Knight's Armor": {
+        "category": "Outfit", 
+        "modifier": [
+            "Pickpocket Chance: +10"
+        ], 
+        "name": "Knight's Armor"
+    }, 
+    "Dire Drifter Duds": {
+        "category": "Outfit", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Dire Drifter Duds"
+    }, 
+    "Terrifying Clown Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +5"
+        ], 
+        "name": "Terrifying Clown Suit"
+    }, 
+    "Tawdry Tramp Togs": {
+        "category": "Outfit", 
+        "modifier": [
+            "DB Combat Damage: +20"
+        ], 
+        "name": "Tawdry Tramp Togs"
+    }, 
+    "Dreadful Vampire Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Damage: +50", 
+            "Cold Spell Damage: +50"
+        ], 
+        "name": "Dreadful Vampire Suit"
+    }, 
+    "Tropical Crimbo Duds": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +10", 
+            "Mysticality: +10", 
+            "Moxie: +10"
+        ], 
+        "name": "Tropical Crimbo Duds"
+    }, 
+    "Spelunker's Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Critical Hit Percent: +15"
+        ], 
+        "name": "Spelunker's Gear"
+    }, 
+    "Radio Free Regalia": {
+        "category": "Outfit", 
+        "modifier": [
+            "Never Fumble"
+        ], 
+        "name": "Radio Free Regalia"
+    }, 
+    "Bakelite Brigandine": {
+        "category": "Outfit", 
+        "modifier": [
+            "Item Drop: +20"
+        ], 
+        "name": "Bakelite Brigandine"
+    }, 
+    "Frat Boy Ensemble": {
+        "category": "Outfit", 
+        "modifier": [
+            "Sleaze Damage: +5"
+        ], 
+        "name": "Frat Boy Ensemble"
+    }, 
+    "Legendary Regalia of the Groovelord": {
+        "category": "Outfit", 
+        "modifier": [
+            "Initiative: +50"
+        ], 
+        "name": "Legendary Regalia of the Groovelord"
+    }, 
+    "Cool Irons": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 20"
+        ], 
+        "name": "Cool Irons"
+    }, 
+    "Dreadful Zombie Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Damage: +50", 
+            "Stench Spell Damage: +50"
+        ], 
+        "name": "Dreadful Zombie Suit"
+    }, 
+    "Legendary Regalia of the Master Squeezeboxer": {
+        "category": "Outfit", 
+        "modifier": [
+            "Pickpocket Chance: +50"
+        ], 
+        "name": "Legendary Regalia of the Master Squeezeboxer"
+    }, 
+    "Blasphemous Bedizenment": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +30", 
+            "Mysticality Percent: +30", 
+            "Moxie Percent: +30"
+        ], 
+        "name": "Blasphemous Bedizenment"
+    }, 
+    "Arrrbor Day Apparrrrrel": {
+        "category": "Outfit", 
+        "modifier": [
+            "HP Regen Min: 10", 
+            "HP Regen Max: 15"
+        ], 
+        "name": "Arrrbor Day Apparrrrrel"
+    }, 
+    "Frat Warrior Fatigues": {
+        "category": "Outfit", 
+        "modifier": [
+            "Sleaze Damage: +15"
+        ], 
+        "name": "Frat Warrior Fatigues"
+    }, 
+    "Crappy Mer-kin Disguise": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +30", 
+            "Mysticality: +30", 
+            "Moxie: +30"
+        ], 
+        "name": "Crappy Mer-kin Disguise"
+    }, 
+    "Fancy Tux": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +15", 
+            "Mysticality Percent: +15", 
+            "Moxie Percent: +15"
+        ], 
+        "name": "Fancy Tux"
+    }, 
+    "Slimesuit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Resistance: +3", 
+            "Cold Resistance: +3", 
+            "Stench Resistance: +3", 
+            "Spooky Resistance: +3", 
+            "Sleaze Resistance: +3"
+        ], 
+        "name": "Slimesuit"
+    }, 
+    "Vestments of the Treeslayer": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 5"
+        ], 
+        "name": "Vestments of the Treeslayer"
+    }, 
+    "Synthetic Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Familiar Weight: +5"
+        ], 
+        "name": "Synthetic Suit"
+    }, 
+    "Furry Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Moxie Percent: -75", 
+            "Monster Level: +5"
+        ], 
+        "name": "Furry Suit"
+    }, 
+    "Hot Daub Ensemble": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Resistance: +3"
+        ], 
+        "name": "Hot Daub Ensemble"
+    }, 
+    "Gladiatorial Glad Rags": {
+        "category": "Outfit", 
+        "modifier": [
+            "Adventures: +6"
+        ], 
+        "name": "Gladiatorial Glad Rags"
+    }, 
+    "Legendary Regalia of the Chelonian Overlord": {
+        "category": "Outfit", 
+        "modifier": [
+            "Experience (familiar): +1"
+        ], 
+        "name": "Legendary Regalia of the Chelonian Overlord"
+    }, 
+    "Smoked Pottery": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Damage: +15"
+        ], 
+        "name": "Smoked Pottery"
+    }, 
+    "Frigid Northlands Garb": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Resistance: +3"
+        ], 
+        "name": "Frigid Northlands Garb"
+    }, 
+    "Dreadful Werewolf Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Weapon Damage: +50", 
+            "Spell Damage: +50"
+        ], 
+        "name": "Dreadful Werewolf Suit"
+    }, 
+    "Mer-kin Scholar's Vestments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spell Critical Percent: +10"
+        ], 
+        "name": "Mer-kin Scholar's Vestments"
+    }, 
+    "Terrycloth Tackle": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Absorption: +30"
+        ], 
+        "name": "Terrycloth Tackle"
+    }, 
+    "Crimborg Assault Armor": {
+        "category": "Outfit", 
+        "modifier": [
+            "Ranged Damage: +20"
+        ], 
+        "name": "Crimborg Assault Armor"
+    }, 
+    "Palmist Paraphernalia": {
+        "category": "Outfit", 
+        "modifier": [
+            "Moxie: +7"
+        ], 
+        "name": "Palmist Paraphernalia"
+    }, 
+    "Wumpus-Hair Wardrobe": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +10", 
+            "Stench Damage: +10", 
+            "Hot Damage: +10", 
+            "Cold Damage: +10", 
+            "Sleaze Damage: +10"
+        ], 
+        "name": "Wumpus-Hair Wardrobe"
+    }, 
+    "Transparent Trappings": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +20", 
+            "Mysticality Percent: +20", 
+            "Moxie Percent: +20"
+        ], 
+        "name": "Transparent Trappings"
+    }, 
+    "Dark Bro's Vestments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Spell Damage: +40"
+        ], 
+        "name": "Dark Bro's Vestments"
+    }, 
+    "Primitive Radio Duds": {
+        "category": "Outfit", 
+        "modifier": [
+            "Hot Resistance: +1", 
+            "Cold Resistance: +1", 
+            "Stench Resistance: +1", 
+            "Spooky Resistance: +1", 
+            "Sleaze Resistance: +1"
+        ], 
+        "name": "Primitive Radio Duds"
+    }, 
+    "Hateful Habiliment": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle Percent: +15", 
+            "Mysticality Percent: +15", 
+            "Moxie Percent: +15"
+        ], 
+        "name": "Hateful Habiliment"
+    }, 
+    "1000th Birthday Suit": {
+        "category": "Outfit", 
+        "modifier": [
+            "Spooky Damage: +15"
+        ], 
+        "name": "1000th Birthday Suit"
+    }, 
+    "High-Radiation Mining Gear": {
+        "category": "Outfit", 
+        "modifier": [
+            "Cold Resistance: +3"
+        ], 
+        "name": "High-Radiation Mining Gear"
+    }, 
+    "Knob Goblin Harem Girl Disguise": {
+        "category": "Outfit", 
+        "modifier": [
+            "Sleaze Damage: +3"
+        ], 
+        "name": "Knob Goblin Harem Girl Disguise"
+    }, 
+    "Glad Bag Glad Rags": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Damage: +5", 
+            "Sleaze Damage: +5", 
+            "Mysticality: +10", 
+            "Moxie: +10", 
+            "Initiative: +10"
+        ], 
+        "name": "Glad Bag Glad Rags"
+    }, 
+    "Dwarvish War Uniform": {
+        "category": "Outfit", 
+        "modifier": [
+            "Damage Reduction: 10"
+        ], 
+        "name": "Dwarvish War Uniform"
+    }, 
+    "Arboreal Raiment": {
+        "category": "Outfit", 
+        "modifier": [
+            "Stench Resistance: +3"
+        ], 
+        "name": "Arboreal Raiment"
+    }, 
+    "Vile Vagrant Vestments": {
+        "category": "Outfit", 
+        "modifier": [
+            "Mana Cost (stackable): -5"
+        ], 
+        "name": "Vile Vagrant Vestments"
+    }, 
+    "Dinsey's Exoskeleton": {
+        "category": "Outfit", 
+        "modifier": [
+            "Muscle: +100", 
+            "Mysticality: +100", 
+            "Moxie: +100"
+        ], 
+        "name": "Dinsey's Exoskeleton"
+    }
+}

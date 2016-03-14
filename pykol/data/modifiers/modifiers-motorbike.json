@@ -1,0 +1,33 @@
+{
+    "Massage Seat": {
+        "category": "Motorbike", 
+        "modifier": [
+            "HP Regen Min: 5", 
+            "HP Regen Max: 6", 
+            "MP Regen Min: 5", 
+            "MP Regen Max: 6"
+        ], 
+        "name": "Massage Seat"
+    }, 
+    "Sissy Bar": {
+        "category": "Motorbike", 
+        "modifier": [
+            "Monster Level: -30"
+        ], 
+        "name": "Sissy Bar"
+    }, 
+    "Nitro-Burnin' Funny Tank": {
+        "category": "Motorbike", 
+        "modifier": [
+            "Initiative: +50"
+        ], 
+        "name": "Nitro-Burnin' Funny Tank"
+    }, 
+    "Sweepy Red Light": {
+        "category": "Motorbike", 
+        "modifier": [
+            "Experience: +5"
+        ], 
+        "name": "Sweepy Red Light"
+    }
+}

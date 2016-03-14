@@ -1,0 +1,23 @@
+{
+    "Mysticality Day": {
+        "category": "StatDay", 
+        "modifier": [
+            "Experience Percent (Mysticality): +25"
+        ], 
+        "name": "Mysticality Day"
+    }, 
+    "Moxie Day": {
+        "category": "StatDay", 
+        "modifier": [
+            "Experience Percent (Moxie): +25"
+        ], 
+        "name": "Moxie Day"
+    }, 
+    "Muscle Day": {
+        "category": "StatDay", 
+        "modifier": [
+            "Experience Percent (Muscle): +25"
+        ], 
+        "name": "Muscle Day"
+    }
+}

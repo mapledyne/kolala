@@ -1,0 +1,26 @@
+{
+    "Clancy's sackbut": {
+        "category": "Clancy", 
+        "modifier": [
+            "HP Regen Min: [C]", 
+            "HP Regen Max: [C*2]", 
+            "MP Regen Min: [C]", 
+            "MP Regen Max: [C*2]"
+        ], 
+        "name": "Clancy's sackbut"
+    }, 
+    "Clancy's lute": {
+        "category": "Clancy", 
+        "modifier": [
+            "Fairy: [5*C]"
+        ], 
+        "name": "Clancy's lute"
+    }, 
+    "Clancy's crumhorn": {
+        "category": "Clancy", 
+        "modifier": [
+            "Volleyball: [5*C]"
+        ], 
+        "name": "Clancy's crumhorn"
+    }
+}

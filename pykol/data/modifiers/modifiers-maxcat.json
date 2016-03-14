@@ -1,0 +1,61 @@
+{
+    "_smithsness": {
+        "category": "MaxCat", 
+        "modifier": [
+            "Meat Drop: +2", 
+            "Item Drop: +1", 
+            "Moxie Percent: +2", 
+            "Mysticality Percent: +2", 
+            "Muscle Percent: +2", 
+            "Weapon Damage: +1", 
+            "Monster Level: +1", 
+            "Spell Damage: +2", 
+            "Initiative: +1", 
+            "Maximum MP: +2", 
+            "Maximum HP: +2"
+        ], 
+        "name": "_smithsness"
+    }, 
+    "_brimstone": {
+        "category": "MaxCat", 
+        "modifier": [
+            "Item Drop: +1", 
+            "Meat Drop: +1", 
+            "Monster Level: +1"
+        ], 
+        "name": "_brimstone"
+    }, 
+    "_slimeHate": {
+        "category": "MaxCat", 
+        "modifier": [
+            "Monster Level: [zone(The Slime Tube)]"
+        ], 
+        "name": "_slimeHate"
+    }, 
+    "_cloathing": {
+        "category": "MaxCat", 
+        "modifier": [
+            "Item Drop: +1", 
+            "Meat Drop: +1", 
+            "Moxie: +1", 
+            "Mysticality: +1", 
+            "Muscle: +1"
+        ], 
+        "name": "_cloathing"
+    }, 
+    "_hoboPower": {
+        "category": "MaxCat", 
+        "modifier": [
+            "Weapon Damage: 0.8", 
+            "Ranged Damage: 1.0", 
+            "Spell Damage: 1.2", 
+            "HP Regen Min: 0.25", 
+            "HP Regen Max: 0.33", 
+            "MP Regen Min: 0.25", 
+            "MP Regen Max: 0.33", 
+            "Meat Drop: 1.0", 
+            "Item Drop: 0.5"
+        ], 
+        "name": "_hoboPower"
+    }
+}

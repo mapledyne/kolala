@@ -2,15 +2,18 @@ import bs4
 import sys
 
 sys.path.append('..')
-from pykol.character import Character  # noqa
-from pykol.pagetypes.CharPane import CharPane  # noqa
+sys.path.append('.')
 
-with open('../_pages/charpane.php', 'r') as file:
+from pykol.character import Character  # noqa
+import pykol.framework as framework  # noqa
+from pykol.pagetypes.CharPane import CharPane  # noqa
+import pykol
+
+with open('_pages/charpane.php', 'r') as file:
     text = file.read()
 
-char = Character()
+CharPane.parse_page(text, pykol.player)
 
-CharPane.parse_page(text, char)
+app = framework.KoLCmd()
 
-print unicode(char)
-exit(0)
+app.cmdloop()

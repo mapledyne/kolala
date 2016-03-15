@@ -1,10 +1,12 @@
-import pykol.Globals as Globals
+import pykol
 
 
-def main(self, arg):
-    self.stdout.write(' Effects '.center(78, '='))
-    self.stdout.write('\n')
-    effects = Globals.player.effects
+def main(arg):
+    print(' Effects '.center(78, '='))
+    effects = pykol.player.effects
     for effect in effects:
-        self.stdout.write(unicode(effect))
-        self.stdout.write('\n')
+        print(u'{}'.format(effect))
+        if effect.name in pykol.modifiers['Effect']:
+            info = pykol.modifiers['Effect'][effect.name]['modifier']
+            for i in info:
+                print u'\t{}'.format(i)

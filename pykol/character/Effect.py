@@ -7,4 +7,5 @@ class Effect(object):
         self.duration = int(effect[1].replace('(', '').replace(')', ''))
 
     def __str__(self):
-        return u'{} ({})'.format(self.name, self.duration)
+        eff = u'{} ({})'.format(self.name, self.duration)
+        return eff

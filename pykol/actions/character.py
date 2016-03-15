@@ -1,5 +1,5 @@
-import pykol.Globals as Globals
+import pykol
 
 
-def main(self, arg):
-    self.stdout.write(unicode(Globals.player))
+def main(arg):
+    print(unicode(pykol.player))

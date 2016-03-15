@@ -1,6 +1,7 @@
 import requests
 import six
 
+from pykol.framework.Logging import Logging
 from pykol.framework.PageSelector import PageSelector
 
 
@@ -32,6 +33,7 @@ class Client(object):
 
         url += Client._dict_to_query_params(params)
 
+        Logging.debug('HTTP Get: ' + url)
         response = Client.session.get(url)
 
         return response
@@ -47,6 +49,7 @@ class Client(object):
 
         url += Client._dict_to_query_params(params)
 
+        Logging.debug('HTTP Post to: ' + url)
         response = Client.session.post(url, data)
 
         return response

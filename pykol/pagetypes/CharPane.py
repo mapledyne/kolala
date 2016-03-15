@@ -23,7 +23,8 @@ class CharPane(KoLPage):
         rollover = soup.find('center', id='rollover')
         if rollover:
             rollover = rollover.text
-            print(rollover.center(78, '*'))
+            if len(rollover) > 0:
+                print(rollover.center(78, '*'))
         if 'Hardcore' in soup.text:
             character.hardcore = True
         tag = soup.find('a', href='charsheet.php')

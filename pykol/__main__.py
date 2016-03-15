@@ -1,5 +1,7 @@
+import sys
+
 import pykol.framework as framework
 
-app = framework.KolCmd()
+app = framework.KoLCmd()
 
 app.cmdloop()

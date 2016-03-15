@@ -20,6 +20,11 @@ class Character(object):
         self.effects = []
         self.hardcore = False
         self.quests = {}
+        self.home = ''
+
+        self.inventory = {}
+
+        self.witchess = False
 
     def __str__(self):
         core = ''

@@ -2,6 +2,8 @@ import os
 
 version = '1.0.0'
 
+log_level = 10
+
 url = 'http://www.kingdomofloathing.com/'
 
 if 'KOL_USER' not in os.environ:

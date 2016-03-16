@@ -20,5 +20,5 @@ def main(arg):
                 set_list += u'\n\t\u2610 ' + p
         if owns_part:
             print(u'{}:{}'.format(o, set_list))
-            if outfits[o].image.replace('.gif', '') not in player.tattoos:
+            if outfits[o].tattoo not in player.tattoos:
                 print(u'\t>> You have not earned a tattoo with this outfit.')

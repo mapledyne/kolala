@@ -26,6 +26,14 @@ class Character(object):
 
         self.witchess = False
 
+        self.tattoos = set()
+
+    def owns(self, item):
+        if item in self.inventory:
+            if self.inventory[item] > 0:
+                return True
+        return False
+
     def __str__(self):
         core = ''
         if self.hardcore:

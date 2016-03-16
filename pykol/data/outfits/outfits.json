@@ -1,0 +1,1140 @@
+{
+    "Cursed Zombie Pirate Costume": {
+        "parts": [
+            "cursed eyepatch", 
+            "cursed cutlass", 
+            "cursed breeches\n"
+        ], 
+        "name": "Cursed Zombie Pirate Costume", 
+        "img": "zompirtat.gif"
+    }, 
+    "Bow Tux": {
+        "parts": [
+            "bowler", 
+            "bow staff", 
+            "bowlegged pants\n"
+        ], 
+        "name": "Bow Tux", 
+        "img": "bowtat.gif"
+    }, 
+    "Uncle Hobo's Rags": {
+        "parts": [
+            "Uncle Hobo's stocking cap", 
+            "Uncle Hobo's gift baggy pants", 
+            "Uncle Hobo's epic beard\n"
+        ], 
+        "name": "Uncle Hobo's Rags", 
+        "img": "crimbeard.gif"
+    }, 
+    "Dyspepsi-Cola Uniform": {
+        "parts": [
+            "Dyspepsi-Cola helmet", 
+            "Dyspepsi-Cola shield", 
+            "Dyspepsi-Cola fatigues\n"
+        ], 
+        "name": "Dyspepsi-Cola Uniform", 
+        "img": "cola2tat.gif"
+    }, 
+    "SMOOCH Army Uniform": {
+        "parts": [
+            "SMOOCH breastplate", 
+            "SMOOCH codpiece", 
+            "SMOOCH bracers", 
+            "SMOOCH kneepads", 
+            "SMOOCH spaulders\n"
+        ], 
+        "name": "SMOOCH Army Uniform", 
+        "img": "smoochtat.gif"
+    }, 
+    "eXtreme Cold-Weather Gear": {
+        "parts": [
+            "eXtreme scarf", 
+            "snowboarder pants", 
+            "eXtreme mittens\n"
+        ], 
+        "name": "eXtreme Cold-Weather Gear", 
+        "img": "coldgear.gif"
+    }, 
+    "War Hippy Fatigues": {
+        "parts": [
+            "reinforced beaded headband", 
+            "bullet-proof corduroys", 
+            "round purple sunglasses\n"
+        ], 
+        "name": "War Hippy Fatigues", 
+        "img": "warhiptat.gif"
+    }, 
+    "Crimbo Duds": {
+        "parts": [
+            "Crimbo hat", 
+            "Crimbo sword", 
+            "Crimbo pants\n"
+        ], 
+        "name": "Crimbo Duds", 
+        "img": "pressietat.gif"
+    }, 
+    "Cloaca-Cola Uniform": {
+        "parts": [
+            "Cloaca-Cola helmet", 
+            "Cloaca-Cola shield", 
+            "Cloaca-Cola fatigues\n"
+        ], 
+        "name": "Cloaca-Cola Uniform", 
+        "img": "cola1tat.gif"
+    }, 
+    "Workoutfit": {
+        "parts": [
+            "sweatband", 
+            "gym shorts", 
+            "ankleweights\n"
+        ], 
+        "name": "Workoutfit", 
+        "img": "workouttat.gif"
+    }, 
+    "Crimbot Crimboutfit": {
+        "parts": [
+            "toy Crimbot mega face", 
+            "toy Crimbot power glove", 
+            "toy Crimbot super fist", 
+            "toy Crimbot rocket legs\n"
+        ], 
+        "name": "Crimbot Crimboutfit", 
+        "img": "zaptat.gif"
+    }, 
+    "Antique Arms and Armor": {
+        "parts": [
+            "antique helmet", 
+            "antique spear", 
+            "antique shield", 
+            "antique greaves\n"
+        ], 
+        "name": "Antique Arms and Armor", 
+        "img": "armortat.gif"
+    }, 
+    "Tapered Threads": {
+        "parts": [
+            "duct tape fedora", 
+            "duct tape sword", 
+            "duct tape dockers\n"
+        ], 
+        "name": "Tapered Threads", 
+        "img": "ducttat.gif"
+    }, 
+    "Radio Free Regalia": {
+        "parts": [
+            "Radio Free Baseball Cap", 
+            "Radio Free Foil", 
+            "Radio Free Pants\n"
+        ], 
+        "name": "Radio Free Regalia", 
+        "img": "radiotat.gif"
+    }, 
+    "Ghast Iron Gear": {
+        "parts": [
+            "ghast iron Garibaldi", 
+            "ghast iron heater shield", 
+            "ghast iron codpiece\n"
+        ], 
+        "name": "Ghast Iron Gear", 
+        "img": "hotghosttat.gif"
+    }, 
+    "Oil Rig": {
+        "parts": [
+            "oil cap", 
+            "oil lamp", 
+            "oil slacks\n"
+        ], 
+        "name": "Oil Rig", 
+        "img": "oiltat.gif"
+    }, 
+    "Hyperborean Hobo Habiliments": {
+        "parts": [
+            "Frosty's old silk hat", 
+            "Frosty's nailbat", 
+            "Frosty's carrot\n"
+        ], 
+        "name": "Hyperborean Hobo Habiliments", 
+        "img": "colhobotat.gif"
+    }, 
+    "Space Beast Furs": {
+        "parts": [
+            "space beast fur hat", 
+            "space beast fur whip", 
+            "space beast fur pants\n"
+        ], 
+        "name": "Space Beast Furs", 
+        "img": "sbeasttat.gif"
+    }, 
+    "Seafaring Suit": {
+        "parts": [
+            "foam commodore's hat", 
+            "miniature deck cannon", 
+            "foam naval trousers\n"
+        ], 
+        "name": "Seafaring Suit", 
+        "img": "sailortat.gif"
+    }, 
+    "Dreadful Bugbear Suit": {
+        "parts": [
+            "Covers-Your-Head", 
+            "Drapes-You-Regally", 
+            "Warms-Your-Tush\n"
+        ], 
+        "name": "Dreadful Bugbear Suit", 
+        "img": "dvotat2.gif"
+    }, 
+    "Sucker Samurai Suit": {
+        "parts": [
+            "sucker kabuto", 
+            "sucker tachi", 
+            "sucker hakama\n"
+        ], 
+        "name": "Sucker Samurai Suit", 
+        "img": "lollitat.gif"
+    }, 
+    "Black Armaments": {
+        "parts": [
+            "black helmet", 
+            "black sword", 
+            "black shield", 
+            "black greaves\n"
+        ], 
+        "name": "Black Armaments", 
+        "img": "blacktat.gif"
+    }, 
+    "Topiaria": {
+        "parts": [
+            "tope&eacute;", 
+            "topiary tights", 
+            "topiary necktie\n"
+        ], 
+        "name": "Topiaria", 
+        "img": "topitat.gif"
+    }, 
+    "Legendary Regalia of the Seal Crusher": {
+        "parts": [
+            "Scalp of Gorgolok", 
+            "Sledgehammer of the V&aelig;lkyr", 
+            "Krakrox's Loincloth", 
+            "Claw of the Infernal Seal\n"
+        ], 
+        "name": "Legendary Regalia of the Seal Crusher", 
+        "img": "revclass1.gif"
+    }, 
+    "Bits o' Honey": {
+        "parts": [
+            "honeycap", 
+            "honey dipper", 
+            "honeybritches\n"
+        ], 
+        "name": "Bits o' Honey", 
+        "img": "honeytat.gif"
+    }, 
+    "Mer-kin Gladiatorial Gear": {
+        "parts": [
+            "Mer-kin gladiator mask", 
+            "Mer-kin gladiator tailpiece\n"
+        ], 
+        "name": "Mer-kin Gladiatorial Gear", 
+        "img": "merkgtat.gif"
+    }, 
+    "Brogre Brouture": {
+        "parts": [
+            "Brogre bucket hat", 
+            "Brogre brolo shirt", 
+            "Brogre brorts\n"
+        ], 
+        "name": "Brogre Brouture", 
+        "img": "brogretat.gif"
+    }, 
+    "Mutant Couture": {
+        "parts": [
+            "parasitic headgnawer", 
+            "parasitic claw", 
+            "parasitic strangleworm", 
+            "parasitic tentacles\n"
+        ], 
+        "name": "Mutant Couture", 
+        "img": "dnatat.gif"
+    }, 
+    "Unblemished Uniform": {
+        "parts": [
+            "stainless steel skullcap", 
+            "stainless steel shillelagh", 
+            "stainless steel slacks", 
+            "stainless steel scarf", 
+            "stainless steel solitaire", 
+            "stainless steel suspenders\n"
+        ], 
+        "name": "Unblemished Uniform", 
+        "img": "staintat.gif"
+    }, 
+    "Animelf Apparel": {
+        "parts": [
+            "brainwave-controlled unicorn horn", 
+            "electronic dulcimer pants", 
+            "Frown Exerciser\n"
+        ], 
+        "name": "Animelf Apparel", 
+        "img": "animelftat.gif"
+    }, 
+    "Frat Warrior Fatigues": {
+        "parts": [
+            "beer helmet", 
+            "distressed denim pants", 
+            "bejeweled pledge pin\n"
+        ], 
+        "name": "Frat Warrior Fatigues", 
+        "img": "warfrattat.gif"
+    }, 
+    "Wicker Wear": {
+        "parts": [
+            "wicker sticker", 
+            "wicker clicker", 
+            "wicker slicker", 
+            "wicker knickers", 
+            "wicker ticker", 
+            "wicker kickers\n"
+        ], 
+        "name": "Wicker Wear", 
+        "img": "wickertat.gif"
+    }, 
+    "The Emperor's New Clothes": {
+        "parts": [
+            "The Emperor's new hat", 
+            "The Emperor's new shirt", 
+            "The Emperor's new pants\n"
+        ], 
+        "name": "The Emperor's New Clothes", 
+        "img": "emperortat.gif"
+    }, 
+    "Dreadful Skeleton Suit": {
+        "parts": [
+            "Unkillable Skeleton's skullcap", 
+            "Unkillable Skeleton's breastplate", 
+            "Unkillable Skeleton's shinguards\n"
+        ], 
+        "name": "Dreadful Skeleton Suit", 
+        "img": "dvotat6.gif"
+    }, 
+    "Gnauga Hides": {
+        "parts": [
+            "gnauga hide whip", 
+            "gnauga hide buckler", 
+            "gnauga hide chaps\n"
+        ], 
+        "name": "Gnauga Hides", 
+        "img": "gnaugatat.gif"
+    }, 
+    "Roy Orbison Disguise": {
+        "parts": [
+            "clingfilm cap", 
+            "clingfilm trousers", 
+            "clingfilm slippers\n"
+        ], 
+        "name": "Roy Orbison Disguise", 
+        "img": "orbisontat.gif"
+    }, 
+    "Ceramic Suit": {
+        "parts": [
+            "porcelain porkpie", 
+            "porcelain police baton", 
+            "porcelain pepper mill", 
+            "porcelain pelerine", 
+            "porcelain plus-fours", 
+            "porcelain phantom mask\n"
+        ], 
+        "name": "Ceramic Suit", 
+        "img": "porctat.gif"
+    }, 
+    "Bugbear Costume": {
+        "parts": [
+            "bugbear beanie", 
+            "bugbear bungguard\n"
+        ], 
+        "name": "Bugbear Costume", 
+        "img": "bugbear.gif"
+    }, 
+    "Hot and Cold Running Ninja Suit": {
+        "parts": [
+            "cold ninja mask", 
+            "icy-hot katana", 
+            "ninja hot pants\n"
+        ], 
+        "name": "Hot and Cold Running Ninja Suit", 
+        "img": "ninja.gif"
+    }, 
+    "Encephalic Ensemble": {
+        "parts": [
+            "Cerebral Cloche", 
+            "Cerebral Crossbow", 
+            "Cerebral Culottes\n"
+        ], 
+        "name": "Encephalic Ensemble", 
+        "img": "jfishtat.gif"
+    }, 
+    "Mining Gear": {
+        "parts": [
+            "miner's helmet", 
+            "7-Foot Dwarven mattock", 
+            "miner's pants\n"
+        ], 
+        "name": "Mining Gear", 
+        "img": "miner.gif"
+    }, 
+    "Dreadful Ghost Suit": {
+        "parts": [
+            "Mayor Ghost's toupee", 
+            "Mayor Ghost's cloak", 
+            "Mayor Ghost's khakis\n"
+        ], 
+        "name": "Dreadful Ghost Suit", 
+        "img": "dvotat5.gif"
+    }, 
+    "Toxic Togs": {
+        "parts": [
+            "isotophat", 
+            "toxic mop", 
+            "Three Mile Island shorts\n"
+        ], 
+        "name": "Toxic Togs", 
+        "img": "toxictat.gif"
+    }, 
+    "Spelunker's Gear": {
+        "parts": [
+            "Spelunker's fedora", 
+            "Spelunker's whip", 
+            "Spelunker's khakis\n"
+        ], 
+        "name": "Spelunker's Gear", 
+        "img": "spelunktat.gif"
+    }, 
+    "Filthy Hippy Disguise": {
+        "parts": [
+            "filthy knitted dread sack", 
+            "filthy corduroys\n"
+        ], 
+        "name": "Filthy Hippy Disguise", 
+        "img": "hippy.gif"
+    }, 
+    "Violent Vestments": {
+        "parts": [
+            "Lens of Violence", 
+            "Pigsticker of Violence", 
+            "Brand of Violence", 
+            "Jodhpurs of Violence", 
+            "Ass-Stompers of Violence", 
+            "Novelty Belt Buckle of Violence\n"
+        ], 
+        "name": "Violent Vestments", 
+        "img": "shubtat.gif"
+    }, 
+    "Grimy Reaper's Vestments": {
+        "parts": [
+            "corrosive cowl", 
+            "villainous scythe", 
+            "corroded breeches\n"
+        ], 
+        "name": "Grimy Reaper's Vestments", 
+        "img": "reapertat.gif"
+    }, 
+    "Cold Comforts": {
+        "parts": [
+            "double-ice cap", 
+            "double-ice box", 
+            "double-ice britches\n"
+        ], 
+        "name": "Cold Comforts", 
+        "img": "doubicetat.gif"
+    }, 
+    "BRICKOfig Outfit": {
+        "parts": [
+            "BRICKO hat", 
+            "BRICKO sword", 
+            "BRICKO pants\n"
+        ], 
+        "name": "BRICKOfig Outfit", 
+        "img": "minifigtat.gif"
+    }, 
+    "Snowman Suit": {
+        "parts": [
+            "snow hat", 
+            "snow pants", 
+            "snow belly\n"
+        ], 
+        "name": "Snowman Suit", 
+        "img": "snowmantat.gif"
+    }, 
+    "Transparent Trappings": {
+        "parts": [
+            "plexiglass pith helmet", 
+            "plexiglass pikestaff", 
+            "plexiglass pants", 
+            "plexiglass pendant", 
+            "plexiglass pocketwatch", 
+            "plexiglass pinky ring\n"
+        ], 
+        "name": "Transparent Trappings", 
+        "img": "plexitat.gif"
+    }, 
+    "Xiblaxian Stealth Suit": {
+        "parts": [
+            "Xiblaxian stealth cowl", 
+            "Xiblaxian stealth vest", 
+            "Xiblaxian stealth trousers\n"
+        ], 
+        "name": "Xiblaxian Stealth Suit", 
+        "img": "xiblaxtat.gif"
+    }, 
+    "The Jokester's Costume": {
+        "parts": [
+            "The Jokester's wig", 
+            "The Jokester's gun", 
+            "The Jokester's pants\n"
+        ], 
+        "name": "The Jokester's Costume", 
+        "img": "jokestertat.gif"
+    }, 
+    "Hodgman's Regal Frippery": {
+        "parts": [
+            "Hodgman's porkpie hat", 
+            "Hodgman's lobsterskin pants", 
+            "Hodgman's bow tie\n"
+        ], 
+        "name": "Hodgman's Regal Frippery", 
+        "img": "hodgmantat.gif"
+    }, 
+    "Pyretic Panhandler Paraphernalia": {
+        "parts": [
+            "Ol' Scratch's stovepipe hat", 
+            "Ol' Scratch's ash can", 
+            "Ol' Scratch's ol' britches\n"
+        ], 
+        "name": "Pyretic Panhandler Paraphernalia", 
+        "img": "hothobotat.gif"
+    }, 
+    "Crappy Mer-kin Disguise": {
+        "parts": [
+            "crappy Mer-kin mask", 
+            "crappy Mer-kin tailpiece\n"
+        ], 
+        "name": "Crappy Mer-kin Disguise", 
+        "img": "merkintat.gif"
+    }, 
+    "Knob Goblin Elite Guard Uniform": {
+        "parts": [
+            "Knob Goblin elite helm", 
+            "Knob Goblin elite polearm", 
+            "Knob Goblin elite pants\n"
+        ], 
+        "name": "Knob Goblin Elite Guard Uniform", 
+        "img": "eliteguard.gif"
+    }, 
+    "Grass Guise": {
+        "parts": [
+            "grass hat", 
+            "grass blade", 
+            "grass skirt\n"
+        ], 
+        "name": "Grass Guise", 
+        "img": "eggtat.gif"
+    }, 
+    "Wax Wardrobe": {
+        "parts": [
+            "wax hat", 
+            "wax pants\n"
+        ], 
+        "name": "Wax Wardrobe", 
+        "img": "crayontat.gif"
+    }, 
+    "1000th Birthday Suit": {
+        "parts": [
+            "bonedanna", 
+            "boneana hammock", 
+            "bone spurs\n"
+        ], 
+        "name": "1000th Birthday Suit", 
+        "img": "skeletat.gif"
+    }, 
+    "Warbear Dress Armor": {
+        "parts": [
+            "warbear dress helmet", 
+            "warbear dress greaves", 
+            "warbear dress bracers\n"
+        ], 
+        "name": "Warbear Dress Armor", 
+        "img": "bearclawta.gif"
+    }, 
+    "OK Lumberjack Outfit": {
+        "parts": [
+            "balaclava", 
+            "los chinos", 
+            "disbelief suspenders\n"
+        ], 
+        "name": "OK Lumberjack Outfit", 
+        "img": "canadiatat.gif"
+    }, 
+    "Star Garb": {
+        "parts": [
+            "star hat", 
+            "star buckler", 
+            "star pants\n"
+        ], 
+        "name": "Star Garb", 
+        "img": "startat.gif"
+    }, 
+    "Raiments of the Final Boss": {
+        "parts": [
+            "Helm of the Scream Emperor", 
+            "Sword of Dark Omens", 
+            "Shield of Icy Fate", 
+            "Cloak of Dire Shadows", 
+            "Greaves of the Murk Lord", 
+            "Boots of Twilight Whispers", 
+            "Belt of Howling Anger", 
+            "Gauntlets of the Blood Moon\n"
+        ], 
+        "name": "Raiments of the Final Boss", 
+        "img": "bosstat.gif"
+    }, 
+    "Pork Elf Prizes": {
+        "parts": [
+            "pig-iron helm", 
+            "pig-iron shinguards", 
+            "pig-iron bracers\n"
+        ], 
+        "name": "Pork Elf Prizes", 
+        "img": "pigirontat.gif"
+    }, 
+    "Time Trappings": {
+        "parts": [
+            "time helmet", 
+            "time sword", 
+            "time trousers\n"
+        ], 
+        "name": "Time Trappings", 
+        "img": "hourtat.gif"
+    }, 
+    "Luniform": {
+        "parts": [
+            "Moonthril Circlet", 
+            "Moonthril Flamberge", 
+            "Moonthril Greaves\n"
+        ], 
+        "name": "Luniform", 
+        "img": "lunartat.gif"
+    }, 
+    "Swashbuckling Getup": {
+        "parts": [
+            "eyepatch", 
+            "swashbuckling pants", 
+            "stuffed shoulder parrot\n"
+        ], 
+        "name": "Swashbuckling Getup", 
+        "img": "pirate.gif"
+    }, 
+    "Knight's Armor": {
+        "parts": [
+            "helm of the white knight", 
+            "trousers of the white knight", 
+            "wristwatch of the white knight\n"
+        ], 
+        "name": "Knight's Armor", 
+        "img": "bknight.gif"
+    }, 
+    "Dire Drifter Duds": {
+        "parts": [
+            "Zombo's skullcap", 
+            "Zombo's shield", 
+            "Zombo's grievous greaves\n"
+        ], 
+        "name": "Dire Drifter Duds", 
+        "img": "spohobotat.gif"
+    }, 
+    "Terrifying Clown Suit": {
+        "parts": [
+            "foolscap fool's cap", 
+            "bloody clown pants", 
+            "big red clown nose", 
+            "polka-dot bow tie", 
+            "clown shoes\n"
+        ], 
+        "name": "Terrifying Clown Suit", 
+        "img": "clown.gif"
+    }, 
+    "Tawdry Tramp Togs": {
+        "parts": [
+            "Chester's bag of candy", 
+            "Chester's cutoffs", 
+            "Chester's moustache\n"
+        ], 
+        "name": "Tawdry Tramp Togs", 
+        "img": "slehobotat.gif"
+    }, 
+    "Dreadful Vampire Suit": {
+        "parts": [
+            "Thunkula's drinking cap", 
+            "Drunkula's cape", 
+            "Drunkula's silky pants\n"
+        ], 
+        "name": "Dreadful Vampire Suit", 
+        "img": "dvotat7.gif"
+    }, 
+    "Vile Vagrant Vestments": {
+        "parts": [
+            "Wand of Oscus", 
+            "Oscus's dumpster waders", 
+            "Oscus's pelt\n"
+        ], 
+        "name": "Vile Vagrant Vestments", 
+        "img": "stehobotat.gif"
+    }, 
+    "Vestments of the Treeslayer": {
+        "parts": [
+            "bark beret", 
+            "bark boxers", 
+            "bark bracelet\n"
+        ], 
+        "name": "Vestments of the Treeslayer", 
+        "img": "arborween.gif"
+    }, 
+    "Yendorian Finery": {
+        "parts": [
+            "cornuthaum", 
+            "vorpal blade", 
+            "ring of aggravate monster\n"
+        ], 
+        "name": "Yendorian Finery", 
+        "img": "elbereth.gif"
+    }, 
+    "Clothing of Loathing": {
+        "parts": [
+            "Goggles of Loathing", 
+            "Stick-Knife of Loathing", 
+            "Scepter of Loathing", 
+            "Jeans of Loathing", 
+            "Treads of Loathing", 
+            "Belt of Loathing", 
+            "Pocket Square of Loathing\n"
+        ], 
+        "name": "Clothing of Loathing", 
+        "img": "loathetat.gif"
+    }, 
+    "Frat Boy Ensemble": {
+        "parts": [
+            "Orcish baseball cap", 
+            "homoerotic frat-paddle", 
+            "Orcish cargo shorts\n"
+        ], 
+        "name": "Frat Boy Ensemble", 
+        "img": "fratboy.gif"
+    }, 
+    "Legendary Regalia of the Groovelord": {
+        "parts": [
+            "Disco 'Fro Pick", 
+            "Seeger's Unstoppable Banjo", 
+            "Volartta's bellbottoms", 
+            "Bling of the New Wave\n"
+        ], 
+        "name": "Legendary Regalia of the Groovelord", 
+        "img": "revclass5.gif"
+    }, 
+    "Legendary Regalia of the Saucemaestro": {
+        "parts": [
+            "Ancient Saucehelm", 
+            "Windsor Pan of the Source", 
+            "Newman's Own Trousers", 
+            "Gravyskin Belt of the Sauceblob\n"
+        ], 
+        "name": "Legendary Regalia of the Saucemaestro", 
+        "img": "revclass4.gif"
+    }, 
+    "Cooper's Couture": {
+        "parts": [
+            "barrelhead", 
+            "chest barrel", 
+            "bottoms of the barrel\n"
+        ], 
+        "name": "Cooper's Couture", 
+        "img": "barreltat.gif"
+    }, 
+    "Cool Irons": {
+        "parts": [
+            "cool iron helmet", 
+            "cool iron breastplate", 
+            "cool iron greaves\n"
+        ], 
+        "name": "Cool Irons", 
+        "img": "dvotat8.gif"
+    }, 
+    "Dreadful Zombie Suit": {
+        "parts": [
+            "zombie mariachi hat", 
+            "zombie accordion", 
+            "zombie mariachi pants\n"
+        ], 
+        "name": "Dreadful Zombie Suit", 
+        "img": "dvotat4.gif"
+    }, 
+    "Legendary Regalia of the Master Squeezeboxer": {
+        "parts": [
+            "El Sombrero De Lopez", 
+            "The Trickster's Trikitixa", 
+            "Lederhosen of the Night", 
+            "La Hebilla del Cintur&oacute;n de Lopez\n"
+        ], 
+        "name": "Legendary Regalia of the Master Squeezeboxer", 
+        "img": "revclass6.gif"
+    }, 
+    "Synthetic Suit": {
+        "parts": [
+            "polyester panama hat", 
+            "polyester peeler", 
+            "polyester pad", 
+            "polyester parachute", 
+            "polyester pettipants", 
+            "polyester pulsera\n"
+        ], 
+        "name": "Synthetic Suit", 
+        "img": "polytat.gif"
+    }, 
+    "Bounty-Hunting Rig": {
+        "parts": [
+            "bounty-hunting helmet", 
+            "bounty-hunting rifle", 
+            "bounty-hunting pants\n"
+        ], 
+        "name": "Bounty-Hunting Rig", 
+        "img": "meattat.gif"
+    }, 
+    "Arrrbor Day Apparrrrrel": {
+        "parts": [
+            "willowy bonnet", 
+            "crotchety pants", 
+            "Saccharine Maple pendant\n"
+        ], 
+        "name": "Arrrbor Day Apparrrrrel", 
+        "img": "arbortat.gif"
+    }, 
+    "Floaty Fatigues": {
+        "parts": [
+            "floaty rock helmet", 
+            "floaty rock pants", 
+            "floaty rock necklace\n"
+        ], 
+        "name": "Floaty Fatigues", 
+        "img": "rock_tat.gif"
+    }, 
+    "Glad Bag Glad Rags": {
+        "parts": [
+            "giant discarded bottlecap", 
+            "giant discarded plastic fork", 
+            "giant discarded torn-up glove\n"
+        ], 
+        "name": "Glad Bag Glad Rags", 
+        "img": "recyctat.gif"
+    }, 
+    "Fancy Tux": {
+        "parts": [
+            "fancy tophat", 
+            "fancy tuxedo pants", 
+            "fancy black tie\n"
+        ], 
+        "name": "Fancy Tux", 
+        "img": "blacktie.gif"
+    }, 
+    "Slimesuit": {
+        "parts": [
+            "hardened slime hat", 
+            "hardened slime pants", 
+            "hardened slime belt\n"
+        ], 
+        "name": "Slimesuit", 
+        "img": "slimetat.gif"
+    }, 
+    "Tropical Crimbo Duds": {
+        "parts": [
+            "Tropical Crimbo Hat", 
+            "Tropical Crimbo Sword", 
+            "Tropical Crimbo Shorts\n"
+        ], 
+        "name": "Tropical Crimbo Duds", 
+        "img": "tropictat.gif"
+    }, 
+    "Furry Suit": {
+        "parts": [
+            "wolf mask", 
+            "furry pants\n"
+        ], 
+        "name": "Furry Suit", 
+        "img": "losertat.gif"
+    }, 
+    "Hot Daub Ensemble": {
+        "parts": [
+            "hot daub bun", 
+            "foot-long hot daub", 
+            "hot daub stand\n"
+        ], 
+        "name": "Hot Daub Ensemble", 
+        "img": "claytat.gif"
+    }, 
+    "Gladiatorial Glad Rags": {
+        "parts": [
+            "centurion helmet", 
+            "madius", 
+            "radiator heater shield", 
+            "gladiator tunica", 
+            "pteruges", 
+            "Roman sadnals\n"
+        ], 
+        "name": "Gladiatorial Glad Rags", 
+        "img": "spqktat.gif"
+    }, 
+    "Legendary Regalia of the Chelonian Overlord": {
+        "parts": [
+            "Elder Turtle Shell", 
+            "Flail of the Seven Aspects", 
+            "Galapagosian Cuisses", 
+            "Garter of the Turtle Poacher\n"
+        ], 
+        "name": "Legendary Regalia of the Chelonian Overlord", 
+        "img": "revclass2.gif"
+    }, 
+    "Smoked Pottery": {
+        "parts": [
+            "pottery hat", 
+            "pottery shield", 
+            "pottery training pants\n"
+        ], 
+        "name": "Smoked Pottery", 
+        "img": "potterytat.gif"
+    }, 
+    "Frigid Northlands Garb": {
+        "parts": [
+            "sealhide hood", 
+            "sealhide buckler", 
+            "sealhide leggings\n"
+        ], 
+        "name": "Frigid Northlands Garb", 
+        "img": "nosealtat.gif"
+    }, 
+    "Dreadful Werewolf Suit": {
+        "parts": [
+            "Great Wolf's headband", 
+            "Great Wolf's right paw", 
+            "Great Wolf's left paw\n"
+        ], 
+        "name": "Dreadful Werewolf Suit", 
+        "img": "dvotat3.gif"
+    }, 
+    "Legendary Regalia of the Pasta Master": {
+        "parts": [
+            "Colander of Em-er'il", 
+            "Wrath of the Capsaician Pastalords", 
+            "Angelhair Culottes", 
+            "Bandolier of the Spaghetti Elemental\n"
+        ], 
+        "name": "Legendary Regalia of the Pasta Master", 
+        "img": "revclass3.gif"
+    }, 
+    "Mer-kin Scholar's Vestments": {
+        "parts": [
+            "Mer-kin scholar mask", 
+            "Mer-kin scholar tailpiece\n"
+        ], 
+        "name": "Mer-kin Scholar's Vestments", 
+        "img": "merkstat.gif"
+    }, 
+    "Terrycloth Tackle": {
+        "parts": [
+            "makeshift turban", 
+            "makeshift cape", 
+            "makeshift skirt\n"
+        ], 
+        "name": "Terrycloth Tackle", 
+        "img": "toweltat.gif"
+    }, 
+    "Crimborg Assault Armor": {
+        "parts": [
+            "biomechanical crimborg helmet", 
+            "C.B.F.G.", 
+            "biomechanical crimborg leg armor\n"
+        ], 
+        "name": "Crimborg Assault Armor", 
+        "img": "halotat.gif"
+    }, 
+    "Palmist Paraphernalia": {
+        "parts": [
+            "extra-large palm-frond toupee", 
+            "palm-frond whip", 
+            "palm-frond capris\n"
+        ], 
+        "name": "Palmist Paraphernalia", 
+        "img": "palmtat.gif"
+    }, 
+    "Wumpus-Hair Wardrobe": {
+        "parts": [
+            "wumpus-hair wig", 
+            "wumpus-hair whip", 
+            "wumpus-hair loincloth\n"
+        ], 
+        "name": "Wumpus-Hair Wardrobe", 
+        "img": "wumpustat.gif"
+    }, 
+    "Paperclippery": {
+        "parts": [
+            "paperclip turban", 
+            "paperclip cape", 
+            "paperclip pants", 
+            "paperclip-on tie\n"
+        ], 
+        "name": "Paperclippery", 
+        "img": "cliptat.gif"
+    }, 
+    "Dark Bro's Vestments": {
+        "parts": [
+            "The Necbromancer's Hat", 
+            "The Necbromancer's Stein", 
+            "The Necbromancer's Shorts\n"
+        ], 
+        "name": "Dark Bro's Vestments", 
+        "img": "necbrotat.gif"
+    }, 
+    "Primitive Radio Duds": {
+        "parts": [
+            "Voluminous Radio Hat", 
+            "Voluminous Radio Pants", 
+            "Voluminous Radio Sneakers\n"
+        ], 
+        "name": "Primitive Radio Duds", 
+        "img": "vol_tat.gif"
+    }, 
+    "Hateful Habiliment": {
+        "parts": [
+            "Lens of Hatred", 
+            "Staff of Simmering Hatred", 
+            "Cold Stone of Hatred", 
+            "Pantaloons of Hatred", 
+            "Fuzzy Slippers of Hatred", 
+            "Girdle of Hatred\n"
+        ], 
+        "name": "Hateful Habiliment", 
+        "img": "yogtat.gif"
+    }, 
+    "Dreadful Pajamas": {
+        "parts": [
+            "dreadful fedora", 
+            "dreadful glove", 
+            "dreadful sweater\n"
+        ], 
+        "name": "Dreadful Pajamas", 
+        "img": "dvotat1.gif"
+    }, 
+    "8-Bit Finery": {
+        "parts": [
+            "pixel hat", 
+            "pixel sword", 
+            "pixel pants\n"
+        ], 
+        "name": "8-Bit Finery", 
+        "img": "swordtat.gif"
+    }, 
+    "High-Radiation Mining Gear": {
+        "parts": [
+            "radiation-resistant helmet", 
+            "high-energy mining laser", 
+            "servo-assisted exo-pants\n"
+        ], 
+        "name": "High-Radiation Mining Gear", 
+        "img": "radminetat.gif"
+    }, 
+    "Knob Goblin Harem Girl Disguise": {
+        "parts": [
+            "Knob Goblin harem veil", 
+            "Knob Goblin harem pants\n"
+        ], 
+        "name": "Knob Goblin Harem Girl Disguise", 
+        "img": "haremgirl.gif"
+    }, 
+    "Pinata Provisions": {
+        "parts": [
+            "papier-mitre", 
+            "papier-m&acirc;churidars", 
+            "papier-masque\n"
+        ], 
+        "name": "Pinata Provisions", 
+        "img": "rad_tat.gif"
+    }, 
+    "Dwarvish War Uniform": {
+        "parts": [
+            "dwarvish war helmet", 
+            "dwarvish war mattock", 
+            "dwarvish war kilt\n"
+        ], 
+        "name": "Dwarvish War Uniform", 
+        "img": "dwarvish.gif"
+    }, 
+    "El Vibrato Relics": {
+        "parts": [
+            "El Vibrato helmet", 
+            "El Vibrato energy spear", 
+            "El Vibrato leg guards\n"
+        ], 
+        "name": "El Vibrato Relics", 
+        "img": "elvtat.gif"
+    }, 
+    "Arboreal Raiment": {
+        "parts": [
+            "can of fake snow", 
+            "tree skirt", 
+            "colored-light &quot;necklace&quot;\n"
+        ], 
+        "name": "Arboreal Raiment", 
+        "img": "wreathtat.gif"
+    }, 
+    "Clockwork Apparatus": {
+        "parts": [
+            "clockwork hat", 
+            "clockwork trench coat", 
+            "clockwork pants\n"
+        ], 
+        "name": "Clockwork Apparatus", 
+        "img": "clocktat.gif"
+    }, 
+    "Dinsey's Exoskeleton": {
+        "parts": [
+            "Dinsey's oculus", 
+            "Dinsey's radar dish", 
+            "Dinsey's pizza cutter", 
+            "Dinsey's brain", 
+            "Dinsey's glove", 
+            "Dinsey's pants\n"
+        ], 
+        "name": "Dinsey's Exoskeleton", 
+        "img": "wdbraintat.gif"
+    }, 
+    "Blasphemous Bedizenment": {
+        "parts": [
+            "Brimstone Beret", 
+            "Brimstone Bludgeon", 
+            "Brimstone Bunker", 
+            "Brimstone Boxers", 
+            "Brimstone Brooch", 
+            "Brimstone Bracelet\n"
+        ], 
+        "name": "Blasphemous Bedizenment", 
+        "img": "brimtat.gif"
+    }, 
+    "Bakelite Brigandine": {
+        "parts": [
+            "bakelite bowl", 
+            "bakelite backpack", 
+            "bakelite breeches", 
+            "bakelite belt", 
+            "bakelite badge", 
+            "bakelite brooch\n"
+        ], 
+        "name": "Bakelite Brigandine", 
+        "img": "baketat.gif"
+    }
+}

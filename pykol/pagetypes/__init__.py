@@ -5,4 +5,5 @@ from pykol.pagetypes.KoLPage import KoLPage
 from pykol.pagetypes.Login import Login
 from pykol.pagetypes.MainFrame import MainFrame
 from pykol.pagetypes.Maint import Maint
+from pykol.pagetypes.Tattoos import Tattoos
 from pykol.pagetypes.TopMenu import TopMenu

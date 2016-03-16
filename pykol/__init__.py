@@ -3,6 +3,7 @@ import pykol.framework as framework
 import pykol.Globals
 
 from pykol.framework.Logging import Logging
+from pykol.framework.Client import Client
 
 from pykol.Globals import modifiers
 from pykol.Globals import moons

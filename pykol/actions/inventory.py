@@ -6,7 +6,7 @@ def main(arg):
     for i in pykol.player.inventory:
         name = i
         qty = pykol.player.inventory[i]
-        print('{} ({})'.format(name, qty))
+        print(u'{} ({})'.format(name, qty))
         if name in pykol.modifiers['Item']:
             info = pykol.modifiers['Item'][name]['modifier']
             for mod in info:

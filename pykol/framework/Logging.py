@@ -23,6 +23,10 @@ class Logging(object):
         Logging.logger.warning(msg)
 
     @staticmethod
+    def debug(msg):
+        Logging.logger.debug(msg)
+
+    @staticmethod
     def info(msg):
         Logging.logger.info(msg)
 

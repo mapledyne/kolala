@@ -11,3 +11,9 @@ def main(arg):
             info = pykol.modifiers['Item'][name]['modifier']
             for mod in info:
                 print(u'\t{}'.format(mod))
+                if mod.startswith('Effect:'):
+                    effect_name = mod.split('"')[1]
+                    if effect_name in pykol.modifiers['Effect']:
+                        effect = pykol.modifiers['Effect'][effect_name]['modifier']
+                        for e in effect:
+                            print(u'\t\t{}'.format(e))

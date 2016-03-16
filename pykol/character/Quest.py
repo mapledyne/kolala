@@ -1,3 +1,6 @@
+import textwrap
+
+
 class Quest(object):
     def __init__(self, name):
         self.name = name
@@ -5,7 +8,7 @@ class Quest(object):
         self.subtasks = []
 
     def __str__(self):
-        ret = u'{}\n'.format(self.description)
+        ret = textwrap.fill(u'{}'.format(self.description), 78) + '\n'
         for sub in self.subtasks:
-            ret += u'\t{}\n'.format(sub)
+            ret += textwrap.fill(u'\t{}'.format(sub)) + '\n'
         return ret

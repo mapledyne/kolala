@@ -18,13 +18,10 @@ class CharPane(KoLPage):
         return response.url.startswith(CharPane.url)
 
     @staticmethod
-    def parse_page(text, character):
+    def parse_page(text, character=None):
+        if character is None:
+            character = Globals.player
         soup = bs4.BeautifulSoup(text, 'html.parser')
-        rollover = soup.find('center', id='rollover')
-        if rollover:
-            rollover = rollover.text
-            if len(rollover) > 0:
-                print(rollover.center(78, '*'))
         if 'Hardcore' in soup.text:
             character.hardcore = True
         tag = soup.find('a', href='charsheet.php')
@@ -65,31 +62,40 @@ class CharPane(KoLPage):
         character.hp = Stat(tag.text)
         tag = tag.find_next('img')
         character.mp = Stat(tag.text)
-
-        tag = tag.find_next('img', title='Meat')
+        tag = soup.find('img', title='Meat')
         character.meat = int(tag.text.replace(',', ''))
 
-        tag = tag.find_next('img', title='Adventures Remaining')
+        tag = soup.find('img', title='Adventures Remaining')
         character.adv = int(tag.text)
 
         character.quests = {}
-        nudges = tag.find_next('table', id='nudges')
+        nudges = soup.find('table', id='nudges')
         nudges = nudges.find_all('tr')
+
         for nudge in nudges:
             quest = Quest(nudge['rel'])
+            st = nudge.div.find_all('s')
+            for s in st:
+                s.string = u'\u2611 ' + s.text
             tasks = nudge.div.text.replace('*', '\n')
+            tasks = tasks.replace('\t', ' ')
             tasks = tasks.split('\n')
             quest.description = tasks[0]
             for sub in range(1, len(tasks)):
-                quest.subtasks.append(tasks[sub])
+                task = tasks[sub]
+                if u'\u2611' not in task:
+                    task = u'\u2610 ' + task.strip()
+                task = task.strip()
+                quest.subtasks.append(task)
             character.quests[quest.name] = quest
 
         character.effects = []
         effects = tag.find_next(text=re.compile('Effects:'))
-        effects = effects.find_next('table')
-        effects = effects.find_all('tr')
-        for effect in effects:
-            character.effects.append(Effect(effect.text))
+        if effects is not None:
+            effects = effects.find_next('table')
+            effects = effects.find_all('tr')
+            for effect in effects:
+                character.effects.append(Effect(effect.text))
 
     def auto_action(self):
         CharPane.parse_page(self.response.text, Globals.player)

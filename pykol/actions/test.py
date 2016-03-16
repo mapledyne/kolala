@@ -3,7 +3,7 @@ import pykol.pagetypes
 
 
 def main(arg):
-    filename = pykol.Config.save_pages_path + 'inventory.php'
+    filename = pykol.Config.save_pages_path + 'charpane.php'
     with open(filename, 'r') as file:
         text = file.read()
-    top = pykol.pagetypes.Inventory.parse_page(text)
+    top = pykol.pagetypes.CharPane.parse_page(text)

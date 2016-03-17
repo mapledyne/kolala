@@ -1,6 +1,9 @@
+import os
 import requests
 import six
+import uuid
 
+import pykol.Config
 from pykol.framework.Logging import Logging
 from pykol.framework.PageSelector import PageSelector
 
@@ -8,6 +11,8 @@ from pykol.framework.PageSelector import PageSelector
 class Client(object):
 
     session = requests.Session()
+    uuid = uuid.uuid4()
+    call_count = 0
 
     @staticmethod
     def _dict_to_query_params(d):
@@ -26,15 +31,25 @@ class Client(object):
         return '?' + "&".join(param_list)
 
     @staticmethod
+    def _check_url(url):
+        if (url.lower().startswith('http://') or
+                url.lower().startswith('https://')):
+            return url
+        return pykol.Config.url + url
+
+    @staticmethod
     def get(url, params=None):
         """Send a  request to the server."""
         if params is None:
             params = {}
 
+        url = Client._check_url(url)
+
         url += Client._dict_to_query_params(params)
 
         Logging.debug('HTTP Get: ' + url)
         response = Client.session.get(url)
+        Client.save_page(url, response.text)
 
         return response
 
@@ -47,12 +62,37 @@ class Client(object):
         if data is None:
             data = {}
 
+        url = Client._check_url(url)
+
         url += Client._dict_to_query_params(params)
 
         Logging.debug('HTTP Post to: ' + url)
         response = Client.session.post(url, data)
-
+        Client.save_page(url, response.text)
         return response
+
+    @staticmethod
+    def save_page(url, page):
+        if not pykol.Config.save_pages:
+            return
+
+        if 'call_counter' not in Client.save_page.__dict__:
+            Client.save_page.call_counter = 0
+        Client.save_page.call_counter += 1
+
+        page_name = url.replace(pykol.Config.url, '')
+        page_name = page_name.replace('?', '-')
+
+        path = pykol.Config.save_pages_path + str(Client.uuid) + '/'
+        if not os.path.exists(path):
+                os.makedirs(path)
+
+        file_name = '{}/[{}] {}'.format(path,
+                                        Client.save_page.call_counter,
+                                        page_name)
+
+        with open(file_name, 'w+') as file:
+            file.write(page.encode('utf-8'))
 
     @staticmethod
     def getpage(url, params=None):

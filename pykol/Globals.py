@@ -7,3 +7,5 @@ player = Character()
 modifiers = ModifierList()
 moons = Moons()
 outfits = Outfits()
+
+clovers = None

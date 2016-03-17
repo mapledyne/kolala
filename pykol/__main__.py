@@ -7,4 +7,7 @@ app = framework.KoLCmd()
 
 app.cmdloop()
 
-# framework.Client.get(Config.url + 'logout.php')
+framework.Client.get('logout.php')
+
+if pykol.Config.save_pages:
+    framework.Logging.Logging.info('Pages saved under uuid: {}'.format(framework.Client.uuid))

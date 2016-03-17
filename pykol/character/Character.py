@@ -34,6 +34,15 @@ class Character(object):
                 return True
         return False
 
+    def worthless():
+        worthless_things = ['worthless trinket', 'worthless gewgaw',
+                            'worthless knick-knack']
+        count = 0
+        for w in worthless_things:
+            if w in self.inventory:
+                count += self.inventory[w]
+        return count
+
     def __str__(self):
         core = ''
         if self.hardcore:

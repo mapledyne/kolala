@@ -24,4 +24,4 @@ maintenance = False
 
 # Debug and debug-related variables:
 save_pages = True
-save_pages_path = '_pages/'
+save_pages_path = '/tmp/pykol/pages/'

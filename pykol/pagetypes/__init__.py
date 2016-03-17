@@ -1,9 +1,15 @@
-from pykol.pagetypes.Campground import Campground
-from pykol.pagetypes.CharPane import CharPane
-from pykol.pagetypes.Inventory import Inventory
-from pykol.pagetypes.KoLPage import KoLPage
-from pykol.pagetypes.Login import Login
-from pykol.pagetypes.MainFrame import MainFrame
-from pykol.pagetypes.Maint import Maint
-from pykol.pagetypes.Tattoos import Tattoos
-from pykol.pagetypes.TopMenu import TopMenu
+
+import inspect
+import pkgutil
+
+__all__ = []
+
+for loader, name, is_pkg in pkgutil.walk_packages(__path__):
+    module = loader.find_module(name).load_module(name)
+
+    for name, value in inspect.getmembers(module):
+        if name.startswith('__'):
+            continue
+
+        globals()[name] = value
+        __all__.append(name)

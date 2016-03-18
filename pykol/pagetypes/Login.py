@@ -49,4 +49,6 @@ class Login(KoLPage):
         param_list['secure'] = 1
         param_list['loginname'] = Config.user
 
+        print('Logging in as {}...'.format(Config.user))
+
         return Client.post(Login.url, param_list)

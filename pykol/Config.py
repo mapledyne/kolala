@@ -2,7 +2,7 @@ import os
 
 version = '1.0.0'
 
-log_level = 10
+log_level = 20
 
 url = 'http://www.kingdomofloathing.com/'
 

@@ -1,8 +1,10 @@
 import bs4
 
 import pykol.Config as Config
+from pykol.framework.Logging import Logging
 import pykol.Globals as Globals
 from pykol.pagetypes.KoLPage import KoLPage
+import re
 
 
 class Hermit(KoLPage):
@@ -22,7 +24,12 @@ class Hermit(KoLPage):
         clover = clover.next_element.next_element
         if 'out of stock' in clover:
             Globals.clovers = 0
-        Globals.clovers = clover.text
+        try:
+            Globals.clovers = int(re.search('\d', str(clover)).group(0))
+        except ValueError:
+            Logging.error('Something weird happened on the way to the ' +
+                          'hermit. Clover count doesn\'t make sense: ' +
+                          clover)
 
     def auto_action(self):
         Hermit.parse_page(self.response.text)

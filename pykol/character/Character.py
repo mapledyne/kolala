@@ -34,7 +34,7 @@ class Character(object):
                 return True
         return False
 
-    def worthless():
+    def worthless(self):
         worthless_things = ['worthless trinket', 'worthless gewgaw',
                             'worthless knick-knack']
         count = 0

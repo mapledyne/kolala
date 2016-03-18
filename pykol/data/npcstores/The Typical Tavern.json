@@ -12,10 +12,10 @@
             "name": "plain old beer", 
             "row": 563
         }, 
-        "overpriced &quot;imported&quot; beer": {
+        "overpriced \"imported\" beer": {
             "url": "bartender", 
             "price": 100, 
-            "name": "overpriced &quot;imported&quot; beer", 
+            "name": "overpriced \"imported\" beer", 
             "row": 564
         }
     }

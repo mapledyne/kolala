@@ -16,6 +16,8 @@ if 'KOL_PASS' not in os.environ:
 user = os.environ['KOL_USER']
 password = os.environ['KOL_PASS']
 
+prompt = '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${class} > '
+
 data_path = 'pykol/data'
 
 # Variables that are set during runtime:

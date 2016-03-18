@@ -1,16 +1,40 @@
 from cmd2 import Cmd
 import importlib
 import inspect
-import pykol.Globals as Globals
-from pykol.framework.Client import Client
-from pykol.pagetypes.CharPane import CharPane
 import pkgutil
+
+import pykol
 import pykol.actions
+import pykol.Config as Config
+from pykol.framework.Client import Client
+import pykol.Globals as Globals
+from pykol.pagetypes.CharPane import CharPane
+
+
+class Prompt(object):
+    def __str__(self):
+        if pykol.player.name == '':
+            return ('Not logged in. Try \'login\', or \'register\' to '
+                    'add a player to the system.\n> ')
+        replacements = {'name': pykol.player.name,
+                        'class': pykol.player.char_cls,
+                        'level': pykol.player.level,
+                        'hp': '{}/{}'.format(pykol.player.hp.current,
+                                             pykol.player.hp.base),
+                        'mp': '{}/{}'.format(pykol.player.mp.current,
+                                             pykol.player.mp.base),
+                        'meat': '{:,}'.format(pykol.player.meat)}
+
+        prompt = Config.prompt
+        for r in replacements:
+            needle = '${' + r + '}'
+            prompt = prompt.replace(needle, replacements[r])
+        return prompt
 
 
 class KoLCmd(Cmd):
     intro = 'Welcome to pykol. A Kingdom of Loathing python interface.'
-    prompt = "> "
+    prompt = Prompt()
     file = None
 
     def __init__(self):
@@ -20,16 +44,3 @@ class KoLCmd(Cmd):
             if getattr(module, 'main', None) is not None:
                 setattr(self, 'do_' + name, module.main)
         Cmd.__init__(self)
-#        Client.getpage(CharPane.url)
-
-    # def do_character(self, arg):
-    #     character.do_character(self, arg)
-    #
-    # def do_meat(self, arg):
-    #     meat.do_meat(self, arg)
-    #
-    # def do_quests(self, arg):
-    #     quests.do_quests(self, arg)
-    #
-    # def do_effects(self, arg):
-    #     effects.do_effects(self, arg)

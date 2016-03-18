@@ -42,12 +42,6 @@
             "name": "soda water", 
             "row": 650
         }, 
-        "Ben-Gal&trade; Balm": {
-            "url": "generalstore", 
-            "price": 24, 
-            "name": "Ben-Gal&trade; Balm", 
-            "row": 630
-        }, 
         "glittery mascara": {
             "url": "generalstore", 
             "price": 24, 
@@ -72,11 +66,11 @@
             "name": "hermit permit", 
             "row": 652
         }, 
-        "Familiar-Gro&trade; Terrarium": {
+        "pool skimmer": {
             "url": "generalstore", 
             "price": 500, 
-            "name": "Familiar-Gro&trade; Terrarium", 
-            "row": 656
+            "name": "pool skimmer", 
+            "row": 628
         }, 
         "M-242": {
             "url": "generalstore", 
@@ -84,11 +78,11 @@
             "name": "M-242", 
             "row": ""
         }, 
-        "pool skimmer": {
+        "Ben-Gal\u2122 Balm": {
             "url": "generalstore", 
-            "price": 500, 
-            "name": "pool skimmer", 
-            "row": 628
+            "price": 24, 
+            "name": "Ben-Gal\u2122 Balm", 
+            "row": 630
         }, 
         "inflatable duck": {
             "url": "generalstore", 
@@ -107,12 +101,6 @@
             "price": 300, 
             "name": "foam noodle", 
             "row": 660
-        }, 
-        "Dramatic&trade; range": {
-            "url": "generalstore", 
-            "price": 1000, 
-            "name": "Dramatic&trade; range", 
-            "row": 643
         }, 
         "pickled egg": {
             "url": "generalstore", 
@@ -137,6 +125,12 @@
             "price": 300, 
             "name": "heavy duty umbrella", 
             "row": 627
+        }, 
+        "Dramatic\u2122 range": {
+            "url": "generalstore", 
+            "price": 1000, 
+            "name": "Dramatic\u2122 range", 
+            "row": 643
         }, 
         "spray paint": {
             "url": "generalstore", 
@@ -191,6 +185,12 @@
             "price": 300, 
             "name": "party hat", 
             "row": 654
+        }, 
+        "Familiar-Gro\u2122 Terrarium": {
+            "url": "generalstore", 
+            "price": 500, 
+            "name": "Familiar-Gro\u2122 Terrarium", 
+            "row": 656
         }, 
         "chewing gum on a string": {
             "url": "generalstore", 

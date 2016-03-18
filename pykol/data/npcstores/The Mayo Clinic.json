@@ -1,5 +1,11 @@
 {
     "The Mayo Clinic": {
+        "Mayo Minder\u2122": {
+            "url": "mayoclinic", 
+            "price": 99, 
+            "name": "Mayo Minder\u2122", 
+            "row": 725
+        }, 
         "Mayonex": {
             "url": "mayoclinic", 
             "price": 1000, 
@@ -47,12 +53,6 @@
             "price": 10000, 
             "name": "miracle whip", 
             "row": 721
-        }, 
-        "Mayo Minder&trade;": {
-            "url": "mayoclinic", 
-            "price": 99, 
-            "name": "Mayo Minder&trade;", 
-            "row": 725
         }, 
         "sphygmayomanometer": {
             "url": "mayoclinic", 

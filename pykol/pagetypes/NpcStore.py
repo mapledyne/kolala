@@ -5,18 +5,18 @@ import pykol.Globals as Globals
 from pykol.pagetypes.KoLPage import KoLPage
 
 
-class Store(KoLPage):
+class NpcStore(KoLPage):
 
-    url = Config.url + 'store.php'
+    url = Config.url + 'shop.php'
 
     @staticmethod
     def claim(response):
-        return response.url.startswith(Store.url)
+        return response.url.startswith(NpcStore.url)
 
     @staticmethod
     def parse_page(text):
         soup = bs4.BeautifulSoup(text, 'html.parser')
 
     def auto_action(self):
-        Store.parse_page(self.response.text)
+        NpcStore.parse_page(self.response.text)
         return None

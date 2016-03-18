@@ -17,4 +17,5 @@ def main(arg):
         print('{} is too expensive. You only have {:,} meat.'.format(offer.name, pykol.player.meat))
         return
 
+    print('Buying {}'.format(offer.name))
     pykol.stores.buy(offer)

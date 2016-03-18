@@ -1,6 +1,8 @@
 import bs4
 import re
 
+import pykol
+
 from pykol.character.Effect import Effect
 from pykol.character.Quest import Quest
 from pykol.character.Stat import Stat
@@ -20,7 +22,7 @@ class CharPane(KoLPage):
     @staticmethod
     def parse_page(text, character=None):
         if character is None:
-            character = Globals.player
+            character = pykol.player
         pwd = re.search('var pwdhash = "([a-f0-9]+)"', text)
 
         Globals.pwd = pwd.group(1)
@@ -102,5 +104,5 @@ class CharPane(KoLPage):
                 character.effects.append(Effect(effect.text))
 
     def auto_action(self):
-        CharPane.parse_page(self.response.text, Globals.player)
+        CharPane.parse_page(self.response.text)
         return None

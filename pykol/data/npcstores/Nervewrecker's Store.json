@@ -1,11 +1,5 @@
 {
     "Nervewrecker's Store": {
-        "Dramatic&trade; range": {
-            "url": "nerve", 
-            "price": 500, 
-            "name": "Dramatic&trade; range", 
-            "row": 591
-        }, 
         "Queue Du Coq cocktailcrafting kit": {
             "url": "nerve", 
             "price": 500, 
@@ -17,6 +11,12 @@
             "price": 500, 
             "name": "tenderizing hammer", 
             "row": 593
+        }, 
+        "Dramatic\u2122 range": {
+            "url": "nerve", 
+            "price": 500, 
+            "name": "Dramatic\u2122 range", 
+            "row": 591
         }
     }
 }

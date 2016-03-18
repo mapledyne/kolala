@@ -2,6 +2,7 @@ import glob
 import json
 
 import pykol.Config as Config
+from pykol.framework.Client import Client
 import pykol.Globals as Globals
 
 
@@ -57,7 +58,10 @@ class Stores(dict):
         found = []
         for store in self:
             for item in self[store]:
-                if target in item:
+                if item == target.lower():
+                    return [self[store][item]]
+                t_case = target.lower()
+                if t_case in item.lower():
                     found.append(self[store][item])
         return found
 
@@ -67,5 +71,11 @@ class Stores(dict):
         #   &action=buyitem&quantity=1
         #   &whichrow=630
         #   &pwd=0c08a016ea730f6457979c89ff9d0d62
-        print('Buying : ' + offer.name + ' x' + str(qty))
-        print('shop.php?whichshop={}&action=buyitem&quantity={}&whichrow={}&pwd={}'.format(offer.url, str(qty), str(offer.row), Globals.pwd))
+        url = ("shop.php?whichshop={}"
+               "&action=buyitem&quantity={}"
+               "&whichrow={}"
+               "&pwd={}").format(offer.url,
+                                 str(qty),
+                                 str(offer.row),
+                                 Globals.pwd)
+        Client.getpage(url)

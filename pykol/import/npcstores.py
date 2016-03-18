@@ -1,8 +1,11 @@
+import HTMLParser
 import json
 import os
 import requests
 
 response = requests.get('https://sourceforge.net/p/kolmafia/code/HEAD/tree/src/data/npcstores.txt?format=raw')
+
+parser = HTMLParser.HTMLParser()
 
 text = response.text
 
@@ -19,9 +22,9 @@ for line in lines:
     if len(item) < 4:
         print('Skipping line: ' + line)
         continue
-    store = item[0]
+    store = parser.unescape(item[0])
     url = item[1]
-    thing = item[2]
+    thing = parser.unescape(item[2])
     price = int(item[3])
     row = ''
     if len(item) == 5:

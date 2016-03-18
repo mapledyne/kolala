@@ -1,0 +1,46 @@
+{
+    "Madeline's Baking Supply": {
+        "Gnollish pie tin": {
+            "url": "madeline", 
+            "price": 25, 
+            "name": "Gnollish pie tin", 
+            "row": 736
+        }, 
+        "unrolling pin": {
+            "url": "madeline", 
+            "price": 400, 
+            "name": "unrolling pin", 
+            "row": 742
+        }, 
+        "taco shell": {
+            "url": "madeline", 
+            "price": 60, 
+            "name": "taco shell", 
+            "row": 738
+        }, 
+        "rolling pin": {
+            "url": "madeline", 
+            "price": 400, 
+            "name": "rolling pin", 
+            "row": 741
+        }, 
+        "Gnollish casserole dish": {
+            "url": "madeline", 
+            "price": 100, 
+            "name": "Gnollish casserole dish", 
+            "row": 740
+        }, 
+        "skewer": {
+            "url": "madeline", 
+            "price": 60, 
+            "name": "skewer", 
+            "row": 739
+        }, 
+        "wad of dough": {
+            "url": "madeline", 
+            "price": 40, 
+            "name": "wad of dough", 
+            "row": 737
+        }
+    }
+}

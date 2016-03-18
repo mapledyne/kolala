@@ -1,0 +1,58 @@
+{
+    "Gouda's Grimoire and Grocery": {
+        "kickback cookbook": {
+            "url": "guildstore2", 
+            "price": 4000, 
+            "name": "kickback cookbook", 
+            "row": 528
+        }, 
+        "magical mystery juice": {
+            "url": "guildstore2", 
+            "price": 100, 
+            "name": "magical mystery juice", 
+            "row": 527
+        }, 
+        "special sauce glove": {
+            "url": "guildstore2", 
+            "price": 5000, 
+            "name": "special sauce glove", 
+            "row": 529
+        }, 
+        "delectable catalyst": {
+            "url": "guildstore2", 
+            "price": 1000, 
+            "name": "delectable catalyst", 
+            "row": 531
+        }, 
+        "big stirring stick": {
+            "url": "guildstore2", 
+            "price": 1500, 
+            "name": "big stirring stick", 
+            "row": 533
+        }, 
+        "MSG": {
+            "url": "guildstore2", 
+            "price": 1000, 
+            "name": "MSG", 
+            "row": 532
+        }, 
+        "Codex of Capsaicin Conjuration": {
+            "url": "guildstore2", 
+            "price": 4000, 
+            "name": "Codex of Capsaicin Conjuration", 
+            "row": 526
+        }, 
+        "ladle of mystery": {
+            "url": "guildstore2", 
+            "price": 3000, 
+            "name": "ladle of mystery", 
+            "row": 530
+        }, 
+        "Gazpacho's Glacial Grimoire": {
+            "url": "guildstore2", 
+            "price": 4000, 
+            "name": "Gazpacho's Glacial Grimoire", 
+            "row": 525
+        }
+    }
+}

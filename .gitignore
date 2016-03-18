@@ -1,6 +1,7 @@
-# Specific things to this project:
+# Specific things for this project:
 
 _pages/
+_imports/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

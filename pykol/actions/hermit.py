@@ -2,7 +2,7 @@ import pykol
 
 
 def main(arg):
-    if pykol.Globals.clovers is None:
+    if pykol.Globals.clovers == -1:
         pykol.Client.getpage('hermit.php')
 
     print('There are {} clover(s) remaining at the hermit.'.format(pykol.Globals.clovers))

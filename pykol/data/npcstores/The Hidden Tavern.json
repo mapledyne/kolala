@@ -1,0 +1,22 @@
+{
+    "The Hidden Tavern": {
+        "Fog Murderer": {
+            "url": "hiddentavern", 
+            "price": 500, 
+            "name": "Fog Murderer", 
+            "row": 175
+        }, 
+        "Cursed Punch": {
+            "url": "hiddentavern", 
+            "price": 500, 
+            "name": "Cursed Punch", 
+            "row": 173
+        }, 
+        "Bowl of Scorpions": {
+            "url": "hiddentavern", 
+            "price": 500, 
+            "name": "Bowl of Scorpions", 
+            "row": 174
+        }
+    }
+}

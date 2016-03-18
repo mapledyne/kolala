@@ -1,0 +1,34 @@
+{
+    "Barrrtleby's Barrrgain Books": {
+        "The Big Book of Pirate Insults": {
+            "url": "bartlebys", 
+            "price": 500, 
+            "name": "The Big Book of Pirate Insults", 
+            "row": 615
+        }, 
+        "abridged dictionary": {
+            "url": "bartlebys", 
+            "price": 1000, 
+            "name": "abridged dictionary", 
+            "row": 617
+        }, 
+        "pirate tract": {
+            "url": "bartlebys", 
+            "price": 300, 
+            "name": "pirate tract", 
+            "row": 614
+        }, 
+        "pirate brochure": {
+            "url": "bartlebys", 
+            "price": 300, 
+            "name": "pirate brochure", 
+            "row": 612
+        }, 
+        "pirate pamphlet": {
+            "url": "bartlebys", 
+            "price": 300, 
+            "name": "pirate pamphlet", 
+            "row": 613
+        }
+    }
+}

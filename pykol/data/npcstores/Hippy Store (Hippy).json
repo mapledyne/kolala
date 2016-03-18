@@ -1,0 +1,70 @@
+{
+    "Hippy Store (Hippy)": {
+        "tomato": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "tomato", 
+            "row": 667
+        }, 
+        "lemon": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "lemon", 
+            "row": 664
+        }, 
+        "peach": {
+            "url": "hippy", 
+            "price": 300, 
+            "name": "peach", 
+            "row": 673
+        }, 
+        "strawberry": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "strawberry", 
+            "row": 668
+        }, 
+        "plum": {
+            "url": "hippy", 
+            "price": 300, 
+            "name": "plum", 
+            "row": 672
+        }, 
+        "pear": {
+            "url": "hippy", 
+            "price": 300, 
+            "name": "pear", 
+            "row": 676
+        }, 
+        "herbs": {
+            "url": "hippy", 
+            "price": 64, 
+            "name": "herbs", 
+            "row": 663
+        }, 
+        "grapefruit": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "grapefruit", 
+            "row": 669
+        }, 
+        "olive": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "olive", 
+            "row": 670
+        }, 
+        "grapes": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "grapes", 
+            "row": 666
+        }, 
+        "orange": {
+            "url": "hippy", 
+            "price": 70, 
+            "name": "orange", 
+            "row": 665
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "The Typical Tavern": {
+        "day-old beer": {
+            "url": "bartender", 
+            "price": 25, 
+            "name": "day-old beer", 
+            "row": 562
+        }, 
+        "plain old beer": {
+            "url": "bartender", 
+            "price": 50, 
+            "name": "plain old beer", 
+            "row": 563
+        }, 
+        "overpriced &quot;imported&quot; beer": {
+            "url": "bartender", 
+            "price": 100, 
+            "name": "overpriced &quot;imported&quot; beer", 
+            "row": 564
+        }
+    }
+}

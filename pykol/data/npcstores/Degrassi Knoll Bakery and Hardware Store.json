@@ -1,0 +1,112 @@
+{
+    "Degrassi Knoll Bakery and Hardware Store": {
+        "cog": {
+            "url": "gnoll", 
+            "price": 20, 
+            "name": "cog", 
+            "row": 597
+        }, 
+        "frilly skirt": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "frilly skirt", 
+            "row": 609
+        }, 
+        "bugbear bungguard": {
+            "url": "gnoll", 
+            "price": 70, 
+            "name": "bugbear bungguard", 
+            "row": 602
+        }, 
+        "Gnollish pie tin": {
+            "url": "gnoll", 
+            "price": 30, 
+            "name": "Gnollish pie tin", 
+            "row": 599
+        }, 
+        "spring": {
+            "url": "gnoll", 
+            "price": 20, 
+            "name": "spring", 
+            "row": 596
+        }, 
+        "bugbear beanie": {
+            "url": "gnoll", 
+            "price": 70, 
+            "name": "bugbear beanie", 
+            "row": 601
+        }, 
+        "maiden wig": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "maiden wig", 
+            "row": 607
+        }, 
+        "taco shell": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "taco shell", 
+            "row": 606
+        }, 
+        "tires": {
+            "url": "gnoll", 
+            "price": 28, 
+            "name": "tires", 
+            "row": 598
+        }, 
+        "Gnollish plunger": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "Gnollish plunger", 
+            "row": 605
+        }, 
+        "Gnollish casserole dish": {
+            "url": "gnoll", 
+            "price": 150, 
+            "name": "Gnollish casserole dish", 
+            "row": 610
+        }, 
+        "Gnollish flyswatter": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "Gnollish flyswatter", 
+            "row": 608
+        }, 
+        "flat dough": {
+            "url": "gnoll", 
+            "price": 70, 
+            "name": "flat dough", 
+            "row": 603
+        }, 
+        "sprocket": {
+            "url": "gnoll", 
+            "price": 20, 
+            "name": "sprocket", 
+            "row": 594
+        }, 
+        "skewer": {
+            "url": "gnoll", 
+            "price": 80, 
+            "name": "skewer", 
+            "row": 604
+        }, 
+        "empty meat tank": {
+            "url": "gnoll", 
+            "price": 20, 
+            "name": "empty meat tank", 
+            "row": 595
+        }, 
+        "detuned radio": {
+            "url": "gnoll", 
+            "price": 300, 
+            "name": "detuned radio", 
+            "row": 611
+        }, 
+        "wad of dough": {
+            "url": "gnoll", 
+            "price": 50, 
+            "name": "wad of dough", 
+            "row": 600
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "Chinatown Shops": {
+        "brass abacus": {
+            "url": "chinatown", 
+            "price": 150, 
+            "name": "brass abacus", 
+            "row": 569
+        }, 
+        "bonsai tree": {
+            "url": "chinatown", 
+            "price": 1500, 
+            "name": "bonsai tree", 
+            "row": 576
+        }, 
+        "cheap Chinese beer": {
+            "url": "chinatown", 
+            "price": 250, 
+            "name": "cheap Chinese beer", 
+            "row": 570
+        }, 
+        "furry pink pillow": {
+            "url": "chinatown", 
+            "price": 500, 
+            "name": "furry pink pillow", 
+            "row": 573
+        }, 
+        "bottle of limeade": {
+            "url": "chinatown", 
+            "price": 300, 
+            "name": "bottle of limeade", 
+            "row": 571
+        }, 
+        "novelty tattoo sleeves": {
+            "url": "chinatown", 
+            "price": 1000, 
+            "name": "novelty tattoo sleeves", 
+            "row": 574
+        }, 
+        "fortune cookie": {
+            "url": "chinatown", 
+            "price": 40, 
+            "name": "fortune cookie", 
+            "row": 568
+        }, 
+        "rhinoceros horn": {
+            "url": "chinatown", 
+            "price": 375, 
+            "name": "rhinoceros horn", 
+            "row": 572
+        }, 
+        "lucky cat statue": {
+            "url": "chinatown", 
+            "price": 2000, 
+            "name": "lucky cat statue", 
+            "row": 577
+        }, 
+        "toy taijijian": {
+            "url": "chinatown", 
+            "price": 1000, 
+            "name": "toy taijijian", 
+            "row": 575
+        }
+    }
+}

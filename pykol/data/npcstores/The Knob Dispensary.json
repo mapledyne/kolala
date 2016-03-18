@@ -1,0 +1,58 @@
+{
+    "The Knob Dispensary": {
+        "Knob Goblin nasal spray": {
+            "url": "knobdisp", 
+            "price": 150, 
+            "name": "Knob Goblin nasal spray", 
+            "row": 513
+        }, 
+        "Knob Goblin stink bomb": {
+            "url": "knobdisp", 
+            "price": 130, 
+            "name": "Knob Goblin stink bomb", 
+            "row": 518
+        }, 
+        "Knob Goblin love potion": {
+            "url": "knobdisp", 
+            "price": 170, 
+            "name": "Knob Goblin love potion", 
+            "row": 517
+        }, 
+        "Knob Goblin learning pill": {
+            "url": "knobdisp", 
+            "price": 300, 
+            "name": "Knob Goblin learning pill", 
+            "row": 515
+        }, 
+        "Knob Goblin pet-buffing spray": {
+            "url": "knobdisp", 
+            "price": 250, 
+            "name": "Knob Goblin pet-buffing spray", 
+            "row": 520
+        }, 
+        "Knob Goblin steroids": {
+            "url": "knobdisp", 
+            "price": 250, 
+            "name": "Knob Goblin steroids", 
+            "row": 516
+        }, 
+        "Knob Goblin eyedrops": {
+            "url": "knobdisp", 
+            "price": 200, 
+            "name": "Knob Goblin eyedrops", 
+            "row": 514
+        }, 
+        "Knob Goblin sharpening spray": {
+            "url": "knobdisp", 
+            "price": 230, 
+            "name": "Knob Goblin sharpening spray", 
+            "row": 519
+        }, 
+        "Knob Goblin seltzer": {
+            "url": "knobdisp", 
+            "price": 80, 
+            "name": "Knob Goblin seltzer", 
+            "row": 521
+        }
+    }
+}

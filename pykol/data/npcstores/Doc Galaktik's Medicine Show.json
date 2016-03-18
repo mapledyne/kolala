@@ -1,0 +1,34 @@
+{
+    "Doc Galaktik's Medicine Show": {
+        "Doc Galaktik's Pungent Unguent": {
+            "url": "doc", 
+            "price": 30, 
+            "name": "Doc Galaktik's Pungent Unguent", 
+            "row": 695
+        }, 
+        "anti-anti-antidote": {
+            "url": "doc", 
+            "price": 30, 
+            "name": "anti-anti-antidote", 
+            "row": 694
+        }, 
+        "Doc Galaktik's Vitality Serum": {
+            "url": "doc", 
+            "price": 60, 
+            "name": "Doc Galaktik's Vitality Serum", 
+            "row": 698
+        }, 
+        "Doc Galaktik's Invigorating Tonic": {
+            "url": "doc", 
+            "price": 90, 
+            "name": "Doc Galaktik's Invigorating Tonic", 
+            "row": 697
+        }, 
+        "Doc Galaktik's Homeopathic Elixir": {
+            "url": "doc", 
+            "price": 120, 
+            "name": "Doc Galaktik's Homeopathic Elixir", 
+            "row": 696
+        }
+    }
+}

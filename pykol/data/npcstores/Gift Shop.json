@@ -1,0 +1,274 @@
+{
+    "Gift Shop": {
+        "long-stemmed rose": {
+            "url": "town_giftshop.php", 
+            "price": 10000, 
+            "name": "long-stemmed rose", 
+            "row": ""
+        }, 
+        "apathetic lizardman doll": {
+            "url": "town_giftshop.php", 
+            "price": 5000, 
+            "name": "apathetic lizardman doll", 
+            "row": ""
+        }, 
+        "red balloon": {
+            "url": "town_giftshop.php", 
+            "price": 100000, 
+            "name": "red balloon", 
+            "row": ""
+        }, 
+        "mugcake": {
+            "url": "town_giftshop.php", 
+            "price": 20, 
+            "name": "mugcake", 
+            "row": ""
+        }, 
+        "Mr. Balloon": {
+            "url": "town_giftshop.php", 
+            "price": 50000, 
+            "name": "Mr. Balloon", 
+            "row": ""
+        }, 
+        "blue velvet cake": {
+            "url": "town_giftshop.php", 
+            "price": 5000, 
+            "name": "blue velvet cake", 
+            "row": ""
+        }, 
+        "Raggedy Hippy doll": {
+            "url": "town_giftshop.php", 
+            "price": 1000, 
+            "name": "Raggedy Hippy doll", 
+            "row": ""
+        }, 
+        "rat head balloon": {
+            "url": "town_giftshop.php", 
+            "price": 10000, 
+            "name": "rat head balloon", 
+            "row": ""
+        }, 
+        "giant stuffed bugbear": {
+            "url": "town_giftshop.php", 
+            "price": 100000, 
+            "name": "giant stuffed bugbear", 
+            "row": ""
+        }, 
+        "congratulatory cake": {
+            "url": "town_giftshop.php", 
+            "price": 10000, 
+            "name": "congratulatory cake", 
+            "row": ""
+        }, 
+        "exotic orchid": {
+            "url": "town_giftshop.php", 
+            "price": 5000, 
+            "name": "exotic orchid", 
+            "row": ""
+        }, 
+        "white balloon": {
+            "url": "town_giftshop.php", 
+            "price": 20, 
+            "name": "white balloon", 
+            "row": ""
+        }, 
+        "stuffed dodecapede": {
+            "url": "town_giftshop.php", 
+            "price": 100, 
+            "name": "stuffed dodecapede", 
+            "row": ""
+        }, 
+        "anniversary balloon": {
+            "url": "town_giftshop.php", 
+            "price": 500, 
+            "name": "anniversary balloon", 
+            "row": ""
+        }, 
+        "Happy Birthday, Claude! cake": {
+            "url": "town_giftshop.php", 
+            "price": 200, 
+            "name": "Happy Birthday, Claude! cake", 
+            "row": ""
+        }, 
+        "heart-shaped balloon": {
+            "url": "town_giftshop.php", 
+            "price": 200, 
+            "name": "heart-shaped balloon", 
+            "row": ""
+        }, 
+        "black lotus": {
+            "url": "town_giftshop.php", 
+            "price": 100000, 
+            "name": "black lotus", 
+            "row": ""
+        }, 
+        "thought balloon": {
+            "url": "town_giftshop.php", 
+            "price": 5000, 
+            "name": "thought balloon", 
+            "row": ""
+        }, 
+        "babycakes": {
+            "url": "town_giftshop.php", 
+            "price": 2000, 
+            "name": "babycakes", 
+            "row": ""
+        }, 
+        "stuffed stab bat": {
+            "url": "town_giftshop.php", 
+            "price": 2000, 
+            "name": "stuffed stab bat", 
+            "row": ""
+        }, 
+        "all-purpose flower": {
+            "url": "town_giftshop.php", 
+            "price": 2000, 
+            "name": "all-purpose flower", 
+            "row": ""
+        }, 
+        "angel-food cake": {
+            "url": "town_giftshop.php", 
+            "price": 20000, 
+            "name": "angel-food cake", 
+            "row": ""
+        }, 
+        "stuffed Mob Penguin": {
+            "url": "town_giftshop.php", 
+            "price": 20000, 
+            "name": "stuffed Mob Penguin", 
+            "row": ""
+        }, 
+        "devil's-food cake": {
+            "url": "town_giftshop.php", 
+            "price": 50000, 
+            "name": "devil's-food cake", 
+            "row": ""
+        }, 
+        "Kevlar balloon": {
+            "url": "town_giftshop.php", 
+            "price": 2000, 
+            "name": "Kevlar balloon", 
+            "row": ""
+        }, 
+        "three-tiered wedding cake": {
+            "url": "town_giftshop.php", 
+            "price": 1000, 
+            "name": "three-tiered wedding cake", 
+            "row": ""
+        }, 
+        "green balloon": {
+            "url": "town_giftshop.php", 
+            "price": 100, 
+            "name": "green balloon", 
+            "row": ""
+        }, 
+        "stuffed sabre-toothed lime": {
+            "url": "town_giftshop.php", 
+            "price": 50000, 
+            "name": "stuffed sabre-toothed lime", 
+            "row": ""
+        }, 
+        "Venus flytrap": {
+            "url": "town_giftshop.php", 
+            "price": 1000, 
+            "name": "Venus flytrap", 
+            "row": ""
+        }, 
+        "birthday party jellybean cheesecake": {
+            "url": "town_giftshop.php", 
+            "price": 100000, 
+            "name": "birthday party jellybean cheesecake", 
+            "row": ""
+        }, 
+        "stuffed yeti": {
+            "url": "town_giftshop.php", 
+            "price": 10000, 
+            "name": "stuffed yeti", 
+            "row": ""
+        }, 
+        "urinal cake": {
+            "url": "town_giftshop.php", 
+            "price": 100, 
+            "name": "urinal cake", 
+            "row": ""
+        }, 
+        "potted fern": {
+            "url": "town_giftshop.php", 
+            "price": 200, 
+            "name": "potted fern", 
+            "row": ""
+        }, 
+        "personalized birthday cake": {
+            "url": "town_giftshop.php", 
+            "price": 500, 
+            "name": "personalized birthday cake", 
+            "row": ""
+        }, 
+        "deadly nightshade": {
+            "url": "town_giftshop.php", 
+            "price": 50000, 
+            "name": "deadly nightshade", 
+            "row": ""
+        }, 
+        "gilded lily": {
+            "url": "town_giftshop.php", 
+            "price": 20000, 
+            "name": "gilded lily", 
+            "row": ""
+        }, 
+        "stuffed can of asparagus": {
+            "url": "town_giftshop.php", 
+            "price": 20, 
+            "name": "stuffed can of asparagus", 
+            "row": ""
+        }, 
+        "potted cactus": {
+            "url": "town_giftshop.php", 
+            "price": 20, 
+            "name": "potted cactus", 
+            "row": ""
+        }, 
+        "Valentine": {
+            "url": "town_giftshop.php", 
+            "price": 500, 
+            "name": "Valentine", 
+            "row": ""
+        }, 
+        "tulip": {
+            "url": "town_giftshop.php", 
+            "price": 500, 
+            "name": "tulip", 
+            "row": ""
+        }, 
+        "mini-zeppelin": {
+            "url": "town_giftshop.php", 
+            "price": 20000, 
+            "name": "mini-zeppelin", 
+            "row": ""
+        }, 
+        "stuffed zmobie": {
+            "url": "town_giftshop.php", 
+            "price": 500, 
+            "name": "stuffed zmobie", 
+            "row": ""
+        }, 
+        "daisy": {
+            "url": "town_giftshop.php", 
+            "price": 100, 
+            "name": "daisy", 
+            "row": ""
+        }, 
+        "stuffed ghuol whelp": {
+            "url": "town_giftshop.php", 
+            "price": 200, 
+            "name": "stuffed ghuol whelp", 
+            "row": ""
+        }, 
+        "Mylar balloon": {
+            "url": "town_giftshop.php", 
+            "price": 1000, 
+            "name": "Mylar balloon", 
+            "row": ""
+        }
+    }
+}

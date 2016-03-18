@@ -1,0 +1,22 @@
+{
+    "Huggler Memorial Colosseum Snack Bar": {
+        "nailswurst": {
+            "url": "snackbar", 
+            "price": 500, 
+            "name": "nailswurst", 
+            "row": 566
+        }, 
+        "used beer": {
+            "url": "snackbar", 
+            "price": 500, 
+            "name": "used beer", 
+            "row": 567
+        }, 
+        "Hatorade": {
+            "url": "snackbar", 
+            "price": 500, 
+            "name": "Hatorade", 
+            "row": 565
+        }
+    }
+}

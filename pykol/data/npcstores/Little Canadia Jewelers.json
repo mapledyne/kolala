@@ -1,0 +1,52 @@
+{
+    "Little Canadia Jewelers": {
+        "Really Expensive Jewelry and You": {
+            "url": "jewelers", 
+            "price": 5000, 
+            "name": "Really Expensive Jewelry and You", 
+            "row": 548
+        }, 
+        "piercing post": {
+            "url": "jewelers", 
+            "price": 64, 
+            "name": "piercing post", 
+            "row": 544
+        }, 
+        "heavy necklace chain": {
+            "url": "jewelers", 
+            "price": 1000, 
+            "name": "heavy necklace chain", 
+            "row": 551
+        }, 
+        "extra-fancy ring setting": {
+            "url": "jewelers", 
+            "price": 1000, 
+            "name": "extra-fancy ring setting", 
+            "row": 549
+        }, 
+        "jewelry-making pliers": {
+            "url": "jewelers", 
+            "price": 1000, 
+            "name": "jewelry-making pliers", 
+            "row": 547
+        }, 
+        "precious piercing post": {
+            "url": "jewelers", 
+            "price": 1000, 
+            "name": "precious piercing post", 
+            "row": 550
+        }, 
+        "ring setting": {
+            "url": "jewelers", 
+            "price": 200, 
+            "name": "ring setting", 
+            "row": 546
+        }, 
+        "necklace chain": {
+            "url": "jewelers", 
+            "price": 70, 
+            "name": "necklace chain", 
+            "row": 545
+        }
+    }
+}

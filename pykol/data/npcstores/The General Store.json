@@ -1,0 +1,220 @@
+{
+    "The General Store": {
+        "third-hand lantern": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "third-hand lantern", 
+            "row": 633
+        }, 
+        "folder (blue)": {
+            "url": "generalstore", 
+            "price": 10, 
+            "name": "folder (blue)", 
+            "row": 636
+        }, 
+        "marshmallow": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "marshmallow", 
+            "row": 662
+        }, 
+        "water wings": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "water wings", 
+            "row": 661
+        }, 
+        "water wings for babies": {
+            "url": "generalstore", 
+            "price": 50, 
+            "name": "water wings for babies", 
+            "row": 625
+        }, 
+        "casino pass": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "casino pass", 
+            "row": 651
+        }, 
+        "soda water": {
+            "url": "generalstore", 
+            "price": 70, 
+            "name": "soda water", 
+            "row": 650
+        }, 
+        "Ben-Gal&trade; Balm": {
+            "url": "generalstore", 
+            "price": 24, 
+            "name": "Ben-Gal&trade; Balm", 
+            "row": 630
+        }, 
+        "glittery mascara": {
+            "url": "generalstore", 
+            "price": 24, 
+            "name": "glittery mascara", 
+            "row": 629
+        }, 
+        "Desert Bus pass": {
+            "url": "generalstore", 
+            "price": 5000, 
+            "name": "Desert Bus pass", 
+            "row": 657
+        }, 
+        "loose purse strings": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "loose purse strings", 
+            "row": 632
+        }, 
+        "hermit permit": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "hermit permit", 
+            "row": 652
+        }, 
+        "Familiar-Gro&trade; Terrarium": {
+            "url": "generalstore", 
+            "price": 500, 
+            "name": "Familiar-Gro&trade; Terrarium", 
+            "row": 656
+        }, 
+        "M-242": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "M-242", 
+            "row": ""
+        }, 
+        "pool skimmer": {
+            "url": "generalstore", 
+            "price": 500, 
+            "name": "pool skimmer", 
+            "row": 628
+        }, 
+        "inflatable duck": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "inflatable duck", 
+            "row": 659
+        }, 
+        "fermenting powder": {
+            "url": "generalstore", 
+            "price": 70, 
+            "name": "fermenting powder", 
+            "row": 649
+        }, 
+        "foam noodle": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "foam noodle", 
+            "row": 660
+        }, 
+        "Dramatic&trade; range": {
+            "url": "generalstore", 
+            "price": 1000, 
+            "name": "Dramatic&trade; range", 
+            "row": 643
+        }, 
+        "pickled egg": {
+            "url": "generalstore", 
+            "price": 40, 
+            "name": "pickled egg", 
+            "row": 646
+        }, 
+        "sweet rims": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "sweet rims", 
+            "row": 653
+        }, 
+        "cup of lukewarm tea": {
+            "url": "generalstore", 
+            "price": 40, 
+            "name": "cup of lukewarm tea", 
+            "row": 644
+        }, 
+        "heavy duty umbrella": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "heavy duty umbrella", 
+            "row": 627
+        }, 
+        "spray paint": {
+            "url": "generalstore", 
+            "price": 50, 
+            "name": "spray paint", 
+            "row": 647
+        }, 
+        "snake": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "snake", 
+            "row": ""
+        }, 
+        "sparkler": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "sparkler", 
+            "row": ""
+        }, 
+        "fortune cookie": {
+            "url": "generalstore", 
+            "price": 40, 
+            "name": "fortune cookie", 
+            "row": 645
+        }, 
+        "Queue Du Coq cocktailcrafting kit": {
+            "url": "generalstore", 
+            "price": 1000, 
+            "name": "Queue Du Coq cocktailcrafting kit", 
+            "row": 642
+        }, 
+        "dingy planks": {
+            "url": "generalstore", 
+            "price": 400, 
+            "name": "dingy planks", 
+            "row": 655
+        }, 
+        "folder (green)": {
+            "url": "generalstore", 
+            "price": 10, 
+            "name": "folder (green)", 
+            "row": 635
+        }, 
+        "miniature life preserver": {
+            "url": "generalstore", 
+            "price": 100, 
+            "name": "miniature life preserver", 
+            "row": 626
+        }, 
+        "party hat": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "party hat", 
+            "row": 654
+        }, 
+        "chewing gum on a string": {
+            "url": "generalstore", 
+            "price": 50, 
+            "name": "chewing gum on a string", 
+            "row": 648
+        }, 
+        "hair spray": {
+            "url": "generalstore", 
+            "price": 24, 
+            "name": "hair spray", 
+            "row": 631
+        }, 
+        "oyster basket": {
+            "url": "generalstore", 
+            "price": 300, 
+            "name": "oyster basket", 
+            "row": 658
+        }, 
+        "folder (red)": {
+            "url": "generalstore", 
+            "price": 10, 
+            "name": "folder (red)", 
+            "row": 634
+        }
+    }
+}

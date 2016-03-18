@@ -13,4 +13,4 @@ def main(arg):
                     meat_count += 1
                     print('\t{} ({})\n\t\t{}'.format(effect.name, effect.duration, i))
     if meat_count == 0:
-        print '\tNone.'
+        print('\tNone.')

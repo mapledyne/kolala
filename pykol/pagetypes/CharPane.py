@@ -21,6 +21,10 @@ class CharPane(KoLPage):
     def parse_page(text, character=None):
         if character is None:
             character = Globals.player
+        pwd = re.search('var pwdhash = "([a-f0-9]+)"', text)
+
+        Globals.pwd = pwd.group(1)
+
         soup = bs4.BeautifulSoup(text, 'html.parser')
         if 'Hardcore' in soup.text:
             character.hardcore = True

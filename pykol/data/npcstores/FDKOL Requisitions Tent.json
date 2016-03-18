@@ -1,0 +1,16 @@
+{
+    "FDKOL Requisitions Tent": {
+        "drop of water-37": {
+            "url": "fdkol", 
+            "price": 1000, 
+            "name": "drop of water-37", 
+            "row": ""
+        }, 
+        "FDKOL hotcakes": {
+            "url": "fdkol", 
+            "price": 5000, 
+            "name": "FDKOL hotcakes", 
+            "row": ""
+        }
+    }
+}

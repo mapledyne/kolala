@@ -1,0 +1,64 @@
+{
+    "Gno-Mart": {
+        "flask of Gnomochloric acid": {
+            "url": "gnomart", 
+            "price": 1000, 
+            "name": "flask of Gnomochloric acid", 
+            "row": 560
+        }, 
+        "Meleegra&trade; pills": {
+            "url": "gnomart", 
+            "price": 300, 
+            "name": "Meleegra&trade; pills", 
+            "row": 557
+        }, 
+        "tamarind-flavored chewing gum": {
+            "url": "gnomart", 
+            "price": 200, 
+            "name": "tamarind-flavored chewing gum", 
+            "row": 554
+        }, 
+        "handsomeness potion": {
+            "url": "gnomart", 
+            "price": 300, 
+            "name": "handsomeness potion", 
+            "row": 556
+        }, 
+        "vial of Gnomochloric acid": {
+            "url": "gnomart", 
+            "price": 500, 
+            "name": "vial of Gnomochloric acid", 
+            "row": 559
+        }, 
+        "marzipan skull": {
+            "url": "gnomart", 
+            "price": 300, 
+            "name": "marzipan skull", 
+            "row": 558
+        }, 
+        "pickle-flavored chewing gum": {
+            "url": "gnomart", 
+            "price": 200, 
+            "name": "pickle-flavored chewing gum", 
+            "row": 555
+        }, 
+        "jaba&ntilde;ero-flavored chewing gum": {
+            "url": "gnomart", 
+            "price": 200, 
+            "name": "jaba&ntilde;ero-flavored chewing gum", 
+            "row": 553
+        }, 
+        "jug of Gnomochloric acid": {
+            "url": "gnomart", 
+            "price": 5000, 
+            "name": "jug of Gnomochloric acid", 
+            "row": 561
+        }, 
+        "lime-and-chile-flavored chewing gum": {
+            "url": "gnomart", 
+            "price": 200, 
+            "name": "lime-and-chile-flavored chewing gum", 
+            "row": 552
+        }
+    }
+}

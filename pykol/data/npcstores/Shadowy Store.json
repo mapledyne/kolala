@@ -1,0 +1,22 @@
+{
+    "Shadowy Store": {
+        "moxie magnet": {
+            "url": "guildstore1", 
+            "price": 3000, 
+            "name": "moxie magnet", 
+            "row": 524
+        }, 
+        "ye olde golde frontes": {
+            "url": "guildstore1", 
+            "price": 1500, 
+            "name": "ye olde golde frontes", 
+            "row": 522
+        }, 
+        "bejeweled accordion strap": {
+            "url": "guildstore1", 
+            "price": 2000, 
+            "name": "bejeweled accordion strap", 
+            "row": 523
+        }
+    }
+}

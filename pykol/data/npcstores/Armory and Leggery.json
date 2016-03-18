@@ -1,0 +1,196 @@
+{
+    "Armory and Leggery": {
+        "lead yo-yo": {
+            "url": "armory", 
+            "price": 600, 
+            "name": "lead yo-yo", 
+            "row": 471
+        }, 
+        "lucky ball-and-chain": {
+            "url": "armory", 
+            "price": 975, 
+            "name": "lucky ball-and-chain", 
+            "row": 474
+        }, 
+        "football helmet": {
+            "url": "armory", 
+            "price": 1125, 
+            "name": "football helmet", 
+            "row": 480
+        }, 
+        "bamboo bokuto": {
+            "url": "armory", 
+            "price": 750, 
+            "name": "bamboo bokuto", 
+            "row": 467
+        }, 
+        "wooden spoon": {
+            "url": "armory", 
+            "price": 300, 
+            "name": "wooden spoon", 
+            "row": 685
+        }, 
+        "macroplane grater": {
+            "url": "armory", 
+            "price": 750, 
+            "name": "macroplane grater", 
+            "row": 687
+        }, 
+        "yellow plastic hard hat": {
+            "url": "armory", 
+            "price": 675, 
+            "name": "yellow plastic hard hat", 
+            "row": 478
+        }, 
+        "studded leather boxer shorts": {
+            "url": "armory", 
+            "price": 50, 
+            "name": "studded leather boxer shorts", 
+            "row": 489
+        }, 
+        "sweet ninja sword": {
+            "url": "armory", 
+            "price": 50, 
+            "name": "sweet ninja sword", 
+            "row": 490
+        }, 
+        "union scalemail pants": {
+            "url": "armory", 
+            "price": 375, 
+            "name": "union scalemail pants", 
+            "row": 482
+        }, 
+        "wooden salad bowl": {
+            "url": "armory", 
+            "price": 900, 
+            "name": "wooden salad bowl", 
+            "row": 479
+        }, 
+        "Kentucky-style derby": {
+            "url": "armory", 
+            "price": 50, 
+            "name": "Kentucky-style derby", 
+            "row": 486
+        }, 
+        "rubber spatula": {
+            "url": "armory", 
+            "price": 150, 
+            "name": "rubber spatula", 
+            "row": 684
+        }, 
+        "chain-mail monokini": {
+            "url": "armory", 
+            "price": 225, 
+            "name": "chain-mail monokini", 
+            "row": 481
+        }, 
+        "pentacorn hat": {
+            "url": "armory", 
+            "price": 300, 
+            "name": "pentacorn hat", 
+            "row": 476
+        }, 
+        "bill bec-de-bardiche glaive-guisarme": {
+            "url": "armory", 
+            "price": 1125, 
+            "name": "bill bec-de-bardiche glaive-guisarme", 
+            "row": 470
+        }, 
+        "goofily-plumed helmet": {
+            "url": "armory", 
+            "price": 525, 
+            "name": "goofily-plumed helmet", 
+            "row": 477
+        }, 
+        "suede shortsword": {
+            "url": "armory", 
+            "price": 300, 
+            "name": "suede shortsword", 
+            "row": 466
+        }, 
+        "sack of doorknobs": {
+            "url": "armory", 
+            "price": 825, 
+            "name": "sack of doorknobs", 
+            "row": 473
+        }, 
+        "obsidian nutcracker": {
+            "url": "armory", 
+            "price": 1125, 
+            "name": "obsidian nutcracker", 
+            "row": 689
+        }, 
+        "crystalline reamer": {
+            "url": "armory", 
+            "price": 525, 
+            "name": "crystalline reamer", 
+            "row": 686
+        }, 
+        "automatic catapult": {
+            "url": "armory", 
+            "price": 1125, 
+            "name": "automatic catapult", 
+            "row": 475
+        }, 
+        "snorkel": {
+            "url": "armory", 
+            "price": 30, 
+            "name": "snorkel", 
+            "row": 488
+        }, 
+        "cool whip": {
+            "url": "armory", 
+            "price": 30, 
+            "name": "cool whip", 
+            "row": 487
+        }, 
+        "paper-plate-mail pants": {
+            "url": "armory", 
+            "price": 600, 
+            "name": "paper-plate-mail pants", 
+            "row": 483
+        }, 
+        "bastard baster": {
+            "url": "armory", 
+            "price": 900, 
+            "name": "bastard baster", 
+            "row": 688
+        }, 
+        "two-handed depthsword": {
+            "url": "armory", 
+            "price": 900, 
+            "name": "two-handed depthsword", 
+            "row": 469
+        }, 
+        "toy accordion": {
+            "url": "armory", 
+            "price": 150, 
+            "name": "toy accordion", 
+            "row": 491
+        }, 
+        "alpha-mail pants": {
+            "url": "armory", 
+            "price": 1050, 
+            "name": "alpha-mail pants", 
+            "row": 485
+        }, 
+        "troutpiece": {
+            "url": "armory", 
+            "price": 825, 
+            "name": "troutpiece", 
+            "row": 484
+        }, 
+        "25-meat staff": {
+            "url": "armory", 
+            "price": 525, 
+            "name": "25-meat staff", 
+            "row": 468
+        }, 
+        "slightly peevedbow": {
+            "url": "armory", 
+            "price": 450, 
+            "name": "slightly peevedbow", 
+            "row": 472
+        }
+    }
+}

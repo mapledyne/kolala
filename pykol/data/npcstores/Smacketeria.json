@@ -1,0 +1,64 @@
+{
+    "Smacketeria": {
+        "turtling rod": {
+            "url": "guildstore3", 
+            "price": 500, 
+            "name": "turtling rod", 
+            "row": 543
+        }, 
+        "figurine of an armored seal": {
+            "url": "guildstore3", 
+            "price": 500, 
+            "name": "figurine of an armored seal", 
+            "row": 542
+        }, 
+        "cheap wind-up clock": {
+            "url": "guildstore3", 
+            "price": 200, 
+            "name": "cheap wind-up clock", 
+            "row": 537
+        }, 
+        "figurine of a wretched-looking seal": {
+            "url": "guildstore3", 
+            "price": 150, 
+            "name": "figurine of a wretched-looking seal", 
+            "row": 540
+        }, 
+        "enchanted brass knuckles": {
+            "url": "guildstore3", 
+            "price": 1000, 
+            "name": "enchanted brass knuckles", 
+            "row": 534
+        }, 
+        "blood of the Wereseal": {
+            "url": "guildstore3", 
+            "price": 500, 
+            "name": "blood of the Wereseal", 
+            "row": 535
+        }, 
+        "turtle pheromones": {
+            "url": "guildstore3", 
+            "price": 50, 
+            "name": "turtle pheromones", 
+            "row": 538
+        }, 
+        "Medicinal Herb's medicinal herbs": {
+            "url": "guildstore3", 
+            "price": 100, 
+            "name": "Medicinal Herb's medicinal herbs", 
+            "row": 536
+        }, 
+        "seal-blubber candle": {
+            "url": "guildstore3", 
+            "price": 100, 
+            "name": "seal-blubber candle", 
+            "row": 539
+        }, 
+        "figurine of a cute baby seal": {
+            "url": "guildstore3", 
+            "price": 250, 
+            "name": "figurine of a cute baby seal", 
+            "row": 541
+        }
+    }
+}

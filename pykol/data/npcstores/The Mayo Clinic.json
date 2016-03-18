@@ -1,0 +1,64 @@
+{
+    "The Mayo Clinic": {
+        "Mayonex": {
+            "url": "mayoclinic", 
+            "price": 1000, 
+            "name": "Mayonex", 
+            "row": 716
+        }, 
+        "Mayozapine": {
+            "url": "mayoclinic", 
+            "price": 1000, 
+            "name": "Mayozapine", 
+            "row": 719
+        }, 
+        "Mayoflex": {
+            "url": "mayoclinic", 
+            "price": 1000, 
+            "name": "Mayoflex", 
+            "row": 720
+        }, 
+        "Mayostat": {
+            "url": "mayoclinic", 
+            "price": 1000, 
+            "name": "Mayostat", 
+            "row": 718
+        }, 
+        "mayo lance": {
+            "url": "mayoclinic", 
+            "price": 2500, 
+            "name": "mayo lance", 
+            "row": 724
+        }, 
+        "tomayohawk-style reflex hammer": {
+            "url": "mayoclinic", 
+            "price": 2500, 
+            "name": "tomayohawk-style reflex hammer", 
+            "row": 723
+        }, 
+        "Mayodiol": {
+            "url": "mayoclinic", 
+            "price": 1000, 
+            "name": "Mayodiol", 
+            "row": 717
+        }, 
+        "miracle whip": {
+            "url": "mayoclinic", 
+            "price": 10000, 
+            "name": "miracle whip", 
+            "row": 721
+        }, 
+        "Mayo Minder&trade;": {
+            "url": "mayoclinic", 
+            "price": 99, 
+            "name": "Mayo Minder&trade;", 
+            "row": 725
+        }, 
+        "sphygmayomanometer": {
+            "url": "mayoclinic", 
+            "price": 2500, 
+            "name": "sphygmayomanometer", 
+            "row": 722
+        }
+    }
+}

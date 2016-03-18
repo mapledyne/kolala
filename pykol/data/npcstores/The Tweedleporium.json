@@ -1,0 +1,76 @@
+{
+    "The Tweedleporium": {
+        "stuffed carpenter": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed carpenter", 
+            "row": 581
+        }, 
+        "stuffed bandersnatch": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed bandersnatch", 
+            "row": 583
+        }, 
+        "stuffed walrus": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed walrus", 
+            "row": 584
+        }, 
+        "wristwatch of the white knight": {
+            "url": "tweedle", 
+            "price": 30000, 
+            "name": "wristwatch of the white knight", 
+            "row": 589
+        }, 
+        "stuffed pocketwatch": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed pocketwatch", 
+            "row": 579
+        }, 
+        "stuffed caterpillar": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed caterpillar", 
+            "row": 580
+        }, 
+        "stuffed dodo": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed dodo", 
+            "row": 585
+        }, 
+        "helm of the white knight": {
+            "url": "tweedle", 
+            "price": 30000, 
+            "name": "helm of the white knight", 
+            "row": 587
+        }, 
+        "stuffed porpoise": {
+            "url": "tweedle", 
+            "price": 10000, 
+            "name": "stuffed porpoise", 
+            "row": 582
+        }, 
+        "puff of smoke": {
+            "url": "tweedle", 
+            "price": 100, 
+            "name": "puff of smoke", 
+            "row": 578
+        }, 
+        "insane tophat": {
+            "url": "tweedle", 
+            "price": 20000, 
+            "name": "insane tophat", 
+            "row": 586
+        }, 
+        "trousers of the white knight": {
+            "url": "tweedle", 
+            "price": 30000, 
+            "name": "trousers of the white knight", 
+            "row": 588
+        }
+    }
+}

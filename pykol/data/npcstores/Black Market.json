@@ -1,0 +1,52 @@
+{
+    "Black Market": {
+        "black cherry soda": {
+            "url": "blackmarket", 
+            "price": 80, 
+            "name": "black cherry soda", 
+            "row": 283
+        }, 
+        "can of black paint": {
+            "url": "blackmarket", 
+            "price": 1000, 
+            "name": "can of black paint", 
+            "row": 282
+        }, 
+        "forged identification documents": {
+            "url": "blackmarket", 
+            "price": 5000, 
+            "name": "forged identification documents", 
+            "row": 281
+        }, 
+        "Black Body&trade; spray": {
+            "url": "blackmarket", 
+            "price": 300, 
+            "name": "Black Body&trade; spray", 
+            "row": 286
+        }, 
+        "black facepaint": {
+            "url": "blackmarket", 
+            "price": 300, 
+            "name": "black facepaint", 
+            "row": 284
+        }, 
+        "exotic parrot egg": {
+            "url": "blackmarket", 
+            "price": 500000, 
+            "name": "exotic parrot egg", 
+            "row": 287
+        }, 
+        "black sheepskin diploma": {
+            "url": "blackmarket", 
+            "price": 300, 
+            "name": "black sheepskin diploma", 
+            "row": 285
+        }, 
+        "Red Zeppelin ticket": {
+            "url": "blackmarket", 
+            "price": 5000, 
+            "name": "Red Zeppelin ticket", 
+            "row": 289
+        }
+    }
+}

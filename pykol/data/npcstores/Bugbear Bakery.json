@@ -1,0 +1,46 @@
+{
+    "Bugbear Bakery": {
+        "Gnollish pie tin": {
+            "url": "bugbear", 
+            "price": 30, 
+            "name": "Gnollish pie tin", 
+            "row": 677
+        }, 
+        "unrolling pin": {
+            "url": "bugbear", 
+            "price": 500, 
+            "name": "unrolling pin", 
+            "row": 682
+        }, 
+        "taco shell": {
+            "url": "bugbear", 
+            "price": 80, 
+            "name": "taco shell", 
+            "row": 679
+        }, 
+        "rolling pin": {
+            "url": "bugbear", 
+            "price": 500, 
+            "name": "rolling pin", 
+            "row": 683
+        }, 
+        "Gnollish casserole dish": {
+            "url": "bugbear", 
+            "price": 150, 
+            "name": "Gnollish casserole dish", 
+            "row": 681
+        }, 
+        "skewer": {
+            "url": "bugbear", 
+            "price": 80, 
+            "name": "skewer", 
+            "row": 680
+        }, 
+        "wad of dough": {
+            "url": "bugbear", 
+            "price": 50, 
+            "name": "wad of dough", 
+            "row": 678
+        }
+    }
+}

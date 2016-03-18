@@ -1,0 +1,40 @@
+{
+    "White Citadel": {
+        "Regular Cloaca Cola": {
+            "url": "whitecitadel", 
+            "price": 80, 
+            "name": "Regular Cloaca Cola", 
+            "row": 622
+        }, 
+        "Cherry Cloaca Cola": {
+            "url": "whitecitadel", 
+            "price": 80, 
+            "name": "Cherry Cloaca Cola", 
+            "row": 621
+        }, 
+        "White Citadel burger": {
+            "url": "whitecitadel", 
+            "price": 100, 
+            "name": "White Citadel burger", 
+            "row": 623
+        }, 
+        "Diet Cloaca Cola": {
+            "url": "whitecitadel", 
+            "price": 80, 
+            "name": "Diet Cloaca Cola", 
+            "row": 620
+        }, 
+        "onion shurikens": {
+            "url": "whitecitadel", 
+            "price": 80, 
+            "name": "onion shurikens", 
+            "row": 619
+        }, 
+        "White Citadel fries": {
+            "url": "whitecitadel", 
+            "price": 80, 
+            "name": "White Citadel fries", 
+            "row": 618
+        }
+    }
+}

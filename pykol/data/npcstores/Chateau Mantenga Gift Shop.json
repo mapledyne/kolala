@@ -1,0 +1,64 @@
+{
+    "Chateau Mantenga Gift Shop": {
+        "alpine watercolor set": {
+            "url": "chateau", 
+            "price": 5000, 
+            "name": "alpine watercolor set", 
+            "row": 420
+        }, 
+        "continental juice bar": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "continental juice bar", 
+            "row": 418
+        }, 
+        "ceiling fan": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "ceiling fan", 
+            "row": 414
+        }, 
+        "electric muscle stimulator": {
+            "url": "chateau", 
+            "price": 500, 
+            "name": "electric muscle stimulator", 
+            "row": 411
+        }, 
+        "Swiss piggy bank": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "Swiss piggy bank", 
+            "row": 417
+        }, 
+        "artificial skylight": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "artificial skylight", 
+            "row": 416
+        }, 
+        "antler chandelier": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "antler chandelier", 
+            "row": 415
+        }, 
+        "foreign language tapes": {
+            "url": "chateau", 
+            "price": 500, 
+            "name": "foreign language tapes", 
+            "row": 412
+        }, 
+        "bowl of potpourri": {
+            "url": "chateau", 
+            "price": 500, 
+            "name": "bowl of potpourri", 
+            "row": 413
+        }, 
+        "fancy stationery set": {
+            "url": "chateau", 
+            "price": 1500, 
+            "name": "fancy stationery set", 
+            "row": 419
+        }
+    }
+}

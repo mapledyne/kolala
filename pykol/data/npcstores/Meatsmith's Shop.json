@@ -1,0 +1,88 @@
+{
+    "Meatsmith's Shop": {
+        "meatsmithing guide": {
+            "url": "meatsmith", 
+            "price": 50, 
+            "name": "meatsmithing guide", 
+            "row": 495
+        }, 
+        "whip kit": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "whip kit", 
+            "row": 499
+        }, 
+        "pants kit": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "pants kit", 
+            "row": 494
+        }, 
+        "bigger stick": {
+            "url": "meatsmith", 
+            "price": 1000, 
+            "name": "bigger stick", 
+            "row": 502
+        }, 
+        "shirt kit": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "shirt kit", 
+            "row": 505
+        }, 
+        "crossbow string": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "crossbow string", 
+            "row": 497
+        }, 
+        "helmet recipe": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "helmet recipe", 
+            "row": 493
+        }, 
+        "big stick": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "big stick", 
+            "row": 496
+        }, 
+        "sturdy sword hilt": {
+            "url": "meatsmith", 
+            "price": 1000, 
+            "name": "sturdy sword hilt", 
+            "row": 504
+        }, 
+        "buckler buckle": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "buckler buckle", 
+            "row": 500
+        }, 
+        "skirt / kilt kit": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "skirt / kilt kit", 
+            "row": 501
+        }, 
+        "sword hilt": {
+            "url": "meatsmith", 
+            "price": 100, 
+            "name": "sword hilt", 
+            "row": 492
+        }, 
+        "tenderizing hammer": {
+            "url": "meatsmith", 
+            "price": 1000, 
+            "name": "tenderizing hammer", 
+            "row": 498
+        }, 
+        "sinewy crossbow string": {
+            "url": "meatsmith", 
+            "price": 1000, 
+            "name": "sinewy crossbow string", 
+            "row": 503
+        }
+    }
+}

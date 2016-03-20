@@ -1,2 +1,5 @@
-# pykol
+=====
+pykol
+=====
+
 Kingdom of Loathing scripting

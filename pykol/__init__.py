@@ -17,4 +17,6 @@ moons = Moons()
 outfits = Outfits()
 stores = Stores()
 
+config = pykol.Config.Config()
+
 Logging.log_level(pykol.Config.log_level)

@@ -2,13 +2,14 @@ import bs4
 import hashlib
 import re
 
-import kolala.Config as Config
+import kolala.framework.Utils as utils
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class Login(KoLPage):
 
-    url = Config.url + 'login.php'
+    url = kolala.Globals.url + 'login.php'
 
     @staticmethod
     def claim(response):
@@ -16,13 +17,7 @@ class Login(KoLPage):
 
     @staticmethod
     def digest_password(password, challenge):
-        md5 = hashlib.md5()
-        md5.update(password)
-        hash1 = md5.hexdigest()
-
-        md5 = hashlib.md5()
-        md5.update(hash1 + ":" + challenge)
-        hash2 = md5.hexdigest()
+        hash2 = utils.md5hash(password + ":" + challenge)
         return hash2
 
     def auto_action(self):
@@ -43,12 +38,12 @@ class Login(KoLPage):
             except KeyError:
                 param_list[p.attrs['name']] = ''
 
-        response = Login.digest_password(Config.password,
+        response = Login.digest_password(kolala.Globals.password,
                                          param_list['challenge'])
         param_list['response'] = response
         param_list['secure'] = 1
-        param_list['loginname'] = Config.user
+        param_list['loginname'] = kolala.Globals.user
 
-        print('Logging in as {}...'.format(Config.user))
+        print('Logging in as {}...'.format(kolala.Globals.user))
 
         return Client.post(Login.url, param_list)

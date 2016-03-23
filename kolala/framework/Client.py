@@ -3,9 +3,9 @@ import requests
 import six
 import uuid
 
-import kolala.Globals
 from kolala.framework.Logging import Logging
 from kolala.framework.PageSelector import PageSelector
+import kolala.Globals
 
 
 class Client(object):
@@ -50,6 +50,9 @@ class Client(object):
         Logging.debug('HTTP Get: ' + url)
         response = Client.session.get(url)
         Client.save_page(url, response.text)
+
+        if 'PHPSESSID' in response.cookies:
+            kolala.Globals.PHPSESSID = response.cookies['PHPSESSID']
 
         return response
 

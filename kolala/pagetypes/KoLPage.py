@@ -1,8 +1,9 @@
-import kolala.Config as Config
+import kolala.Globals
+
 
 class KoLPage(object):
 
-    url = Config.url
+    url = kolala.Globals.url
 
     def __init__(self, response):
         self.response = response

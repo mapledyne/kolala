@@ -15,6 +15,7 @@ class Prompt(object):
         if kolala.player.name == '':
             return ('Not logged in. Try \'login\', or \'register\' to '
                     'add a player to the system.\n> ')
+
         replacements = {'name': kolala.player.name,
                         'class': kolala.player.char_cls,
                         'level': kolala.player.level,
@@ -36,10 +37,19 @@ class KoLCmd(Cmd):
     prompt = Prompt()
     file = None
 
+    def postloop(self):
+        print('postloop')
+
+    def postcmd(self, stop, line):
+        print('postcmd: {} :: {}'.format(stop, line))
+
     def __init__(self):
         package = kolala.actions
         for loader, name, is_pkg in pkgutil.walk_packages(package.__path__):
             module = loader.find_module(name).load_module(name)
             if getattr(module, 'main', None) is not None:
                 setattr(self, 'do_' + name, module.main)
+            if getattr(module, 'help', None) is not None:
+                setattr(self, 'help_' + name, module.help)
+
         Cmd.__init__(self)

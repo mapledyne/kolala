@@ -6,5 +6,6 @@ url = 'http://www.kingdomofloathing.com/'
 clovers = -1
 
 pwd = ''
+PHPSESSID = ''
 
 maintenance = False

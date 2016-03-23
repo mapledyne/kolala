@@ -8,7 +8,7 @@ class PageSelector(object):
         self.response = response
 
     def page(self):
-        page_name = self.response.url.replace(Config.url, '').split('?')[0]
+        page_name = self.response.url.replace(kolala.Globals.url, '').split('?')[0]
 
         for page in pagetypes.KoLPage.__subclasses__():
             if page.claim(self.response):

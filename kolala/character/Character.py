@@ -1,5 +1,4 @@
-from kolala.character.Stat import Stat
-from kolala.character.Stats import Stats
+import kolala.character.Stats as Stats
 
 
 class Character(object):
@@ -8,9 +7,9 @@ class Character(object):
         self.name = ''
         self.char_cls = ''
         self.level = ''
-        self.stats = Stats()
-        self.hp = Stat()
-        self.mp = Stat()
+        self.stats = Stats.Stats()
+        self.hp = Stats.Stat()
+        self.mp = Stats.Stat()
         self.meat = 0
         self.adv = 0
         self.liver = 0
@@ -60,13 +59,17 @@ class Character(object):
         furynote = self.furynote
         if len(furynote) > 0:
             furynote = ' ({})'.format(furynote)
+        fury = ''
+        if self.fury > 0:
+            fury = 'Fury: {}{}\n'.format(self.fury, furynote)
+
         msg = (header + '\n' +
                stats + '\n' +
                'HP: {}, MP: {}\n'.format(self.hp, self.mp) +
                'Liver: {}{}\n'.format(self.liver, drunk) +
                'Meat: {:,}\n'.format(self.meat) +
                'Adv: {}\n'.format(self.adv) +
-               'Fury: {}{}\n'.format(self.fury, furynote))
+               fury)
         msg += 'Effects: ' + '\n'
         if len(self.effects) == 0:
             msg += '\tNone.\n'

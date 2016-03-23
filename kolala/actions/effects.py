@@ -2,7 +2,7 @@ import kolala
 
 
 def main(arg):
-    print(' Effects '.center(78, '='))
+    print(kolala.banner('Effects'))
     effects = kolala.player.effects
     for effect in effects:
         print(u'{}'.format(effect))

@@ -1,5 +1,6 @@
 import json
 import os
+
 import kolala.Globals
 
 version = '1.0.0'
@@ -27,7 +28,9 @@ defaults = {'home_path': '/tmp/.{}/'.format(kolala.Globals.app_name),
             'save_pages_path': '/tmp/{}/pages/'.format(kolala.Globals.app_name),
             'data_path': '{}/data'.format(kolala.Globals.app_name),
             'prompt': '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${class} > ',
-            'log_level': 20}
+            'log_level': 20,
+            'banner_char': '=',
+            'screen_width': 78}
 
 
 class Config(dict):

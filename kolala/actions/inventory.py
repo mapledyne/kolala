@@ -2,7 +2,7 @@ import kolala
 
 
 def main(arg):
-    print(' Inventory '.center(78, '='))
+    print(kolala.banner('Inventory'))
     for i in kolala.player.inventory:
         name = i
         qty = kolala.player.inventory[i]

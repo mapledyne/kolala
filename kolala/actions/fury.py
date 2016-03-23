@@ -2,6 +2,7 @@ import kolala
 
 
 def main(arg):
+    print(kolala.banner('Fury'))
     qty = 'gallons'
     if kolala.player.fury == 1:
         qty = 'gallon'

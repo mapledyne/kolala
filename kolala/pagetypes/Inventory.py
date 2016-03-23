@@ -6,7 +6,7 @@ from kolala.pagetypes.KoLPage import KoLPage
 
 class Inventory(KoLPage):
 
-    url = kolala.Config.url + 'inventory.php'
+    url = kolala.globals.url + 'inventory.php'
 
     @staticmethod
     def claim(response):

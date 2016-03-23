@@ -1,13 +1,13 @@
 import bs4
 
 import kolala.Config as Config
-import kolala.Globals as Globals
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class NpcStore(KoLPage):
 
-    url = Config.url + 'shop.php'
+    url = kolala.Globals.url + 'shop.php'
 
     @staticmethod
     def claim(response):

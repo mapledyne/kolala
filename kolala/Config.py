@@ -9,9 +9,6 @@ log_level = 20
 
 url = 'http://www.kingdomofloathing.com/'
 
-#user = os.environ['KOL_USER']
-#password = os.environ['KOL_PASS']
-
 prompt = '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${class} > '
 
 data_path = 'kolala/data'

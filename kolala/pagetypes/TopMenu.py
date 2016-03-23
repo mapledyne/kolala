@@ -1,12 +1,13 @@
 import bs4
 
 import kolala
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class TopMenu(KoLPage):
 
-    url = kolala.Config.url + 'awesomemenu.php'
+    url = kolala.Globals.url + 'awesomemenu.php'
 
     @staticmethod
     def claim(response):

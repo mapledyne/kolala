@@ -13,7 +13,7 @@ from kolala.pagetypes.KoLPage import KoLPage
 
 class CharPane(KoLPage):
 
-    url = Config.url + 'charpane.php'
+    url = kolala.Globals.url + 'charpane.php'
 
     @staticmethod
     def claim(response):

@@ -9,7 +9,7 @@ import re
 
 class Hermit(KoLPage):
 
-    url = Config.url + 'hermit.php'
+    url = Globals.url + 'hermit.php'
 
     no_worthless = "looks like you don't have anything worthless enough"
 

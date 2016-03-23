@@ -37,12 +37,6 @@ class KoLCmd(Cmd):
     prompt = Prompt()
     file = None
 
-    def postloop(self):
-        print('postloop')
-
-    def postcmd(self, stop, line):
-        print('postcmd: {} :: {}'.format(stop, line))
-
     def __init__(self):
         package = kolala.actions
         for loader, name, is_pkg in pkgutil.walk_packages(package.__path__):

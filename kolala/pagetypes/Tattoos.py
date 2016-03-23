@@ -1,13 +1,13 @@
 import bs4
 
 import kolala.Config as Config
-import kolala.Globals as Globals
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class Tattoos(KoLPage):
 
-    url = Config.url + 'account_tattoos.php'
+    url = kolala.Globals.url + 'account_tattoos.php'
 
     @staticmethod
     def claim(response):
@@ -21,7 +21,7 @@ class Tattoos(KoLPage):
         tat_list = set()
         for tat in tattoos:
             tat_list.add(tat['alt'].replace('Tattoo: ', ''))
-        Globals.player.tattoos = tat_list
+        kolala.Globals.player.tattoos = tat_list
 
     def auto_action(self):
         Tattoos.parse_page(self.response.text)

@@ -1,10 +1,10 @@
-import kolala.Config as Config
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class MainFrame(KoLPage):
 
-    url = Config.url + 'game.php'
+    url = kolala.Globals.url + 'game.php'
 
     @staticmethod
     def claim(response):

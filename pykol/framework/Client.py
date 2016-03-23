@@ -3,7 +3,7 @@ import requests
 import six
 import uuid
 
-import pykol.Config
+import pykol.Globals
 from pykol.framework.Logging import Logging
 from pykol.framework.PageSelector import PageSelector
 
@@ -35,7 +35,7 @@ class Client(object):
         if (url.lower().startswith('http://') or
                 url.lower().startswith('https://')):
             return url
-        return pykol.Config.url + url
+        return pykol.Globals.url + url
 
     @staticmethod
     def get(url, params=None):
@@ -73,17 +73,19 @@ class Client(object):
 
     @staticmethod
     def save_page(url, page):
-        if not pykol.Config.save_pages:
+        from pykol import config
+
+        if not pykol.config['save_pages']:
             return
 
         if 'call_counter' not in Client.save_page.__dict__:
             Client.save_page.call_counter = 0
         Client.save_page.call_counter += 1
 
-        page_name = url.replace(pykol.Config.url, '')
+        page_name = url.replace(pykol.Globals.url, '')
         page_name = page_name.replace('?', '-')
 
-        path = pykol.Config.save_pages_path + str(Client.uuid) + '/'
+        path = pykol.config['save_pages_path'] + str(Client.uuid) + '/'
         if not os.path.exists(path):
                 os.makedirs(path)
 

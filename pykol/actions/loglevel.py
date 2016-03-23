@@ -16,4 +16,5 @@ def main(arg):
         print('Cannot change level to \'{}\''.format(new))
         return
     print('Changing logging level to {}.'.format(new))
+    pykol.config['log_level'] = new
     pykol.Logging.log_level(new)

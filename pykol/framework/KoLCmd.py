@@ -5,7 +5,6 @@ import pkgutil
 
 import pykol
 import pykol.actions
-import pykol.Config as Config
 from pykol.framework.Client import Client
 import pykol.Globals as Globals
 from pykol.pagetypes.CharPane import CharPane
@@ -25,7 +24,7 @@ class Prompt(object):
                                              pykol.player.mp.base),
                         'meat': '{:,}'.format(pykol.player.meat)}
 
-        prompt = Config.prompt
+        prompt = pyckol.config.prompt
         for r in replacements:
             needle = '${' + r + '}'
             prompt = prompt.replace(needle, replacements[r])

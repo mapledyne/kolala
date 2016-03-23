@@ -1,5 +1,6 @@
 import json
 import os
+import pykol.Globals
 
 version = '1.0.0'
 
@@ -14,17 +15,21 @@ prompt = '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${cla
 
 data_path = 'pykol/data'
 
-# Variables that are set during runtime:
-
-maintenance = False
 
 # Debug and debug-related variables:
 save_pages = True
 save_pages_path = '/tmp/pykol/pages/'
 
-home_path = '/tmp/.kolala/'
+home_path = '/tmp/.{}/'.format(pykol.Globals.app_name)
 
-defaults = {'home_path': home_path}
+defaults = {
+            'home_path': '/tmp/.{}/'.format(pykol.Globals.app_name),
+            'save_pages': True,
+            'save_pages_path': '/tmp/{}/pages/'.format(pykol.Globals.app_name),
+            'data_path': '{}/data'.format(pykol.Globals.app_name),
+            'prompt': '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${class} > ',
+            'log_level': 20
+            }
 
 
 class Config(dict):

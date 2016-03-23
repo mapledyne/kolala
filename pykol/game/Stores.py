@@ -1,9 +1,7 @@
 import glob
 import json
 
-import pykol.Config as Config
-from pykol.framework.Client import Client
-import pykol.Globals as Globals
+import pykol
 
 
 class Offer(object):
@@ -44,7 +42,7 @@ class Stores(dict):
     def __init__(self):
         super(Stores, self).__init__(self)
 
-        for filename in glob.glob(Config.data_path +
+        for filename in glob.glob(pykol.config['data_path'] +
                                   '/npcstores/*.json'):
             with open(filename) as data_file:
                 data = json.load(data_file)
@@ -77,5 +75,5 @@ class Stores(dict):
                "&pwd={}").format(offer.url,
                                  str(qty),
                                  str(offer.row),
-                                 Globals.pwd)
+                                 pykol.globals.pwd)
         Client.getpage(url)

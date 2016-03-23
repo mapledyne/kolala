@@ -3,7 +3,7 @@ import pykol.pagetypes
 
 
 def main(arg):
-    filename = pykol.Config.save_pages_path + 'account_tattoos.php'
+    filename = pykol.config['save_pages_path'] + 'account_tattoos.php'
     with open(filename, 'r') as file:
         text = file.read()
     top = pykol.pagetypes.Tattoos.parse_page(text)

@@ -1,5 +1,4 @@
-import pykol.Config as Config
-from pykol.framework.Logging import Logging
+import pykol
 import pykol.pagetypes as pagetypes
 
 
@@ -13,7 +12,7 @@ class PageSelector(object):
 
         for page in pagetypes.KoLPage.__subclasses__():
             if page.claim(self.response):
-                Logging.debug('Page claimed by: ' + page.__name__)
+                pykol.Logging.debug('Page claimed by: ' + page.__name__)
                 return page(self.response)
-        Logging.info('Page ({}) went unclaimed.'.format(page_name))
+        pykol.Logging.info('Page ({}) went unclaimed.'.format(page_name))
         return pagetypes.KoLPage(self.response)

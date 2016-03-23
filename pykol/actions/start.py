@@ -12,4 +12,4 @@ def main(arg):
     pykol.Client.getpage('inventory.php?which=3')
     print('Visiting the hermit...')
     pykol.Client.getpage('hermit.php')
-    print('\tHe has {} clovers.'.format(pykol.Globals.clovers))
+    print('\tHe has {} clovers.'.format(pykol.globals.clovers))

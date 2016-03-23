@@ -1,6 +1,6 @@
 import pykol.Config
 import pykol.framework as framework
-import pykol.Globals
+import pykol.Globals as globals
 
 from pykol.framework.Client import Client
 from pykol.framework.Logging import Logging

@@ -1,7 +1,7 @@
 import glob
 import json
 
-import pykol.Config as Config
+import pykol
 
 
 class Outfit(object):
@@ -23,7 +23,7 @@ class Outfits(dict):
     def __init__(self):
         super(Outfits, self).__init__(self)
 
-        for filename in glob.glob(Config.data_path + '/outfits/outfits.json'):
+        for filename in glob.glob(pykol.config.data_path + '/outfits/outfits.json'):
             with open(filename) as data_file:
                 data = json.load(data_file)
                 for d in data:

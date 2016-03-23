@@ -1,7 +1,7 @@
 import glob
 import json
 
-import pykol.Config as Config
+import pykol
 
 
 class Modifier(dict):
@@ -16,7 +16,7 @@ class ModifierList(dict):
     def __init__(self):
         super(ModifierList, self).__init__(self)
 
-        for filename in glob.glob(Config.data_path + '/modifiers/*.json'):
+        for filename in glob.glob(pykol.onfig.data_path + '/modifiers/*.json'):
             with open(filename) as data_file:
                 data = json.load(data_file)
                 for d in data:

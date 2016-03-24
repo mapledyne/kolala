@@ -5,7 +5,7 @@ import kolala
 
 from kolala.character.Effect import Effect
 from kolala.character.Quest import Quest
-from kolala.character.Stat import Stat
+from kolala.character.Stats import Stat
 import kolala.Config as Config
 import kolala.Globals as Globals
 from kolala.pagetypes.KoLPage import KoLPage

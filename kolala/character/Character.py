@@ -1,4 +1,5 @@
 import kolala.character.Stats as Stats
+import kolala.framework.Utils as Utils
 
 
 class Character(object):
@@ -33,6 +34,12 @@ class Character(object):
                 return True
         return False
 
+    def usable(self):
+        usable = []
+        for i in list(self.inventory):
+            # if this thing is usable ...
+            usable.append(i) 
+
     def worthless(self):
         worthless_things = ['worthless trinket', 'worthless gewgaw',
                             'worthless knick-knack']
@@ -46,10 +53,10 @@ class Character(object):
         core = ''
         if self.hardcore:
             core = ' [Hardcore]'
-        header = u' {} (Level {} {}){} '.format(self.name,
-                                                self.level,
-                                                self.char_cls,
-                                                core).center(78, '=')
+        header = Utils.banner(u'{} (Level {} {}){}'.format(self.name,
+                              self.level,
+                              self.char_cls,
+                              core))
         stats = 'Mus: {}, Mox: {}, Mys: {}'.format(self.stats.muscle,
                                                    self.stats.moxie,
                                                    self.stats.mysticality)

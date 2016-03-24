@@ -76,4 +76,4 @@ class Stores(dict):
                                  str(qty),
                                  str(offer.row),
                                  kolala.globals.pwd)
-        Client.getpage(url)
+        kolala.Client.getpage(url)

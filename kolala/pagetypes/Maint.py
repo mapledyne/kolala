@@ -11,5 +11,6 @@ class Maint(KoLPage):
         return response.url.startswith(Maint.url)
 
     def auto_action(self):
-        Globals.maintenance = True
+        kolala.Globals.maintenance = True
+        print('Kingdom of Loathing is in maintenance mode. Try back later.')
         return None

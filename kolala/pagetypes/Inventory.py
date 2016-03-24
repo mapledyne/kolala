@@ -1,12 +1,12 @@
 import bs4
 
-import kolala
+import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
 
 class Inventory(KoLPage):
 
-    url = kolala.globals.url + 'inventory.php'
+    url = kolala.Globals.url + 'inventory.php'
 
     @staticmethod
     def claim(response):

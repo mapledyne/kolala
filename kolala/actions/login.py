@@ -2,6 +2,7 @@ import kolala
 
 
 def main(arg):
+
     if len(arg) == 0:
         if len(kolala.registrations) == 0:
             print('No registered users. Login with a user/pass combo, or '
@@ -38,3 +39,4 @@ def login(user, password=None):
         kolala.Globals.user = user
         kolala.Globals.password = kolala.registrations[user]['password']
     kolala.Client.getpage('charpane.php')
+    return

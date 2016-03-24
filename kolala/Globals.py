@@ -5,6 +5,10 @@ url = 'http://www.kingdomofloathing.com/'
 
 clovers = -1
 
+user = ''
+
+password = ''
+
 pwd = ''
 PHPSESSID = ''
 

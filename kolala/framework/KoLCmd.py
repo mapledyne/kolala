@@ -25,7 +25,7 @@ class Prompt(object):
                                              kolala.player.mp.base),
                         'meat': '{:,}'.format(kolala.player.meat)}
 
-        prompt = pyckol.config.prompt
+        prompt = kolala.config['prompt']
         for r in replacements:
             needle = '${' + r + '}'
             prompt = prompt.replace(needle, replacements[r])

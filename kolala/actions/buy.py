@@ -9,7 +9,7 @@ def main(arg):
     if len(targets) > 1:
         print('Your request could mean multiple things:')
         for t in targets:
-            print('\t{}'.format(t))
+            print(u'\t{}'.format(t))
         return
     offer = targets[0]
 

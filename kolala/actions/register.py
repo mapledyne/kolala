@@ -26,6 +26,10 @@ def main(arg):
 
     user = args[0]
     password = args[1]
+    if user in kolala.registrations:
+        print('Updating registration for {}...'.format(user))
+    else:
+        print('Registering {}...'.format(user))
     kolala.registrations.register(user, password)
 
 

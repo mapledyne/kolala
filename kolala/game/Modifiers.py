@@ -23,3 +23,5 @@ class ModifierList(dict):
                     if data[d]['category'] not in self:
                         self[data[d]['category']] = {}
                     self[data[d]['category']][data[d]['name']] = Modifier(data[d])
+
+modifiers = ModifierList()

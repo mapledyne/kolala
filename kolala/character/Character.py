@@ -1,5 +1,6 @@
 import kolala.character.Stats as Stats
 import kolala.framework.Utils as Utils
+from kolala.game.Items import items
 
 
 class Character(object):
@@ -22,23 +23,28 @@ class Character(object):
         self.quests = {}
         self.home = ''
 
-        self.inventory = {}
-
         self.witchess = False
 
         self.tattoos = set()
 
+    def inventory(self):
+        inv = []
+        for i in items:
+            if items[i].inventory > 0:
+                inv.append(i)
+        return inv
+
     def owns(self, item):
-        if item in self.inventory:
-            if self.inventory[item] > 0:
+        if item in items:
+            if items[i].inventory[item] > 0:
                 return True
         return False
 
     def usable(self):
         usable = []
-        for i in list(self.inventory):
-            # if this thing is usable ...
-            usable.append(i)
+        for i in items:
+            if (items[i].usable or items[i].multiple) and items[i].inventory > 0:
+                usable.append(i)
         return usable
 
     def worthless(self):

@@ -1,0 +1,47 @@
+[
+    {
+        "weapon": true, 
+        "use": "weapon", 
+        "name": "7-Foot Dwarven mattock", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 979636979, 
+        "number": 362, 
+        "access": "t,d", 
+        "autosell": 90, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "7-Foot Dwarven maddox", 
+        "image": "mattock.gif"
+    }, 
+    {
+        "use": "offhand", 
+        "name": "7-ball", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 268658787, 
+        "offhand": true, 
+        "number": 1906, 
+        "access": "t,d", 
+        "autosell": 65, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "7ball.gif"
+    }, 
+    {
+        "weapon": true, 
+        "use": "weapon", 
+        "name": "7-inch discus", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 620169454, 
+        "number": 3713, 
+        "access": "t,d", 
+        "autosell": 125, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "record.gif"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "use": "offhand", 
+        "name": "9-ball", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 963743153, 
+        "offhand": true, 
+        "number": 1940, 
+        "access": "t,d", 
+        "autosell": 85, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "9ball.gif"
+    }, 
+    {
+        "use": "none", 
+        "name": "99.44% pure math", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 881502992, 
+        "number": 7818, 
+        "access": "t,d", 
+        "autosell": 49, 
+        "quest": false, 
+        "none": true, 
+        "discard": true, 
+        "plural": "", 
+        "image": "10101.gif"
+    }
+]

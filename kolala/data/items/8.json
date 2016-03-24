@@ -1,0 +1,49 @@
+[
+    {
+        "use": "none, combat", 
+        "name": "8-ball", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 631597539, 
+        "number": 1907, 
+        "access": "t,d", 
+        "autosell": 65, 
+        "quest": false, 
+        "none": true, 
+        "combat": true, 
+        "discard": true, 
+        "plural": "", 
+        "image": "8ball.gif"
+    }, 
+    {
+        "use": "multiple, candy", 
+        "multiple": true, 
+        "name": "8-bit banana", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 603852187, 
+        "number": 6841, 
+        "candy": true, 
+        "access": "t,d", 
+        "autosell": 25, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "8-bit bananananas", 
+        "image": "8bitbanana.gif"
+    }, 
+    {
+        "use": "hat", 
+        "name": "8-billed baseball cap", 
+        "gift": false, 
+        "tradable": true, 
+        "hat": true, 
+        "descid": 412867104, 
+        "number": 7468, 
+        "access": "t,d", 
+        "autosell": 250, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "6hats.gif"
+    }
+]

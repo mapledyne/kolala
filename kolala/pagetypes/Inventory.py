@@ -1,5 +1,6 @@
 import bs4
 
+from kolala.game.Items import items
 import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
@@ -29,7 +30,7 @@ class Inventory(KoLPage):
                     qty = 1
                 else:
                     qty = int(td.span.text.replace('(', '').replace(')', ''))
-                kolala.player.inventory[td.b.text] = qty
+                items[td.b.text].inventory = qty
                 # Usage link:
                 # print td.a['href']
 

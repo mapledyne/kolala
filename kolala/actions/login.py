@@ -24,7 +24,6 @@ def main(arg):
         login(combo[0])
         return
     login(combo[0], combo[1])
-    return
 
 
 def login(user, password=None):
@@ -38,5 +37,15 @@ def login(user, password=None):
             return
         kolala.Globals.user = user
         kolala.Globals.password = kolala.registrations[user]['password']
+    page = kolala.Client.getpage('login.php')
+    if (type(page).__name__ != 'MainFrame'):
+        print('Unable to log in, sorry. Try again later.')
+        return
+    print('Loading moon data...')
+    kolala.Client.getpage('awesomemenu.php')
+    print('Getting character data...')
     kolala.Client.getpage('charpane.php')
-    return
+    print('Getting inventory...')
+    kolala.Client.getpage('inventory.php?which=1')
+    kolala.Client.getpage('inventory.php?which=2')
+    kolala.Client.getpage('inventory.php?which=3')

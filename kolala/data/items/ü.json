@@ -1,0 +1,17 @@
+[
+    {
+        "use": "avatar", 
+        "name": "\u00dcberraschthexengebr\u00e4u", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 408549054, 
+        "number": 8307, 
+        "access": "t,d", 
+        "autosell": 5, 
+        "quest": false, 
+        "avatar": true, 
+        "discard": true, 
+        "plural": "bottles of &Uuml;berraschthexengebr&auml;u", 
+        "image": "fancybrew.gif"
+    }
+]

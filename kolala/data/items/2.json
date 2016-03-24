@@ -1,0 +1,32 @@
+[
+    {
+        "weapon": true, 
+        "use": "weapon", 
+        "name": "25-meat staff", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 325365981, 
+        "number": 1467, 
+        "access": "t,d", 
+        "autosell": 70, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "25-meat staves", 
+        "image": "25staff.gif"
+    }, 
+    {
+        "use": "offhand", 
+        "name": "2-ball", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 340092063, 
+        "offhand": true, 
+        "number": 1901, 
+        "access": "t,d", 
+        "autosell": 65, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "2ball.gif"
+    }
+]

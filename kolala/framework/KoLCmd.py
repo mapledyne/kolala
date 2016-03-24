@@ -16,6 +16,9 @@ class Prompt(object):
             return ('Not logged in. Try \'login\', or \'register\' to '
                     'add a player to the system.\n> ')
 
+        drunk_text = ''
+        if kolala.player.drunk:
+            drunk_text = ' (drunk) '
         replacements = {'name': kolala.player.name,
                         'class': kolala.player.char_cls,
                         'level': kolala.player.level,
@@ -23,17 +26,23 @@ class Prompt(object):
                                              kolala.player.hp.base),
                         'mp': '{}/{}'.format(kolala.player.mp.current,
                                              kolala.player.mp.base),
-                        'meat': '{:,}'.format(kolala.player.meat)}
+                        'meat': '{:,}'.format(kolala.player.meat),
+                        'adv': str(kolala.player.adv),
+                        'drunk': drunk_text
+                        }
 
         prompt = kolala.config['prompt']
-        for r in replacements:
-            needle = '${' + r + '}'
-            prompt = prompt.replace(needle, replacements[r])
+        try:
+            for r in replacements:
+                needle = '${' + r + '}'
+                prompt = prompt.replace(needle, replacements[r])
+        except Exception as e:
+            kolala.Logging.error('Error processing prompt: ' + str(e))
         return prompt
 
 
 class KoLCmd(Cmd):
-    intro = 'Welcome to kolala. A Kingdom of Loathing python interface.'
+    intro = 'Welcome to {}. A Kingdom of Loathing python interface.'.format(kolala.globals.app_name)
     prompt = Prompt()
     file = None
 

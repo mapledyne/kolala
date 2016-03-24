@@ -6,7 +6,7 @@ from kolala.pagetypes.KoLPage import KoLPage
 
 class Campground(KoLPage):
 
-    url = kolala.Config.url + 'campground.php'
+    url = kolala.globals.url + 'campground.php'
 
     @staticmethod
     def claim(response):

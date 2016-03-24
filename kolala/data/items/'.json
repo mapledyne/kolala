@@ -1,0 +1,47 @@
+[
+    {
+        "use": "usable", 
+        "name": "'Villa' document", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 1261246, 
+        "number": 783, 
+        "access": "t", 
+        "autosell": 0, 
+        "quest": false, 
+        "usable": true, 
+        "discard": false, 
+        "plural": "", 
+        "image": "guildapp.gif"
+    }, 
+    {
+        "use": "offhand", 
+        "name": "'WILL WORK FOR BOOZE' sign", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 828428600, 
+        "offhand": true, 
+        "number": 3137, 
+        "access": "t,d", 
+        "autosell": 110, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "boozesign.gif"
+    }, 
+    {
+        "use": "none", 
+        "name": "'Smuggler Shot First' Button", 
+        "gift": false, 
+        "tradable": false, 
+        "descid": 222586103, 
+        "number": 4064, 
+        "access": "q", 
+        "autosell": 0, 
+        "quest": true, 
+        "none": true, 
+        "discard": false, 
+        "plural": "", 
+        "image": "smugbutton.gif"
+    }
+]

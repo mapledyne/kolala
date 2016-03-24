@@ -111,7 +111,4 @@ class Client(object):
         while req is not None:
             page = PageSelector(req).page()
             req = page.auto_action()
-
-        if type(page).__name__ is 'MainFrame' and url is not page.url:
-            return Client.getpage(url, params)
         return page

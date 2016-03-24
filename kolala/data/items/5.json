@@ -1,0 +1,47 @@
+[
+    {
+        "weapon": true, 
+        "use": "weapon", 
+        "name": "5-Alarm Saucepan", 
+        "gift": false, 
+        "tradable": false, 
+        "descid": 695837819, 
+        "number": 57, 
+        "access": "", 
+        "autosell": 0, 
+        "quest": false, 
+        "discard": false, 
+        "plural": "", 
+        "image": "5alarm.gif"
+    }, 
+    {
+        "use": "offhand", 
+        "name": "5-ball", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 933771260, 
+        "offhand": true, 
+        "number": 1904, 
+        "access": "t,d", 
+        "autosell": 65, 
+        "quest": false, 
+        "discard": true, 
+        "plural": "", 
+        "image": "5ball.gif"
+    }, 
+    {
+        "use": "drink", 
+        "name": "5-hour acrimony", 
+        "gift": false, 
+        "tradable": true, 
+        "descid": 922162926, 
+        "drink": true, 
+        "number": 5731, 
+        "access": "t", 
+        "autosell": 0, 
+        "quest": false, 
+        "discard": false, 
+        "plural": "5-hour acrimonies", 
+        "image": "potion13.gif"
+    }
+]

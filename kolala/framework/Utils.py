@@ -17,7 +17,7 @@ def md5hash(text):
 
 def find_from_list(haystack, needle):
     found = []
-    for h in list(haystack):
+    for h in haystack:
         if needle in h:
             found.append(h)
     return found

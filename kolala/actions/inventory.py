@@ -3,12 +3,13 @@ import kolala
 
 def main(arg):
     print(kolala.utils.banner('Inventory'))
-    for i in kolala.player.inventory:
-        name = i
-        qty = kolala.player.inventory[i]
-        print(u'{} ({})'.format(name, qty))
-        if name in kolala.modifiers['Item']:
-            info = kolala.modifiers['Item'][name]['modifier']
+    for i in kolala.player.inventory():
+        if len(arg) > 0 and arg.lower() not in i.lower():
+            continue
+        qty = kolala.items[i].inventory
+        print(u'{} ({})'.format(i, qty))
+        if i in kolala.modifiers['Item']:
+            info = kolala.modifiers['Item'][i]['modifier']
             for mod in info:
                 print(u'\t{}'.format(mod))
                 if mod.startswith('Effect:'):

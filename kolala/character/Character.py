@@ -38,7 +38,8 @@ class Character(object):
         usable = []
         for i in list(self.inventory):
             # if this thing is usable ...
-            usable.append(i) 
+            usable.append(i)
+        return usable
 
     def worthless(self):
         worthless_things = ['worthless trinket', 'worthless gewgaw',

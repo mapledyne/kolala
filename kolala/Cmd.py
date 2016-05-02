@@ -1,19 +1,15 @@
 import sys
 
-from kolala.Config import config
-from kolala.framework.Client import Client
+import kolala
 from kolala.framework.KoLCmd import KoLCmd
-from kolala.framework.Logging import Logging
 
 
 def go():
-
     app = KoLCmd()
-
     app.cmdloop()
+    kolala.globals.stopping = True
+    kolala.Client.get('logout.php')
 
-    Client.get('logout.php')
-
-    if config['save_pages']:
-        msg = 'Pages saved under uuid: {}'.format(Client.uuid)
+    if kolala.config['save_pages']:
+        msg = 'Pages saved under uuid: {}'.format(kolala.Client.uuid)
         print(msg)

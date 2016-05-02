@@ -13,3 +13,5 @@ pwd = ''
 PHPSESSID = ''
 
 maintenance = False
+
+stopping = False

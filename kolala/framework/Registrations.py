@@ -26,5 +26,5 @@ class Registrations(dict):
             writefile.write(json.dumps(self, indent=4))
 
     def register(self, user, password):
-        self[user] = {'password': utils.md5hash(password)}
+        self[user] = {'password': password}
         self.save()

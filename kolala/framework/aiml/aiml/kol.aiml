@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<category>
+    <pattern>
+        HELP *
+    </pattern>
+    <template>
+        {{all|<star/>}}
+    </template>
+</category>
+<category>
+    <pattern>
+        TELL ME ABOUT *
+    </pattern>
+    <template>
+        <srai>help <star/></srai>
+    </template>
+</category>
+<category>
+    <pattern>
+        ITEM *
+    </pattern>
+    <template>
+        {{item|<star/>}}
+    </template>
+</category>
+</aiml>

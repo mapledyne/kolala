@@ -9,7 +9,8 @@ def main(arg):
         print('30: WARNING')
         print('40: ERROR')
         print('50: CRITICAL')
-        print('Current log level is: {}'.format(Logging.log_level()))
+        print('Current log level is: {}'.format(kolala.Logging.log_level()))
+        return
     try:
         new = int(arg)
     except ValueError:

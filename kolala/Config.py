@@ -7,8 +7,6 @@ version = '1.0.0'
 
 log_level = 20
 
-url = 'http://www.kingdomofloathing.com/'
-
 prompt = '\nHP: ${hp} | MP: ${mp} | Meat: ${meat}\n${name}, Level ${level} ${class} > '
 
 data_path = 'kolala/data'

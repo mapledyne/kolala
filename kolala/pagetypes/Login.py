@@ -2,7 +2,7 @@ import bs4
 import hashlib
 import re
 
-import kolala.framework.Utils as utils
+import kolala.framework
 import kolala.Globals
 from kolala.pagetypes.KoLPage import KoLPage
 
@@ -17,7 +17,7 @@ class Login(KoLPage):
 
     @staticmethod
     def digest_password(password, challenge):
-        hash2 = utils.md5hash(password + ":" + challenge)
+        hash2 = kolala.utils.md5hash(kolala.utils.md5hash(password) + ":" + challenge)
         return hash2
 
     def auto_action(self):
@@ -27,7 +27,11 @@ class Login(KoLPage):
 
         retry = soup(text=re.compile('try again in'))
         if len(retry) > 0:
-            raise framework.KoLError(retry[0])
+            raise kolala.framework.KoLLoginError(retry[0])
+
+        retry = soup(text=re.compile('Bad password.'))
+        if len(retry) > 0:
+            raise kolala.framework.KoLLoginError(retry[0])
 
         form = soup.find('form', attrs={'name': 'Login'})
         params = form.find_all('input')
@@ -40,6 +44,7 @@ class Login(KoLPage):
 
         response = Login.digest_password(kolala.Globals.password,
                                          param_list['challenge'])
+        param_list['password'] = kolala.Globals.password
         param_list['response'] = response
         param_list['secure'] = 1
         param_list['loginname'] = kolala.Globals.user

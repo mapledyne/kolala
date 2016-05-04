@@ -6,6 +6,7 @@ from kolala.game.Items import items
 class Character(object):
 
     def __init__(self):
+        self.id = 0
         self.name = ''
         self.char_cls = ''
         self.level = ''

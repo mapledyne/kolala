@@ -5,7 +5,7 @@
         HELP *
     </pattern>
     <template>
-        {{all|<star/>}}
+    [[<star/>]]{% if search|length == 0 %}Nothing found.{% elif search|length == 1 %}{{search[0]['name']}} found.{% else %}{{search|length}} items found. {% endif %}
     </template>
 </category>
 <category>

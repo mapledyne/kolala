@@ -222,6 +222,9 @@
 <category><pattern>HEY THERE</pattern>
 <template><srai>hello</srai></template>
 </category>
+<category><pattern>HEY</pattern>
+<template><srai>hello</srai></template>
+</category>
 <category><pattern>BYE BYE</pattern>
 <template><srai>bye</srai></template>
 </category>
@@ -302,9 +305,12 @@
 <template>I am fine thank you how are you?</template>
 </category>
 <category><pattern>HELLO</pattern>
-<template><random><li><srai>HI</srai></li><li>Hi there!</li></random></template>
+<template><random><li>Hi!</li><li>Hi there!</li></random></template>
 </category>
 <category><pattern>HULLO</pattern>
+<template><srai>hello</srai></template>
+</category>
+<category><pattern>HI</pattern>
 <template><srai>hello</srai></template>
 </category>
 <category><pattern>HALO</pattern>

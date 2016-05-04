@@ -24,8 +24,10 @@ class CharPane(KoLPage):
         if character is None:
             character = kolala.player
         pwd = re.search('var pwdhash = "([a-f0-9]+)"', text)
-
         Globals.pwd = pwd.group(1)
+
+        playerid = re.search('var playerid = ([0-9]+);', text)
+        character.id = playerid
 
         soup = bs4.BeautifulSoup(text, 'html.parser')
         if 'Hardcore' in soup.text:
